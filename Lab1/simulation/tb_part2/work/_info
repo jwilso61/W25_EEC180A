@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/WINDOWS/system32
+vdec_7seg_decoder
+!s110 1736384481
+!i10b 1
+!s100 fTD<]CUFW2MMUIKOc<mJk1
+If;fNSK4DQCneb6Y^5L4e<0
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/EEC 180/lab1/simulation/tb_part2
+w1736382812
+8C:/EEC 180/lab1/hdl/dec_7seg_decoder.v
+FC:/EEC 180/lab1/hdl/dec_7seg_decoder.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1736384480.000000
+!s107 C:/EEC 180/lab1/hdl/dec_7seg_decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/lab1/hdl/dec_7seg_decoder.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vpart2
+Z6 !s110 1736384480
+!i10b 1
+!s100 U>?44FYWn4@Z28OXcNBJR2
+IX6z6Roz4^EQcQm2WzfKg31
+R0
+R1
+w1736382896
+8C:/EEC 180/lab1/synthesis/part2/part2.v
+FC:/EEC 180/lab1/synthesis/part2/part2.v
+L0 6
+R2
+r1
+!s85 0
+31
+R3
+!s107 C:/EEC 180/lab1/synthesis/part2/part2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/lab1/synthesis/part2/part2.v|
+!i113 1
+R4
+R5
+vtb_part2
+R6
+!i10b 1
+!s100 dcTO`c7SO<9A9@QDI[dT53
+I_hXhTDlT4cYYW>l<I]CzC0
+R0
+R1
+w1736384476
+8C:/EEC 180/lab1/test/tb_part2.v
+FC:/EEC 180/lab1/test/tb_part2.v
+L0 1
+R2
+r1
+!s85 0
+31
+R3
+!s107 C:/EEC 180/lab1/test/tb_part2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/lab1/test/tb_part2.v|
+!i113 1
+R4
+R5

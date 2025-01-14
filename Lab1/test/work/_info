@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/WINDOWS/system32
+vmajority
+Z0 !s110 1736370824
+!i10b 1
+!s100 jhJL?[oI@nn019c]RdVFd0
+IYJ7P:nhoCmYIW9b9Uo^C@2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/EEC 180/lab1/test
+w1736367718
+8C:/EEC 180/lab1/synthesis/majority/majority.v
+FC:/EEC 180/lab1/synthesis/majority/majority.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1736370824.000000
+!s107 C:/EEC 180/lab1/synthesis/majority/majority.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/lab1/synthesis/majority/majority.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vtb_majority
+R0
+!i10b 1
+!s100 QGGbDiEWBmSlnG^=BcS5d1
+I9zgeJjL]P4e@1@F3o2IM<2
+R1
+R2
+w1736370729
+8C:/EEC 180/lab1/test/tb_majority.v
+FC:/EEC 180/lab1/test/tb_majority.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180/lab1/test/tb_majority.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/lab1/test/tb_majority.v|
+!i113 1
+R5
+R6

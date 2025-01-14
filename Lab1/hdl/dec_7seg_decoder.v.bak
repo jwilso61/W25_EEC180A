@@ -1,0 +1,18 @@
+module dec_7seg_decoder(
+
+	assign HEX0[0]
+	assign HEX0[1]
+	assign HEX0[2]
+	assign HEX0[3]
+	assign HEX0[4]
+	assign HEX0[5]
+	assign HEX0[6]
+	assign HEX1[0]
+	assign HEX1[1]
+	assign HEX1[2]
+	assign HEX1[3]
+	assign HEX1[4]
+	assign HEX1[5]
+	assign HEX1[6]
+	
+	

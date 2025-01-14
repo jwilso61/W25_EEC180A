@@ -1,0 +1,225 @@
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:43:03 on Jan 08,2025
+# Loading work.tb_part2
+# ** Warning: (vsim-3035) Instantiation depth of '/tb_part2/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
+# ** Error: (vsim-3036) Instantiation depth of '/tb_part2/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT' is 75. Assuming recursive instantiation.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT File: C:/EEC 180/lab1/test/tb_part2.v
+# Error loading design
+# End time: 16:43:03 on Jan 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:47:07 on Jan 08,2025
+# Loading work.tb_part2
+# ** Warning: (vsim-3035) Instantiation depth of '/tb_part2/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT' is 51. This might indicate a recursive instantiation. Increasing limit to 75.
+# ** Error: (vsim-3036) Instantiation depth of '/tb_part2/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT' is 75. Assuming recursive instantiation.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT/UUT File: C:/EEC 180/lab1/test/tb_part2.v
+# Error loading design
+# End time: 16:47:08 on Jan 08,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:47:36 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# ** Error: (vsim-3033) C:/EEC 180/lab1/synthesis/part2/part2.v(38): Instantiation of 'dec_7seg_decoder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+#         Searched libraries:
+#             C:/EEC 180/lab1/simulation/tb_part2/work
+# Error loading design
+# End time: 16:47:36 on Jan 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:48:14 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# ** Error: (vsim-3033) C:/EEC 180/lab1/synthesis/part2/part2.v(38): Instantiation of 'dec_7seg_decoder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+#         Searched libraries:
+#             C:/EEC 180/lab1/simulation/tb_part2/work
+# Error loading design
+# End time: 16:48:14 on Jan 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:49:56 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# ** Error: (vsim-3033) C:/EEC 180/lab1/synthesis/part2/part2.v(38): Instantiation of 'dec_7seg_decoder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+#         Searched libraries:
+#             C:/EEC 180/lab1/simulation/tb_part2/work
+# Error loading design
+# End time: 16:49:56 on Jan 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:51:57 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# ** Error: (vsim-3033) C:/EEC 180/lab1/synthesis/part2/part2.v(38): Instantiation of 'dec_7seg_decoder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+#         Searched libraries:
+#             C:/EEC 180/lab1/simulation/tb_part2/work
+# Error loading design
+# End time: 16:51:58 on Jan 08,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:52:39 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# ** Error: (vsim-3033) C:/EEC 180/lab1/synthesis/part2/part2.v(38): Instantiation of 'dec_7seg_decoder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+#         Searched libraries:
+#             C:/EEC 180/lab1/simulation/tb_part2/work
+# Error loading design
+# End time: 16:52:39 on Jan 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:53:17 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# ** Error: (vsim-3033) C:/EEC 180/lab1/synthesis/part2/part2.v(38): Instantiation of 'dec_7seg_decoder' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+#         Searched libraries:
+#             C:/EEC 180/lab1/simulation/tb_part2/work
+# Error loading design
+# End time: 16:53:17 on Jan 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# Compile of dec_7seg_decoder.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:56:20 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.dec_7seg_decoder
+# ** Warning: (vsim-3017) C:/EEC 180/lab1/test/tb_part2.v(8): [TFMPC] - Too few port connections. Expected 9, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab1/test/tb_part2.v(8): [PCDPC] - Port size (10) does not match connection size (4) for port 'SW'. The port definition is at: C:/EEC 180/lab1/synthesis/part2/part2.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+# ** Error: (vsim-3063) C:/EEC 180/lab1/test/tb_part2.v(8): Port 'dec_7seg_decoder' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(8): [TFMPC] - Missing connection for port 'HEX2'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(8): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(8): [TFMPC] - Missing connection for port 'HEX4'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(8): [TFMPC] - Missing connection for port 'HEX5'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(8): [TFMPC] - Missing connection for port 'KEY'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(8): [TFMPC] - Missing connection for port 'LEDR'.
+# Error loading design
+# End time: 16:56:20 on Jan 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 8
+# Load canceled
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# Compile of dec_7seg_decoder.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 16:58:39 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.dec_7seg_decoder
+# ** Warning: (vsim-3017) C:/EEC 180/lab1/test/tb_part2.v(14): [TFMPC] - Too few port connections. Expected 9, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab1/test/tb_part2.v(14): [PCDPC] - Port size (10) does not match connection size (4) for port 'SW'. The port definition is at: C:/EEC 180/lab1/synthesis/part2/part2.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+# ** Error: (vsim-3063) C:/EEC 180/lab1/test/tb_part2.v(14): Port 'dec_7seg_decoder' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(14): [TFMPC] - Missing connection for port 'HEX2'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(14): [TFMPC] - Missing connection for port 'HEX3'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(14): [TFMPC] - Missing connection for port 'HEX4'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(14): [TFMPC] - Missing connection for port 'HEX5'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(14): [TFMPC] - Missing connection for port 'KEY'.
+# ** Warning: (vsim-3722) C:/EEC 180/lab1/test/tb_part2.v(14): [TFMPC] - Missing connection for port 'LEDR'.
+# Error loading design
+# End time: 16:58:39 on Jan 08,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 8
+# Compile of tb_part2.v failed with 1 errors.
+# Compile of part2.v was successful.
+# Compile of dec_7seg_decoder.v was successful.
+# 3 compiles, 1 failed with 1 error.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# Compile of dec_7seg_decoder.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 17:01:31 on Jan 08,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.dec_7seg_decoder
+# ** Warning: (vsim-3015) C:/EEC 180/lab1/test/tb_part2.v(14): [PCDPC] - Port size (2) does not match connection size (1) for port 'KEY'. The port definition is at: C:/EEC 180/lab1/synthesis/part2/part2.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab1/test/tb_part2.v(14): [PCDPC] - Port size (10) does not match connection size (1) for port 'LEDR'. The port definition is at: C:/EEC 180/lab1/synthesis/part2/part2.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab1/test/tb_part2.v(14): [PCDPC] - Port size (10) does not match connection size (4) for port 'SW'. The port definition is at: C:/EEC 180/lab1/synthesis/part2/part2.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT File: C:/EEC 180/lab1/synthesis/part2/part2.v
+add wave -position insertpoint  \
+sim:/tb_part2/count
+add wave -position insertpoint  \
+sim:/tb_part2/HEX0
+add wave -position insertpoint  \
+sim:/tb_part2/HEX1
+run
+# in = 0000, hex0 = 11000000, hex1 = 11000000
+run
+# in = 0001, hex0 = 11001111, hex1 = 11000000
+run
+# in = 0010, hex0 = 10100100, hex1 = 11000000
+run
+# in = 0011, hex0 = 10110000, hex1 = 11000000
+run
+# in = 0100, hex0 = 10011001, hex1 = 11000000
+run
+# in = 0101, hex0 = 10010010, hex1 = 11000000
+run
+# in = 0110, hex0 = 10000010, hex1 = 11000000
+run
+# in = 0111, hex0 = 11111000, hex1 = 11000000
+run
+# in = 1000, hex0 = 10000000, hex1 = 11000000
+run
+# in = 1001, hex0 = 10011000, hex1 = 11000000
+run
+# in = 1010, hex0 = 11000000, hex1 = 11001111
+run
+# in = 1011, hex0 = 11001111, hex1 = 11001111
+run
+# in = 1100, hex0 = 10100100, hex1 = 11001111
+run
+# in = 1101, hex0 = 10110000, hex1 = 11001111
+run
+# in = 1110, hex0 = 10011001, hex1 = 11001111
+run
+# in = 1111, hex0 = 10010010, hex1 = 11001111
