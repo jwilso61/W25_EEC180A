@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/John/Desktop/180LAB/Lab1/test
+vFullAdder
+Z0 !s110 1737583570
+!i10b 1
+!s100 iTm_J0j0I_@2d_GG7HJlk3
+Im>]Ge]cC039LF`6]Xlh>i3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/John/Desktop/180LAB/Lab2/lab2/simulation/tb_part3
+w1737583019
+8C:/Users/John/Desktop/180LAB/Lab2/lab2/hdl/FullAdder.v
+FC:/Users/John/Desktop/180LAB/Lab2/lab2/hdl/FullAdder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1737583570.000000
+!s107 C:/Users/John/Desktop/180LAB/Lab2/lab2/hdl/FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/John/Desktop/180LAB/Lab2/lab2/hdl/FullAdder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@full@adder
+vpart3
+R0
+!i10b 1
+!s100 anjlbJ19:zn19mJbOIaK[1
+I7[R]aD>TVL8hAXKdN:Gf_2
+R1
+R2
+w1737583100
+8C:/Users/John/Desktop/180LAB/Lab2/lab2/synthesis/part3/part3.v
+FC:/Users/John/Desktop/180LAB/Lab2/lab2/synthesis/part3/part3.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/John/Desktop/180LAB/Lab2/lab2/synthesis/part3/part3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/John/Desktop/180LAB/Lab2/lab2/synthesis/part3/part3.v|
+!i113 1
+R5
+R6
+vtb_part3
+R0
+!i10b 1
+!s100 WnfmAcc7f8Jh7njF>=?351
+I0IFYD8gWPK480JEU]h=zQ1
+R1
+R2
+w1737583567
+8C:/Users/John/Desktop/180LAB/Lab2/lab2/test/tb_part3.v
+FC:/Users/John/Desktop/180LAB/Lab2/lab2/test/tb_part3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/John/Desktop/180LAB/Lab2/lab2/test/tb_part3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/John/Desktop/180LAB/Lab2/lab2/test/tb_part3.v|
+!i113 1
+R5
+R6

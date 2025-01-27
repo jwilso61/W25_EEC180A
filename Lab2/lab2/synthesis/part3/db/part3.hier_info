@@ -1,0 +1,93 @@
+|part3
+s[0] <= FullAdder:FAgen[0].u0.port1
+s[1] <= FullAdder:FAgen[1].u0.port1
+s[2] <= FullAdder:FAgen[2].u0.port1
+s[3] <= FullAdder:FAgen[3].u0.port1
+s[4] <= FullAdder:FAgen[4].u0.port1
+s[5] <= FullAdder:FAgen[5].u0.port1
+s[6] <= FullAdder:FAgen[6].u0.port1
+s[7] <= FullAdder:FAgen[7].u0.port1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => carry[0].IN1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+
+
+|part3|FullAdder:FAgen[0].u0
+c0 <= <GND>
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+b => s.IN1
+cI => s.IN1
+
+
+|part3|FullAdder:FAgen[1].u0
+c0 <= <GND>
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+b => s.IN1
+cI => s.IN1
+
+
+|part3|FullAdder:FAgen[2].u0
+c0 <= <GND>
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+b => s.IN1
+cI => s.IN1
+
+
+|part3|FullAdder:FAgen[3].u0
+c0 <= <GND>
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+b => s.IN1
+cI => s.IN1
+
+
+|part3|FullAdder:FAgen[4].u0
+c0 <= <GND>
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+b => s.IN1
+cI => s.IN1
+
+
+|part3|FullAdder:FAgen[5].u0
+c0 <= <GND>
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+b => s.IN1
+cI => s.IN1
+
+
+|part3|FullAdder:FAgen[6].u0
+c0 <= <GND>
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+b => s.IN1
+cI => s.IN1
+
+
+|part3|FullAdder:FAgen[7].u0
+c0 <= <GND>
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => s.IN0
+b => s.IN1
+cI => s.IN1
+
+

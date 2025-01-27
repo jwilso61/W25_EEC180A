@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/Users/John/Desktop/180LAB/Lab2/lab2/simulation/tb_part3
 vFullAdder
-Z0 !s110 1737593834
+Z0 !s110 1737962273
 !i10b 1
-!s100 iTm_J0j0I_@2d_GG7HJlk3
-Im>]Ge]cC039LF`6]Xlh>i3
+!s100 BLSoJDJL:DQ02WEeeLTB13
+IL^zjRzBi]6d3jh>SC42mY0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/John/Desktop/180LAB/Lab3/Lab3/simulation/tb_part2
-w1737583019
-8C:/Users/John/Desktop/180LAB/Lab2/lab2/hdl/FullAdder.v
-FC:/Users/John/Desktop/180LAB/Lab2/lab2/hdl/FullAdder.v
+Z2 dC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/simulation/tb_part2
+w1737951797
+8C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab2/lab2/hdl/FullAdder.v
+FC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab2/lab2/hdl/FullAdder.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1737593834.000000
-!s107 C:/Users/John/Desktop/180LAB/Lab2/lab2/hdl/FullAdder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/John/Desktop/180LAB/Lab2/lab2/hdl/FullAdder.v|
+Z4 !s108 1737962273.000000
+!s107 C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab2/lab2/hdl/FullAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab2/lab2/hdl/FullAdder.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
@@ -33,21 +33,21 @@ n@full@adder
 vLZD_4
 R0
 !i10b 1
-!s100 RF;[gM0YcT2S?Hi3TZkcA1
-IaaYGKToQI4TUUVdhWOV3V0
+!s100 VPgU<6?V?9LPBV<XA]?S@0
+IQDK4=lZab5VzF[>5L^0iS3
 R1
 R2
-w1737586306
-8C:/Users/John/Desktop/180LAB/Lab3/Lab3/hdl/LZD_4.v
-FC:/Users/John/Desktop/180LAB/Lab3/Lab3/hdl/LZD_4.v
+w1737958381
+8C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/hdl/LZD_4.v
+FC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/hdl/LZD_4.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/John/Desktop/180LAB/Lab3/Lab3/hdl/LZD_4.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/John/Desktop/180LAB/Lab3/Lab3/hdl/LZD_4.v|
+!s107 C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/hdl/LZD_4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/hdl/LZD_4.v|
 !i113 1
 R5
 R6
@@ -55,63 +55,63 @@ n@l@z@d_4
 vpart2
 R0
 !i10b 1
-!s100 ;d@KYdL<cEHM_?UjXOHYz3
-IkPl1eS:kC6cmgARQ8;anG2
+!s100 ?^>[;1j>JJ_P`Li><Dk^83
+I1Rc;7^3BCE9]Go@J1mfJz1
 R1
 R2
-w1737592988
-8C:/Users/John/Desktop/180LAB/Lab3/Lab3/synthesis/part2/part2.v
-FC:/Users/John/Desktop/180LAB/Lab3/Lab3/synthesis/part2/part2.v
-L0 6
+w1737957843
+8C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/synthesis/part2/part2.v
+FC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/synthesis/part2/part2.v
+L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/John/Desktop/180LAB/Lab3/Lab3/synthesis/part2/part2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/John/Desktop/180LAB/Lab3/Lab3/synthesis/part2/part2.v|
+!s107 C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/synthesis/part2/part2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/synthesis/part2/part2.v|
 !i113 1
 R5
 R6
 vpart3
 R0
 !i10b 1
-!s100 anjlbJ19:zn19mJbOIaK[1
-I7[R]aD>TVL8hAXKdN:Gf_2
+!s100 9HYWbnT;J`fgGS6`O4Oie1
+IVAnCOP_5?`doga]h`P9CD3
 R1
 R2
-w1737583100
-8C:/Users/John/Desktop/180LAB/Lab2/lab2/synthesis/part3/part3.v
-FC:/Users/John/Desktop/180LAB/Lab2/lab2/synthesis/part3/part3.v
-L0 3
+w1737958338
+8C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab2/lab2/synthesis/part3/part3.v
+FC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab2/lab2/synthesis/part3/part3.v
+L0 2
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/John/Desktop/180LAB/Lab2/lab2/synthesis/part3/part3.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/John/Desktop/180LAB/Lab2/lab2/synthesis/part3/part3.v|
+!s107 C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab2/lab2/synthesis/part3/part3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab2/lab2/synthesis/part3/part3.v|
 !i113 1
 R5
 R6
 vtb_part2
 R0
 !i10b 1
-!s100 dbfF3PCIkb]nO@aPBTLRo3
-I`K`YSi3_:l;TfeBN32=KV2
+!s100 g2Y:CT_86:Ul@H_k:L:hj1
+I9BFi^nLc16Ik[ja?_JgO72
 R1
 R2
-w1737593646
-8C:/Users/John/Desktop/180LAB/Lab3/Lab3/test/tb_part2.v
-FC:/Users/John/Desktop/180LAB/Lab3/Lab3/test/tb_part2.v
-L0 3
+w1737962239
+8C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/test/tb_part2.v
+FC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/test/tb_part2.v
+L0 1
 R3
 r1
 !s85 0
 31
-!s108 1737593833.000000
-!s107 C:/Users/John/Desktop/180LAB/Lab3/Lab3/test/tb_part2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/John/Desktop/180LAB/Lab3/Lab3/test/tb_part2.v|
+R4
+!s107 C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/test/tb_part2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/test/tb_part2.v|
 !i113 1
 R5
 R6

@@ -1,0 +1,944 @@
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 01:14:01 on Jan 22,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.bitmulti
+# Loading work.FullAdder
+# Loading work.bit2Hex
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA0 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA2 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA5 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA6 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(36): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/b File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(37): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/a File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(38): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p0 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(39): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p1 File: C:/EEC 180/lab2/hdl/bit2hex.v
+run
+# PASS: a=0, b=0, Product=00
+# PASS: a=0, b=1, Product=00
+# PASS: a=0, b=2, Product=00
+# PASS: a=0, b=3, Product=00
+# PASS: a=0, b=4, Product=00
+# PASS: a=0, b=5, Product=00
+# PASS: a=0, b=6, Product=00
+# PASS: a=0, b=7, Product=00
+# PASS: a=0, b=8, Product=00
+# PASS: a=0, b=9, Product=00
+run
+# PASS: a=0, b=a, Product=00
+# PASS: a=0, b=b, Product=00
+# PASS: a=0, b=c, Product=00
+# PASS: a=0, b=d, Product=00
+# PASS: a=0, b=e, Product=00
+# PASS: a=0, b=f, Product=00
+# PASS: a=0, b=0, Product=00
+# PASS: a=0, b=1, Product=00
+# PASS: a=0, b=2, Product=00
+# PASS: a=0, b=3, Product=00
+run
+# PASS: a=0, b=4, Product=00
+run
+# PASS: a=0, b=5, Product=00
+run
+# PASS: a=0, b=6, Product=00
+run
+# PASS: a=0, b=7, Product=00
+run
+# PASS: a=0, b=8, Product=00
+run
+# PASS: a=0, b=9, Product=00
+run
+# PASS: a=0, b=a, Product=00
+run
+# PASS: a=0, b=b, Product=00
+run
+# PASS: a=0, b=c, Product=00
+run
+# PASS: a=0, b=d, Product=00
+run
+# PASS: a=0, b=e, Product=00
+run
+# PASS: a=0, b=f, Product=00
+run
+# PASS: a=0, b=0, Product=00
+run
+# PASS: a=0, b=1, Product=00
+run
+# PASS: a=0, b=2, Product=00
+run
+# PASS: a=0, b=3, Product=00
+run
+# PASS: a=0, b=4, Product=00
+run
+# PASS: a=0, b=5, Product=00
+run
+# PASS: a=0, b=6, Product=00
+run
+# PASS: a=0, b=7, Product=00
+run
+# PASS: a=0, b=8, Product=00
+run
+# PASS: a=0, b=9, Product=00
+run
+# PASS: a=0, b=a, Product=00
+run
+# PASS: a=0, b=b, Product=00
+run
+# PASS: a=0, b=c, Product=00
+run
+# PASS: a=0, b=d, Product=00
+run
+# PASS: a=0, b=e, Product=00
+run
+# PASS: a=0, b=f, Product=00
+run
+# PASS: a=0, b=0, Product=00
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# End time: 01:17:01 on Jan 22,2025, Elapsed time: 0:03:00
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_part2 
+# Start time: 01:17:01 on Jan 22,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.bitmulti
+# Loading work.FullAdder
+# Loading work.bit2Hex
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA0 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA2 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA5 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA6 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(36): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/b File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(37): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/a File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(38): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p0 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(39): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p1 File: C:/EEC 180/lab2/hdl/bit2hex.v
+run
+# PASS: a=0, b=0, Product=00
+run
+# PASS: a=0, b=1, Product=00
+run
+# PASS: a=0, b=2, Product=00
+run
+# PASS: a=0, b=3, Product=00
+run
+# PASS: a=0, b=4, Product=00
+run
+# PASS: a=0, b=5, Product=00
+run
+# PASS: a=0, b=6, Product=00
+run
+# PASS: a=0, b=7, Product=00
+run
+# PASS: a=0, b=8, Product=00
+run
+# PASS: a=0, b=9, Product=00
+run
+# PASS: a=0, b=a, Product=00
+run
+# PASS: a=0, b=b, Product=00
+run
+# PASS: a=0, b=c, Product=00
+run
+# PASS: a=0, b=d, Product=00
+run
+# PASS: a=0, b=e, Product=00
+run
+# PASS: a=0, b=f, Product=00
+run
+# PASS: a=0, b=0, Product=00
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v failed with 1 errors.
+# Compile of part2.v was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v failed with 1 errors.
+# Compile of part2.v was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of tb_part2.v was successful.
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# End time: 01:19:27 on Jan 22,2025, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_part2 
+# Start time: 01:19:27 on Jan 22,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.bitmulti
+# Loading work.FullAdder
+# Loading work.bit2Hex
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA0 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA2 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA5 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA6 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(36): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/b File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(37): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/a File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(38): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p0 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(39): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p1 File: C:/EEC 180/lab2/hdl/bit2hex.v
+run
+# PASS: a=0, b=0, Product=00
+run
+# PASS: a=0, b=1, Product=00
+run
+# PASS: a=0, b=2, Product=00
+run
+# PASS: a=0, b=3, Product=00
+run
+# PASS: a=0, b=4, Product=00
+run
+# PASS: a=0, b=5, Product=00
+run
+# PASS: a=0, b=6, Product=00
+run
+# PASS: a=0, b=7, Product=00
+run
+# PASS: a=0, b=8, Product=00
+run
+# PASS: a=0, b=9, Product=00
+run
+# PASS: a=0, b=a, Product=00
+run
+# PASS: a=0, b=b, Product=00
+run
+# PASS: a=0, b=c, Product=00
+run
+# PASS: a=0, b=d, Product=00
+run
+# PASS: a=0, b=e, Product=00
+run
+# PASS: a=0, b=f, Product=00
+run
+# PASS: a=0, b=0, Product=00
+run
+# PASS: a=0, b=1, Product=00
+run
+# PASS: a=0, b=2, Product=00
+run
+# PASS: a=0, b=3, Product=00
+run
+# PASS: a=0, b=4, Product=00
+run
+# PASS: a=0, b=5, Product=00
+run
+# PASS: a=0, b=6, Product=00
+run
+# PASS: a=0, b=7, Product=00
+run
+# PASS: a=0, b=8, Product=00
+run
+# PASS: a=0, b=9, Product=00
+run
+# PASS: a=0, b=a, Product=00
+run
+# PASS: a=0, b=b, Product=00
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# End time: 01:22:49 on Jan 22,2025, Elapsed time: 0:03:22
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_part2 
+# Start time: 01:22:49 on Jan 22,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.bitmulti
+# Loading work.FullAdder
+# Loading work.bit2Hex
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA0 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA2 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA5 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA6 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(36): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/b File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(37): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/a File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(38): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p0 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(39): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p1 File: C:/EEC 180/lab2/hdl/bit2hex.v
+run
+# PASS: a=00000000, b=00000000, Product=00
+run
+# PASS: a=00000000, b=00000001, Product=00
+run
+# PASS: a=00000000, b=00000002, Product=00
+run
+# PASS: a=00000000, b=00000003, Product=00
+run
+# PASS: a=00000000, b=00000004, Product=00
+run
+# PASS: a=00000000, b=00000005, Product=00
+run
+# PASS: a=00000000, b=00000006, Product=00
+run
+# PASS: a=00000000, b=00000007, Product=00
+run
+# PASS: a=00000000, b=00000008, Product=00
+run
+# PASS: a=00000000, b=00000009, Product=00
+run
+# PASS: a=00000000, b=0000000a, Product=00
+run
+# PASS: a=00000000, b=0000000b, Product=00
+run
+# PASS: a=00000000, b=0000000c, Product=00
+run
+# PASS: a=00000000, b=0000000d, Product=00
+run
+# PASS: a=00000000, b=0000000e, Product=00
+run
+# PASS: a=00000000, b=0000000f, Product=00
+run
+# PASS: a=00000001, b=00000000, Product=00
+run
+# PASS: a=00000001, b=00000001, Product=01
+run
+# PASS: a=00000001, b=00000002, Product=02
+run
+# PASS: a=00000001, b=00000003, Product=03
+run
+# PASS: a=00000001, b=00000004, Product=04
+run
+# PASS: a=00000001, b=00000005, Product=05
+run
+# PASS: a=00000001, b=00000006, Product=06
+run
+# PASS: a=00000001, b=00000007, Product=07
+run
+# PASS: a=00000001, b=00000008, Product=08
+run
+# PASS: a=00000001, b=00000009, Product=09
+run
+# PASS: a=00000001, b=0000000a, Product=0x
+run
+# PASS: a=00000001, b=0000000b, Product=0b
+run
+# PASS: a=00000001, b=0000000c, Product=0x
+run
+# PASS: a=00000001, b=0000000d, Product=0d
+run
+# PASS: a=00000001, b=0000000e, Product=0x
+run
+# PASS: a=00000001, b=0000000f, Product=0f
+# PASS: a=00000002, b=00000000, Product=00
+# PASS: a=00000002, b=00000001, Product=02
+# PASS: a=00000002, b=00000002, Product=04
+# PASS: a=00000002, b=00000003, Product=06
+# PASS: a=00000002, b=00000004, Product=08
+# PASS: a=00000002, b=00000005, Product=0x
+# PASS: a=00000002, b=00000006, Product=0x
+# PASS: a=00000002, b=00000007, Product=0x
+# PASS: a=00000002, b=00000008, Product=10
+run
+# PASS: a=00000002, b=00000009, Product=12
+# PASS: a=00000002, b=0000000a, Product=14
+# PASS: a=00000002, b=0000000b, Product=16
+# PASS: a=00000002, b=0000000c, Product=18
+# PASS: a=00000002, b=0000000d, Product=1x
+# PASS: a=00000002, b=0000000e, Product=1x
+# PASS: a=00000002, b=0000000f, Product=1x
+# PASS: a=00000003, b=00000000, Product=00
+# PASS: a=00000003, b=00000001, Product=03
+# PASS: a=00000003, b=00000002, Product=06
+run
+# PASS: a=00000003, b=00000003, Product=09
+# PASS: a=00000003, b=00000004, Product=0x
+# PASS: a=00000003, b=00000005, Product=0f
+# PASS: a=00000003, b=00000006, Product=12
+# PASS: a=00000003, b=00000007, Product=15
+# PASS: a=00000003, b=00000008, Product=18
+# PASS: a=00000003, b=00000009, Product=1b
+# PASS: a=00000003, b=0000000a, Product=1x
+# PASS: a=00000003, b=0000000b, Product=21
+# PASS: a=00000003, b=0000000c, Product=24
+run
+# PASS: a=00000003, b=0000000d, Product=27
+# PASS: a=00000003, b=0000000e, Product=2x
+# PASS: a=00000003, b=0000000f, Product=2d
+# PASS: a=00000004, b=00000000, Product=00
+# PASS: a=00000004, b=00000001, Product=04
+# PASS: a=00000004, b=00000002, Product=08
+# PASS: a=00000004, b=00000003, Product=0x
+# PASS: a=00000004, b=00000004, Product=10
+# PASS: a=00000004, b=00000005, Product=14
+# PASS: a=00000004, b=00000006, Product=18
+run
+# PASS: a=00000004, b=00000007, Product=1x
+# PASS: a=00000004, b=00000008, Product=20
+# PASS: a=00000004, b=00000009, Product=24
+# PASS: a=00000004, b=0000000a, Product=28
+# PASS: a=00000004, b=0000000b, Product=2x
+# PASS: a=00000004, b=0000000c, Product=30
+# PASS: a=00000004, b=0000000d, Product=34
+# PASS: a=00000004, b=0000000e, Product=38
+# PASS: a=00000004, b=0000000f, Product=3x
+# PASS: a=00000005, b=00000000, Product=00
+run
+# PASS: a=00000005, b=00000001, Product=05
+# PASS: a=00000005, b=00000002, Product=0x
+# PASS: a=00000005, b=00000003, Product=0f
+# PASS: a=00000005, b=00000004, Product=14
+# PASS: a=00000005, b=00000005, Product=19
+# PASS: a=00000005, b=00000006, Product=1x
+# PASS: a=00000005, b=00000007, Product=23
+# PASS: a=00000005, b=00000008, Product=28
+# PASS: a=00000005, b=00000009, Product=2d
+# PASS: a=00000005, b=0000000a, Product=32
+run
+# PASS: a=00000005, b=0000000b, Product=37
+# PASS: a=00000005, b=0000000c, Product=3x
+# PASS: a=00000005, b=0000000d, Product=41
+# PASS: a=00000005, b=0000000e, Product=46
+# PASS: a=00000005, b=0000000f, Product=4b
+# PASS: a=00000006, b=00000000, Product=00
+# PASS: a=00000006, b=00000001, Product=06
+# PASS: a=00000006, b=00000002, Product=0x
+# PASS: a=00000006, b=00000003, Product=12
+# PASS: a=00000006, b=00000004, Product=18
+run
+# PASS: a=00000006, b=00000005, Product=1x
+# PASS: a=00000006, b=00000006, Product=24
+# PASS: a=00000006, b=00000007, Product=2x
+# PASS: a=00000006, b=00000008, Product=30
+# PASS: a=00000006, b=00000009, Product=36
+# PASS: a=00000006, b=0000000a, Product=3x
+# PASS: a=00000006, b=0000000b, Product=42
+# PASS: a=00000006, b=0000000c, Product=48
+# PASS: a=00000006, b=0000000d, Product=4x
+# PASS: a=00000006, b=0000000e, Product=54
+run
+# PASS: a=00000006, b=0000000f, Product=5x
+# PASS: a=00000007, b=00000000, Product=00
+# PASS: a=00000007, b=00000001, Product=07
+# PASS: a=00000007, b=00000002, Product=0x
+# PASS: a=00000007, b=00000003, Product=15
+# PASS: a=00000007, b=00000004, Product=1x
+# PASS: a=00000007, b=00000005, Product=23
+# PASS: a=00000007, b=00000006, Product=2x
+# PASS: a=00000007, b=00000007, Product=31
+# PASS: a=00000007, b=00000008, Product=38
+run
+# PASS: a=00000007, b=00000009, Product=3f
+# PASS: a=00000007, b=0000000a, Product=46
+# PASS: a=00000007, b=0000000b, Product=4d
+# PASS: a=00000007, b=0000000c, Product=54
+# PASS: a=00000007, b=0000000d, Product=5b
+# PASS: a=00000007, b=0000000e, Product=62
+# PASS: a=00000007, b=0000000f, Product=69
+# PASS: a=00000008, b=00000000, Product=00
+# PASS: a=00000008, b=00000001, Product=08
+# PASS: a=00000008, b=00000002, Product=10
+run
+# PASS: a=00000008, b=00000003, Product=18
+# PASS: a=00000008, b=00000004, Product=20
+# PASS: a=00000008, b=00000005, Product=28
+# PASS: a=00000008, b=00000006, Product=30
+# PASS: a=00000008, b=00000007, Product=38
+# PASS: a=00000008, b=00000008, Product=40
+# PASS: a=00000008, b=00000009, Product=48
+# PASS: a=00000008, b=0000000a, Product=50
+# PASS: a=00000008, b=0000000b, Product=58
+# PASS: a=00000008, b=0000000c, Product=60
+run
+# PASS: a=00000008, b=0000000d, Product=68
+# PASS: a=00000008, b=0000000e, Product=70
+# PASS: a=00000008, b=0000000f, Product=78
+# PASS: a=00000009, b=00000000, Product=00
+# PASS: a=00000009, b=00000001, Product=09
+# PASS: a=00000009, b=00000002, Product=12
+# PASS: a=00000009, b=00000003, Product=1b
+# PASS: a=00000009, b=00000004, Product=24
+# PASS: a=00000009, b=00000005, Product=2d
+# PASS: a=00000009, b=00000006, Product=36
+run
+# PASS: a=00000009, b=00000007, Product=3f
+# PASS: a=00000009, b=00000008, Product=48
+# PASS: a=00000009, b=00000009, Product=51
+# PASS: a=00000009, b=0000000a, Product=5x
+# PASS: a=00000009, b=0000000b, Product=63
+# PASS: a=00000009, b=0000000c, Product=6x
+# PASS: a=00000009, b=0000000d, Product=75
+# PASS: a=00000009, b=0000000e, Product=7x
+# PASS: a=00000009, b=0000000f, Product=87
+# PASS: a=0000000a, b=00000000, Product=00
+run
+# PASS: a=0000000a, b=00000001, Product=0x
+# PASS: a=0000000a, b=00000002, Product=14
+# PASS: a=0000000a, b=00000003, Product=1x
+# PASS: a=0000000a, b=00000004, Product=28
+# PASS: a=0000000a, b=00000005, Product=32
+# PASS: a=0000000a, b=00000006, Product=3x
+# PASS: a=0000000a, b=00000007, Product=46
+# PASS: a=0000000a, b=00000008, Product=50
+# PASS: a=0000000a, b=00000009, Product=5x
+# PASS: a=0000000a, b=0000000a, Product=64
+run
+# PASS: a=0000000a, b=0000000b, Product=6x
+# PASS: a=0000000a, b=0000000c, Product=78
+# PASS: a=0000000a, b=0000000d, Product=82
+# PASS: a=0000000a, b=0000000e, Product=8x
+# PASS: a=0000000a, b=0000000f, Product=96
+# PASS: a=0000000b, b=00000000, Product=00
+# PASS: a=0000000b, b=00000001, Product=0b
+# PASS: a=0000000b, b=00000002, Product=16
+# PASS: a=0000000b, b=00000003, Product=21
+# PASS: a=0000000b, b=00000004, Product=2x
+run
+# PASS: a=0000000b, b=00000005, Product=37
+# PASS: a=0000000b, b=00000006, Product=42
+# PASS: a=0000000b, b=00000007, Product=4d
+# PASS: a=0000000b, b=00000008, Product=58
+# PASS: a=0000000b, b=00000009, Product=63
+# PASS: a=0000000b, b=0000000a, Product=6x
+# PASS: a=0000000b, b=0000000b, Product=79
+# PASS: a=0000000b, b=0000000c, Product=84
+# PASS: a=0000000b, b=0000000d, Product=8f
+# PASS: a=0000000b, b=0000000e, Product=9x
+run
+# PASS: a=0000000b, b=0000000f, Product=x5
+# PASS: a=0000000c, b=00000000, Product=00
+# PASS: a=0000000c, b=00000001, Product=0x
+# PASS: a=0000000c, b=00000002, Product=18
+# PASS: a=0000000c, b=00000003, Product=24
+# PASS: a=0000000c, b=00000004, Product=30
+# PASS: a=0000000c, b=00000005, Product=3x
+# PASS: a=0000000c, b=00000006, Product=48
+# PASS: a=0000000c, b=00000007, Product=54
+# PASS: a=0000000c, b=00000008, Product=60
+run
+# PASS: a=0000000c, b=00000009, Product=6x
+# PASS: a=0000000c, b=0000000a, Product=78
+# PASS: a=0000000c, b=0000000b, Product=84
+# PASS: a=0000000c, b=0000000c, Product=90
+# PASS: a=0000000c, b=0000000d, Product=9x
+# PASS: a=0000000c, b=0000000e, Product=x8
+# PASS: a=0000000c, b=0000000f, Product=b4
+# PASS: a=0000000d, b=00000000, Product=00
+# PASS: a=0000000d, b=00000001, Product=0d
+# PASS: a=0000000d, b=00000002, Product=1x
+run
+# PASS: a=0000000d, b=00000003, Product=27
+# PASS: a=0000000d, b=00000004, Product=34
+# PASS: a=0000000d, b=00000005, Product=41
+# PASS: a=0000000d, b=00000006, Product=4x
+# PASS: a=0000000d, b=00000007, Product=5b
+# PASS: a=0000000d, b=00000008, Product=68
+# PASS: a=0000000d, b=00000009, Product=75
+# PASS: a=0000000d, b=0000000a, Product=82
+# PASS: a=0000000d, b=0000000b, Product=8f
+# PASS: a=0000000d, b=0000000c, Product=9x
+run
+# PASS: a=0000000d, b=0000000d, Product=x9
+# PASS: a=0000000d, b=0000000e, Product=b6
+# PASS: a=0000000d, b=0000000f, Product=x3
+# PASS: a=0000000e, b=00000000, Product=00
+# PASS: a=0000000e, b=00000001, Product=0x
+# PASS: a=0000000e, b=00000002, Product=1x
+# PASS: a=0000000e, b=00000003, Product=2x
+# PASS: a=0000000e, b=00000004, Product=38
+# PASS: a=0000000e, b=00000005, Product=46
+# PASS: a=0000000e, b=00000006, Product=54
+run
+# PASS: a=0000000e, b=00000007, Product=62
+# PASS: a=0000000e, b=00000008, Product=70
+# PASS: a=0000000e, b=00000009, Product=7x
+# PASS: a=0000000e, b=0000000a, Product=8x
+# PASS: a=0000000e, b=0000000b, Product=9x
+# PASS: a=0000000e, b=0000000c, Product=x8
+# PASS: a=0000000e, b=0000000d, Product=b6
+# PASS: a=0000000e, b=0000000e, Product=x4
+# PASS: a=0000000e, b=0000000f, Product=d2
+# PASS: a=0000000f, b=00000000, Product=00
+run
+# PASS: a=0000000f, b=00000001, Product=0f
+# PASS: a=0000000f, b=00000002, Product=1x
+# PASS: a=0000000f, b=00000003, Product=2d
+# PASS: a=0000000f, b=00000004, Product=3x
+# PASS: a=0000000f, b=00000005, Product=4b
+# PASS: a=0000000f, b=00000006, Product=5x
+# PASS: a=0000000f, b=00000007, Product=69
+# PASS: a=0000000f, b=00000008, Product=78
+# PASS: a=0000000f, b=00000009, Product=87
+# PASS: a=0000000f, b=0000000a, Product=96
+run
+# PASS: a=0000000f, b=0000000b, Product=x5
+# PASS: a=0000000f, b=0000000c, Product=b4
+# PASS: a=0000000f, b=0000000d, Product=x3
+# PASS: a=0000000f, b=0000000e, Product=d2
+# PASS: a=0000000f, b=0000000f, Product=x1
+# ** Note: $finish    : C:/EEC 180/lab2/test/tb_part2.v(67)
+#    Time: 2570 ps  Iteration: 0  Instance: /tb_part2
+# 1
+# Break in Module tb_part2 at C:/EEC 180/lab2/test/tb_part2.v line 67
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# End time: 01:34:04 on Jan 22,2025, Elapsed time: 0:11:15
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_part2 
+# Start time: 01:34:04 on Jan 22,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.bitmulti
+# Loading work.FullAdder
+# Loading work.bit2Hex
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA0 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA2 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA5 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA6 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(36): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/b File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(37): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/a File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(38): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p0 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(39): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p1 File: C:/EEC 180/lab2/hdl/bit2hex.v
+run
+# PASS: a=00000000, b=00000000, Product=00
+# PASS: a=00000000, b=00000001, Product=00
+# PASS: a=00000000, b=00000002, Product=00
+# PASS: a=00000000, b=00000003, Product=00
+# PASS: a=00000000, b=00000004, Product=00
+# PASS: a=00000000, b=00000005, Product=00
+# PASS: a=00000000, b=00000006, Product=00
+# PASS: a=00000000, b=00000007, Product=00
+# PASS: a=00000000, b=00000008, Product=00
+# PASS: a=00000000, b=00000009, Product=00
+run
+# PASS: a=00000000, b=0000000a, Product=00
+# PASS: a=00000000, b=0000000b, Product=00
+# PASS: a=00000000, b=0000000c, Product=00
+# PASS: a=00000000, b=0000000d, Product=00
+# PASS: a=00000000, b=0000000e, Product=00
+# PASS: a=00000000, b=0000000f, Product=00
+# PASS: a=00000001, b=00000000, Product=00
+# PASS: a=00000001, b=00000001, Product=01
+# PASS: a=00000001, b=00000002, Product=02
+# PASS: a=00000001, b=00000003, Product=03
+run
+# PASS: a=00000001, b=00000004, Product=04
+# PASS: a=00000001, b=00000005, Product=05
+# PASS: a=00000001, b=00000006, Product=06
+# PASS: a=00000001, b=00000007, Product=07
+# PASS: a=00000001, b=00000008, Product=08
+# PASS: a=00000001, b=00000009, Product=09
+# PASS: a=00000001, b=0000000a, Product=0a
+# PASS: a=00000001, b=0000000b, Product=0b
+# PASS: a=00000001, b=0000000c, Product=0c
+# PASS: a=00000001, b=0000000d, Product=0d
+run
+# PASS: a=00000001, b=0000000e, Product=0e
+# PASS: a=00000001, b=0000000f, Product=0f
+# PASS: a=00000002, b=00000000, Product=00
+# PASS: a=00000002, b=00000001, Product=02
+# PASS: a=00000002, b=00000002, Product=04
+# PASS: a=00000002, b=00000003, Product=06
+# PASS: a=00000002, b=00000004, Product=08
+# PASS: a=00000002, b=00000005, Product=0a
+# PASS: a=00000002, b=00000006, Product=0c
+# PASS: a=00000002, b=00000007, Product=0e
+run
+# PASS: a=00000002, b=00000008, Product=10
+# PASS: a=00000002, b=00000009, Product=12
+# PASS: a=00000002, b=0000000a, Product=14
+# PASS: a=00000002, b=0000000b, Product=16
+# PASS: a=00000002, b=0000000c, Product=18
+# PASS: a=00000002, b=0000000d, Product=1a
+# PASS: a=00000002, b=0000000e, Product=1c
+# PASS: a=00000002, b=0000000f, Product=1e
+# PASS: a=00000003, b=00000000, Product=00
+# PASS: a=00000003, b=00000001, Product=03
+vsim -gui work.tb_part2
+# End time: 01:35:11 on Jan 22,2025, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_part2 
+# Start time: 01:35:11 on Jan 22,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.bitmulti
+# Loading work.FullAdder
+# Loading work.bit2Hex
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA0 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA2 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA5 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA6 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(36): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/b File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(37): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/a File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(38): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p0 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(39): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p1 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# Load canceled
+run
+# PASS: a=00000000, b=00000000, Product=00
+# PASS: a=00000000, b=00000001, Product=00
+# PASS: a=00000000, b=00000002, Product=00
+# PASS: a=00000000, b=00000003, Product=00
+# PASS: a=00000000, b=00000004, Product=00
+# PASS: a=00000000, b=00000005, Product=00
+# PASS: a=00000000, b=00000006, Product=00
+# PASS: a=00000000, b=00000007, Product=00
+# PASS: a=00000000, b=00000008, Product=00
+# PASS: a=00000000, b=00000009, Product=00
+run
+# PASS: a=00000000, b=0000000a, Product=00
+# PASS: a=00000000, b=0000000b, Product=00
+# PASS: a=00000000, b=0000000c, Product=00
+# PASS: a=00000000, b=0000000d, Product=00
+# PASS: a=00000000, b=0000000e, Product=00
+# PASS: a=00000000, b=0000000f, Product=00
+# PASS: a=00000001, b=00000000, Product=00
+# PASS: a=00000001, b=00000001, Product=01
+# PASS: a=00000001, b=00000002, Product=02
+# PASS: a=00000001, b=00000003, Product=03
+run
+# PASS: a=00000001, b=00000004, Product=04
+# PASS: a=00000001, b=00000005, Product=05
+# PASS: a=00000001, b=00000006, Product=06
+# PASS: a=00000001, b=00000007, Product=07
+# PASS: a=00000001, b=00000008, Product=08
+# PASS: a=00000001, b=00000009, Product=09
+# PASS: a=00000001, b=0000000a, Product=0a
+# PASS: a=00000001, b=0000000b, Product=0b
+# PASS: a=00000001, b=0000000c, Product=0c
+# PASS: a=00000001, b=0000000d, Product=0d
+run
+# PASS: a=00000001, b=0000000e, Product=0e
+# PASS: a=00000001, b=0000000f, Product=0f
+# PASS: a=00000002, b=00000000, Product=00
+# PASS: a=00000002, b=00000001, Product=02
+# PASS: a=00000002, b=00000002, Product=04
+# PASS: a=00000002, b=00000003, Product=06
+# PASS: a=00000002, b=00000004, Product=08
+# PASS: a=00000002, b=00000005, Product=0a
+# PASS: a=00000002, b=00000006, Product=0c
+# PASS: a=00000002, b=00000007, Product=0e
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# End time: 01:35:51 on Jan 22,2025, Elapsed time: 0:00:40
+# Errors: 1, Warnings: 8
+# vsim -gui work.tb_part2 
+# Start time: 01:35:51 on Jan 22,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.bitmulti
+# Loading work.FullAdder
+# Loading work.bit2Hex
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA0 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA2 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA5 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA6 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(36): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/b File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(37): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/a File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(38): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p0 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(39): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p1 File: C:/EEC 180/lab2/hdl/bit2hex.v
+run
+# PASS: a=00000000, b=00000000, Product=xx
+# PASS: a=00000000, b=00000001, Product=xx
+# PASS: a=00000000, b=00000002, Product=xx
+# PASS: a=00000000, b=00000003, Product=xx
+# PASS: a=00000000, b=00000004, Product=xx
+# PASS: a=00000000, b=00000005, Product=xx
+# PASS: a=00000000, b=00000006, Product=xx
+# PASS: a=00000000, b=00000007, Product=xx
+# PASS: a=00000000, b=00000008, Product=xx
+# PASS: a=00000000, b=00000009, Product=xx
+run
+# PASS: a=00000000, b=0000000a, Product=xx
+# PASS: a=00000000, b=0000000b, Product=xx
+# PASS: a=00000000, b=0000000c, Product=xx
+# PASS: a=00000000, b=0000000d, Product=xx
+# PASS: a=00000000, b=0000000e, Product=xx
+# PASS: a=00000000, b=0000000f, Product=xx
+# PASS: a=00000001, b=00000000, Product=xx
+# PASS: a=00000001, b=00000001, Product=xx
+# PASS: a=00000001, b=00000002, Product=xx
+# PASS: a=00000001, b=00000003, Product=xx
+run
+# PASS: a=00000001, b=00000004, Product=xx
+# PASS: a=00000001, b=00000005, Product=xx
+# PASS: a=00000001, b=00000006, Product=xx
+# PASS: a=00000001, b=00000007, Product=xx
+# PASS: a=00000001, b=00000008, Product=xx
+# PASS: a=00000001, b=00000009, Product=xx
+# PASS: a=00000001, b=0000000a, Product=xx
+# PASS: a=00000001, b=0000000b, Product=xx
+# PASS: a=00000001, b=0000000c, Product=xx
+# PASS: a=00000001, b=0000000d, Product=xx
+# Compile of bit2hex.v was successful.
+# Compile of bitMulti.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# End time: 01:37:11 on Jan 22,2025, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_part2 
+# Start time: 01:37:11 on Jan 22,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.bitmulti
+# Loading work.FullAdder
+# Loading work.bit2Hex
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA0 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(22): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA2 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'cI'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA5 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/hdl/bitMulti.v(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'b'. The port definition is at: C:/EEC 180/lab2/hdl/FullAdder.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/multiplier/FA6 File: C:/EEC 180/lab2/hdl/FullAdder.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(36): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/b File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(37): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/a File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(38): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p0 File: C:/EEC 180/lab2/hdl/bit2hex.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/synthesis/part2/part2.v(39): [PCDPC] - Port size (8) does not match connection size (7) for port 'HEX'. The port definition is at: C:/EEC 180/lab2/hdl/bit2hex.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part2/UUT/p1 File: C:/EEC 180/lab2/hdl/bit2hex.v
+run
+# PASS: a=00000000, b=00000000, Product=00
+# PASS: a=00000000, b=00000001, Product=00
+# PASS: a=00000000, b=00000002, Product=00
+# PASS: a=00000000, b=00000003, Product=00
+# PASS: a=00000000, b=00000004, Product=00
+# PASS: a=00000000, b=00000005, Product=00
+# PASS: a=00000000, b=00000006, Product=00
+# PASS: a=00000000, b=00000007, Product=00
+# PASS: a=00000000, b=00000008, Product=00
+# PASS: a=00000000, b=00000009, Product=00
+run
+# PASS: a=00000000, b=0000000a, Product=00
+# PASS: a=00000000, b=0000000b, Product=00
+# PASS: a=00000000, b=0000000c, Product=00
+# PASS: a=00000000, b=0000000d, Product=00
+# PASS: a=00000000, b=0000000e, Product=00
+# PASS: a=00000000, b=0000000f, Product=00
+# PASS: a=00000001, b=00000000, Product=00
+# PASS: a=00000001, b=00000001, Product=01
+# PASS: a=00000001, b=00000002, Product=02
+# PASS: a=00000001, b=00000003, Product=03
+run
+# PASS: a=00000001, b=00000004, Product=04
+# PASS: a=00000001, b=00000005, Product=05
+# PASS: a=00000001, b=00000006, Product=06
+# PASS: a=00000001, b=00000007, Product=07
+# PASS: a=00000001, b=00000008, Product=08
+# PASS: a=00000001, b=00000009, Product=09
+# PASS: a=00000001, b=0000000a, Product=0a
+# PASS: a=00000001, b=0000000b, Product=0b
+# PASS: a=00000001, b=0000000c, Product=0c
+# PASS: a=00000001, b=0000000d, Product=0d
+run
+# PASS: a=00000001, b=0000000e, Product=0e
+# PASS: a=00000001, b=0000000f, Product=0f
+# PASS: a=00000002, b=00000000, Product=00
+# PASS: a=00000002, b=00000001, Product=02
+# PASS: a=00000002, b=00000002, Product=04
+# PASS: a=00000002, b=00000003, Product=06
+# PASS: a=00000002, b=00000004, Product=08
+# PASS: a=00000002, b=00000005, Product=0a
+# PASS: a=00000002, b=00000006, Product=0c
+# PASS: a=00000002, b=00000007, Product=0e
+run
+# PASS: a=00000002, b=00000008, Product=10
+# PASS: a=00000002, b=00000009, Product=12
+# PASS: a=00000002, b=0000000a, Product=14
+# PASS: a=00000002, b=0000000b, Product=16
+# PASS: a=00000002, b=0000000c, Product=18
+# PASS: a=00000002, b=0000000d, Product=1a
+# PASS: a=00000002, b=0000000e, Product=1c
+# PASS: a=00000002, b=0000000f, Product=1e
+# PASS: a=00000003, b=00000000, Product=00
+# PASS: a=00000003, b=00000001, Product=03
+run
+# PASS: a=00000003, b=00000002, Product=06
+# PASS: a=00000003, b=00000003, Product=09
+# PASS: a=00000003, b=00000004, Product=0c
+# PASS: a=00000003, b=00000005, Product=0f
+# PASS: a=00000003, b=00000006, Product=12
+# PASS: a=00000003, b=00000007, Product=15
+# PASS: a=00000003, b=00000008, Product=18
+# PASS: a=00000003, b=00000009, Product=1b
+# PASS: a=00000003, b=0000000a, Product=1e
+# PASS: a=00000003, b=0000000b, Product=21

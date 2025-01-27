@@ -1,0 +1,102 @@
+project open C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/simulation/tb_part2/tb_part2
+
+
+
+
+
+
+# Compile of LZD_4.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# Compile of part3.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 21:06:45 on Jan 26,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.LZD_4
+# Loading work.part3
+# Loading work.FullAdder
+add wave -position insertpoint  \
+sim:/tb_part2/LEDR \
+sim:/tb_part2/SW
+run 100
+# Rand input: 00100100 | LEDR output: 0010
+# Rand input: 10000001 | LEDR output: 0000
+# Rand input: 00001001 | LEDR output: 0100
+run 100
+# Rand input: 01100011 | LEDR output: 0001
+# Rand input: 00001101 | LEDR output: 0100
+# Rand input: 10001101 | LEDR output: 0000
+run 100
+# Rand input: 01100101 | LEDR output: 0001
+# Rand input: 00010010 | LEDR output: 0011
+# Rand input: 00000001 | LEDR output: 0111
+run 100
+# Rand input: 00001101 | LEDR output: 0100
+# ** Note: $finish    : C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/test/tb_part2.v(23)
+#    Time: 310 ps  Iteration: 0  Instance: /tb_part2
+# 1
+# Break in Module tb_part2 at C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/test/tb_part2.v line 23
+run 100
+quit -sim
+# End time: 21:25:42 on Jan 26,2025, Elapsed time: 0:18:57
+# Errors: 0, Warnings: 0
+# Compile of LZD_4.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v failed with 1 errors.
+# Compile of part3.v was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of LZD_4.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v failed with 1 errors.
+# Compile of part3.v was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of LZD_4.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# Compile of part3.v was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of LZD_4.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# Compile of part3.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_part2
+# vsim -gui work.tb_part2 
+# Start time: 23:16:53 on Jan 26,2025
+# Loading work.tb_part2
+# Loading work.part2
+# Loading work.LZD_4
+# Loading work.part3
+# Loading work.FullAdder
+run 400
+# Rand input: 00100100 | LEDR output:  2
+# Rand input: 10000001 | LEDR output:  0
+# Rand input: 00001001 | LEDR output:  4
+# Rand input: 01100011 | LEDR output:  1
+# Rand input: 00001101 | LEDR output:  4
+# Rand input: 10001101 | LEDR output:  0
+# Rand input: 01100101 | LEDR output:  1
+# Rand input: 00010010 | LEDR output:  3
+# Rand input: 00000001 | LEDR output:  7
+# Rand input: 00001101 | LEDR output:  4
+# ** Note: $finish    : C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/test/tb_part2.v(21)
+#    Time: 310 ps  Iteration: 0  Instance: /tb_part2
+# 1
+# Break in Module tb_part2 at C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/test/tb_part2.v line 21
+quit -sim
+# End time: 23:17:26 on Jan 26,2025, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 0
+# Compile of LZD_4.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part2.v was successful.
+# Compile of part2.v was successful.
+# Compile of part3.v was successful.
+# 5 compiles, 0 failed with no errors.

@@ -6,21 +6,16 @@
 module part2(
 
 	//////////// SEG7 //////////
-	output		     [7:0]		HEX0,
-	output		     [7:0]		HEX1,
-	output		     [7:0]		HEX2,
-	output		     [7:0]		HEX3,
-	output		     [7:0]		HEX4,
-	output		     [7:0]		HEX5,
+	output		     [6:0]		HEX0,
+	output		     [6:0]		HEX1,
+	output		     [6:0]		HEX2,
+	output		     [6:0]		HEX3,
 
-	//////////// KEY //////////
-	input 		     [1:0]		KEY,
 
-	//////////// LED //////////
-	output		     [9:0]		LEDR,
+	
 
 	//////////// SW //////////
-	input 		     [9:0]		SW
+	input 		     [7:0]		SW
 );
 
 
@@ -35,6 +30,13 @@ module part2(
 //=======================================================
 //  Structural coding
 //=======================================================
+wire [7:0] product;
+
+bitmulti multiplier (product[7:0], SW[3:0], SW[7:4]);
+bit2Hex b (HEX2[6:0], SW[3:0]);
+bit2Hex a (HEX3[6:0], SW[7:4]);
+bit2Hex p0 (HEX0[6:0], product[3:0]);
+bit2Hex p1 (HEX1[6:0], product[7:4]);
 
 
 
