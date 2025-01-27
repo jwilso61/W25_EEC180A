@@ -1,0 +1,22 @@
+
+
+module tb_part2;
+    integer x, i;
+    reg [3:0] LEDR;
+    reg [7:0] SW;
+
+part2 UUT (
+    .LEDR(LEDR[3:0]),
+    .SW(SW[7:0])
+);
+
+initial begin
+    for (i=0; i<10; i=i+1) begin
+        x = $random & 8'b11111111;
+	
+
+	$display("Random Number is %b", x[7:0]);
+    end
+    $finish;
+end
+endmodule
