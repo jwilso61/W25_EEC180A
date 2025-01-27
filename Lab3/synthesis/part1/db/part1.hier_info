@@ -1,0 +1,28 @@
+|part1
+LEDR[0] << LZD_4:lzd4.port0
+LEDR[1] << LZD_4:lzd4.port0
+LEDR[2] << LZD_4:lzd4.port0
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+
+
+|part1|LZD_4:lzd4
+LEDR[0] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LEDR.DB_MAX_OUTPUT_PORT_TYPE
+SW[0] => LEDR.IN1
+SW[0] => LEDR.IN0
+SW[0] => LEDR.IN0
+SW[1] => LEDR.IN1
+SW[1] => LEDR.IN1
+SW[1] => LEDR.IN1
+SW[2] => LEDR.IN0
+SW[2] => LEDR.IN1
+SW[2] => LEDR.IN1
+SW[3] => LEDR.IN1
+SW[3] => LEDR.IN1
+SW[3] => LEDR.IN1
+
+

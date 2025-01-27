@@ -1,0 +1,1121 @@
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# vsim -gui work.tb_part1 
+# Start time: 14:56:59 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(7): [PCDPC] - Port size (8) does not match connection size (1) for port 'sum'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(7): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(7): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+run
+# ERROR: a=00000000, b = 00000010, sum =0
+# ERROR: a=00000000, b = 00000011, sum =1
+# ERROR: a=00000000, b = 00000100, sum =0
+# ERROR: a=00000000, b = 00000101, sum =1
+# ERROR: a=00000000, b = 00000110, sum =0
+# ERROR: a=00000000, b = 00000111, sum =1
+# ERROR: a=00000000, b = 00001000, sum =0
+# ERROR: a=00000000, b = 00001001, sum =1
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 14:59:33 on Jan 15,2025, Elapsed time: 0:02:34
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_part1 
+# Start time: 14:59:33 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(8): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(8): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 15:03:52 on Jan 15,2025, Elapsed time: 0:04:19
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 15:03:52 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(8): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(8): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+run
+run
+run -continue
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 15:08:19 on Jan 15,2025, Elapsed time: 0:04:27
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 15:08:19 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(8): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(8): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 15:11:46 on Jan 15,2025, Elapsed time: 0:03:27
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 15:11:46 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Error (suppressible): (vsim-3053) C:/EEC 180/lab2/test/tb_part1.v(8): Illegal output or inout port connection for port 'sum'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(8): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(8): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# Error loading design
+# End time: 15:11:48 on Jan 15,2025, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 2
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# vsim -gui work.tb_part1 
+# Start time: 15:13:58 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Error (suppressible): (vsim-3053) C:/EEC 180/lab2/test/tb_part1.v(9): Illegal output or inout port connection for port 'sum'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(9): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(9): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# Error loading design
+# End time: 15:13:58 on Jan 15,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# vsim -gui work.tb_part1 
+# Start time: 15:14:56 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(9): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(9): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+run
+run
+run
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 15:18:01 on Jan 15,2025, Elapsed time: 0:03:05
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 15:18:01 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(9): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(9): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+run
+# test
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v failed with 4 errors.
+# 3 compiles, 1 failed with 4 errors.
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v failed with 4 errors.
+# 3 compiles, 1 failed with 4 errors.
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 15:42:38 on Jan 15,2025, Elapsed time: 0:24:37
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 15:42:38 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(12): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(12): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 15:48:31 on Jan 15,2025, Elapsed time: 0:05:53
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 15:48:31 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+add wave -position insertpoint  \
+sim:/tb_part1/sum_reg
+run
+# ERROR: a=00000000, b = 00000001, sum =00000000
+# ERROR: a=00000000, b = 00000010, sum =00000000
+# ERROR: a=00000000, b = 00000011, sum =00000000
+# ERROR: a=00000000, b = 00000100, sum =00000000
+# ERROR: a=00000000, b = 00000101, sum =00000000
+# ERROR: a=00000000, b = 00000110, sum =00000000
+# ERROR: a=00000000, b = 00000111, sum =00000000
+# ERROR: a=00000000, b = 00001000, sum =00000000
+# ERROR: a=00000000, b = 00001001, sum =00000000
+run
+# ERROR: a=00000000, b = 00001010, sum =00000000
+# ERROR: a=00000000, b = 00001011, sum =00000000
+# ERROR: a=00000000, b = 00001100, sum =00000000
+# ERROR: a=00000000, b = 00001101, sum =00000000
+# ERROR: a=00000000, b = 00001110, sum =00000000
+# ERROR: a=00000000, b = 00001111, sum =00000000
+# ERROR: a=00000000, b = 00010000, sum =00000000
+# ERROR: a=00000000, b = 00010001, sum =00000000
+# ERROR: a=00000000, b = 00010010, sum =00000000
+# ERROR: a=00000000, b = 00010011, sum =00000000
+run
+# ERROR: a=00000000, b = 00010100, sum =00000000
+# ERROR: a=00000000, b = 00010101, sum =00000000
+# ERROR: a=00000000, b = 00010110, sum =00000000
+# ERROR: a=00000000, b = 00010111, sum =00000000
+# ERROR: a=00000000, b = 00011000, sum =00000000
+# ERROR: a=00000000, b = 00011001, sum =00000000
+# ERROR: a=00000000, b = 00011010, sum =00000000
+# ERROR: a=00000000, b = 00011011, sum =00000000
+# ERROR: a=00000000, b = 00011100, sum =00000000
+# ERROR: a=00000000, b = 00011101, sum =00000000
+run
+# ERROR: a=00000000, b = 00011110, sum =00000000
+# ERROR: a=00000000, b = 00011111, sum =00000000
+# ERROR: a=00000000, b = 00100000, sum =00000000
+# ERROR: a=00000000, b = 00100001, sum =00000000
+# ERROR: a=00000000, b = 00100010, sum =00000000
+# ERROR: a=00000000, b = 00100011, sum =00000000
+# ERROR: a=00000000, b = 00100100, sum =00000000
+# ERROR: a=00000000, b = 00100101, sum =00000000
+# ERROR: a=00000000, b = 00100110, sum =00000000
+# ERROR: a=00000000, b = 00100111, sum =00000000
+run
+# ERROR: a=00000000, b = 00101000, sum =00000000
+# ERROR: a=00000000, b = 00101001, sum =00000000
+# ERROR: a=00000000, b = 00101010, sum =00000000
+# ERROR: a=00000000, b = 00101011, sum =00000000
+# ERROR: a=00000000, b = 00101100, sum =00000000
+# ERROR: a=00000000, b = 00101101, sum =00000000
+# ERROR: a=00000000, b = 00101110, sum =00000000
+# ERROR: a=00000000, b = 00101111, sum =00000000
+# ERROR: a=00000000, b = 00110000, sum =00000000
+# ERROR: a=00000000, b = 00110001, sum =00000000
+run
+# ERROR: a=00000000, b = 00110010, sum =00000000
+# ERROR: a=00000000, b = 00110011, sum =00000000
+# ERROR: a=00000000, b = 00110100, sum =00000000
+# ERROR: a=00000000, b = 00110101, sum =00000000
+# ERROR: a=00000000, b = 00110110, sum =00000000
+# ERROR: a=00000000, b = 00110111, sum =00000000
+# ERROR: a=00000000, b = 00111000, sum =00000000
+# ERROR: a=00000000, b = 00111001, sum =00000000
+# ERROR: a=00000000, b = 00111010, sum =00000000
+# ERROR: a=00000000, b = 00111011, sum =00000000
+run
+# ERROR: a=00000000, b = 00111100, sum =00000000
+# ERROR: a=00000000, b = 00111101, sum =00000000
+# ERROR: a=00000000, b = 00111110, sum =00000000
+# ERROR: a=00000000, b = 00111111, sum =00000000
+# ERROR: a=00000000, b = 01000000, sum =00000000
+# ERROR: a=00000000, b = 01000001, sum =00000000
+# ERROR: a=00000000, b = 01000010, sum =00000000
+# ERROR: a=00000000, b = 01000011, sum =00000000
+# ERROR: a=00000000, b = 01000100, sum =00000000
+# ERROR: a=00000000, b = 01000101, sum =00000000
+run
+# ERROR: a=00000000, b = 01000110, sum =00000000
+# ERROR: a=00000000, b = 01000111, sum =00000000
+# ERROR: a=00000000, b = 01001000, sum =00000000
+# ERROR: a=00000000, b = 01001001, sum =00000000
+# ERROR: a=00000000, b = 01001010, sum =00000000
+# ERROR: a=00000000, b = 01001011, sum =00000000
+# ERROR: a=00000000, b = 01001100, sum =00000000
+# ERROR: a=00000000, b = 01001101, sum =00000000
+# ERROR: a=00000000, b = 01001110, sum =00000000
+# ERROR: a=00000000, b = 01001111, sum =00000000
+run
+# ERROR: a=00000000, b = 01010000, sum =00000000
+# ERROR: a=00000000, b = 01010001, sum =00000000
+# ERROR: a=00000000, b = 01010010, sum =00000000
+# ERROR: a=00000000, b = 01010011, sum =00000000
+# ERROR: a=00000000, b = 01010100, sum =00000000
+# ERROR: a=00000000, b = 01010101, sum =00000000
+# ERROR: a=00000000, b = 01010110, sum =00000000
+# ERROR: a=00000000, b = 01010111, sum =00000000
+# ERROR: a=00000000, b = 01011000, sum =00000000
+# ERROR: a=00000000, b = 01011001, sum =00000000
+run
+# ERROR: a=00000000, b = 01011010, sum =00000000
+# ERROR: a=00000000, b = 01011011, sum =00000000
+# ERROR: a=00000000, b = 01011100, sum =00000000
+# ERROR: a=00000000, b = 01011101, sum =00000000
+# ERROR: a=00000000, b = 01011110, sum =00000000
+# ERROR: a=00000000, b = 01011111, sum =00000000
+# ERROR: a=00000000, b = 01100000, sum =00000000
+# ERROR: a=00000000, b = 01100001, sum =00000000
+# ERROR: a=00000000, b = 01100010, sum =00000000
+# ERROR: a=00000000, b = 01100011, sum =00000000
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 15:50:08 on Jan 15,2025, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 15:50:08 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+add wave -position insertpoint  \
+sim:/tb_part1/sum_reg
+run
+# ERROR: a=00000000, b = 00000001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00000011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00000101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00000111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00001001, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00001010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00001011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00001101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00001111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00010000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00010001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00010010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00010011, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00010100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00010101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00010110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00010111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00011000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00011001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00011010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00011011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00011100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00011101, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00011110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00011111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00100000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00100001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00100010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00100011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00100100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00100101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00100110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00100111, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00101000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00101001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00101010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00101011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00101100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00101101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00101110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00101111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00110000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00110001, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00110010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00110011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00110100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00110101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00110110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00110111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00111000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00111001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00111010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00111011, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00111100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00111101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00111110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00111111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01000000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01000001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01000010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01000011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01000100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01000101, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01000110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01000111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01001000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01001001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01001010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01001011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01001100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01001101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01001110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01001111, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01010000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01010001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01010010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01010011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01010100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01010101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01010110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01010111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01011000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01011001, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01011010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01011011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01011100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01011101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01011110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01011111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01100000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01100001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01100010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01100011, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01100100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01100101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01100110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01100111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01101000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01101001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01101010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01101011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01101100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01101101, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01101110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01101111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01110000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01110001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01110010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01110011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01110100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01110101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01110110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 01110111, sum =xxxxxxx0
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 15:52:13 on Jan 15,2025, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 15:52:13 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint sim:/tb_part1/*
+add wave -position insertpoint sim:/tb_part1/UUT/*
+run
+# ERROR: a=00000000, b = 00000001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001001, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00001011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00010001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00010011, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00010101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00010111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00011001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00011011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00011101, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00011111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00100001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00100011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00100101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00100111, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00101001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00101011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00101101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00101111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00110001, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00110011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00110101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00110111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00111001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00111011, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00111101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00111111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01000001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01000011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01000101, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01000111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01001001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01001011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01001101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01001111, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01010001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01010011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01010101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01010111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01011001, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01011011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01011101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01011111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01100001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01100011, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01100101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01100111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01101001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01101011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01101101, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 01101111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01110001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01110011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01110101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 01110111, sum =xxxxxxx0
+vsim -gui work.tb_part1
+# End time: 16:02:23 on Jan 15,2025, Elapsed time: 0:10:10
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 16:02:23 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+add wave -position insertpoint  \
+sim:/tb_part1/sum_reg
+run
+# ERROR: a=00000000, b = 00000001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001001, sum =xxxxxxx0
+# Compile of part1.v failed with 2 errors.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of part1.v failed with 2 errors.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of part1.v failed with 2 errors.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 1 failed with 2 errors.
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 16:03:54 on Jan 15,2025, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 16:03:54 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (1) does not match connection size (8) for port 'carryIn'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+# ** Warning: (vsim-3015) C:/EEC 180/lab2/test/tb_part1.v(14): [PCDPC] - Port size (8) does not match connection size (1) for port 'b'. The port definition is at: C:/EEC 180/lab2/synthesis/part1.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1/UUT File: C:/EEC 180/lab2/synthesis/part1.v
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+add wave -position insertpoint  \
+sim:/tb_part1/sum_reg
+run
+# ERROR: a=00000000, b = 00000001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00000011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00000101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00000110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00000111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00001001, sum =xxxxxxx0
+run
+# ERROR: a=00000000, b = 00001010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00001011, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001100, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00001101, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00001110, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00001111, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00010000, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00010001, sum =xxxxxxx0
+# ERROR: a=00000000, b = 00010010, sum =xxxxxxx1
+# ERROR: a=00000000, b = 00010011, sum =xxxxxxx0
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 16:06:52 on Jan 15,2025, Elapsed time: 0:02:58
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_part1 
+# Start time: 16:06:52 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+add wave -position insertpoint  \
+sim:/tb_part1/a
+add wave -position insertpoint  \
+sim:/tb_part1/b
+add wave -position insertpoint  \
+sim:/tb_part1/carryin
+add wave -position insertpoint  \
+sim:/tb_part1/overflow
+add wave -position insertpoint  \
+sim:/tb_part1/sum
+add wave -position insertpoint  \
+sim:/tb_part1/sum_reg
+run
+# ERROR: a=00000000, b = 00000001, sum =00000000
+# ERROR: a=00000000, b = 00000010, sum =00000001
+# ERROR: a=00000000, b = 00000011, sum =00000010
+# ERROR: a=00000000, b = 00000100, sum =00000011
+# ERROR: a=00000000, b = 00000101, sum =00000100
+# ERROR: a=00000000, b = 00000110, sum =00000101
+# ERROR: a=00000000, b = 00000111, sum =00000110
+# ERROR: a=00000000, b = 00001000, sum =00000111
+# ERROR: a=00000000, b = 00001001, sum =00001000
+run
+# ERROR: a=00000000, b = 00001010, sum =00001001
+# ERROR: a=00000000, b = 00001011, sum =00001010
+# ERROR: a=00000000, b = 00001100, sum =00001011
+# ERROR: a=00000000, b = 00001101, sum =00001100
+# ERROR: a=00000000, b = 00001110, sum =00001101
+# ERROR: a=00000000, b = 00001111, sum =00001110
+# ERROR: a=00000000, b = 00010000, sum =00001111
+# ERROR: a=00000000, b = 00010001, sum =00010000
+# ERROR: a=00000000, b = 00010010, sum =00010001
+# ERROR: a=00000000, b = 00010011, sum =00010010
+run
+# ERROR: a=00000000, b = 00010100, sum =00010011
+# ERROR: a=00000000, b = 00010101, sum =00010100
+# ERROR: a=00000000, b = 00010110, sum =00010101
+# ERROR: a=00000000, b = 00010111, sum =00010110
+# ERROR: a=00000000, b = 00011000, sum =00010111
+# ERROR: a=00000000, b = 00011001, sum =00011000
+# ERROR: a=00000000, b = 00011010, sum =00011001
+# ERROR: a=00000000, b = 00011011, sum =00011010
+# ERROR: a=00000000, b = 00011100, sum =00011011
+# ERROR: a=00000000, b = 00011101, sum =00011100
+run
+# ERROR: a=00000000, b = 00011110, sum =00011101
+# ERROR: a=00000000, b = 00011111, sum =00011110
+# ERROR: a=00000000, b = 00100000, sum =00011111
+# ERROR: a=00000000, b = 00100001, sum =00100000
+# ERROR: a=00000000, b = 00100010, sum =00100001
+# ERROR: a=00000000, b = 00100011, sum =00100010
+# ERROR: a=00000000, b = 00100100, sum =00100011
+# ERROR: a=00000000, b = 00100101, sum =00100100
+# ERROR: a=00000000, b = 00100110, sum =00100101
+# ERROR: a=00000000, b = 00100111, sum =00100110
+run
+# ERROR: a=00000000, b = 00101000, sum =00100111
+# ERROR: a=00000000, b = 00101001, sum =00101000
+# ERROR: a=00000000, b = 00101010, sum =00101001
+# ERROR: a=00000000, b = 00101011, sum =00101010
+# ERROR: a=00000000, b = 00101100, sum =00101011
+# ERROR: a=00000000, b = 00101101, sum =00101100
+# ERROR: a=00000000, b = 00101110, sum =00101101
+# ERROR: a=00000000, b = 00101111, sum =00101110
+# ERROR: a=00000000, b = 00110000, sum =00101111
+# ERROR: a=00000000, b = 00110001, sum =00110000
+run
+# ERROR: a=00000000, b = 00110010, sum =00110001
+# ERROR: a=00000000, b = 00110011, sum =00110010
+# ERROR: a=00000000, b = 00110100, sum =00110011
+# ERROR: a=00000000, b = 00110101, sum =00110100
+# ERROR: a=00000000, b = 00110110, sum =00110101
+# ERROR: a=00000000, b = 00110111, sum =00110110
+# ERROR: a=00000000, b = 00111000, sum =00110111
+# ERROR: a=00000000, b = 00111001, sum =00111000
+# ERROR: a=00000000, b = 00111010, sum =00111001
+# ERROR: a=00000000, b = 00111011, sum =00111010
+run
+# ERROR: a=00000000, b = 00111100, sum =00111011
+# ERROR: a=00000000, b = 00111101, sum =00111100
+# ERROR: a=00000000, b = 00111110, sum =00111101
+# ERROR: a=00000000, b = 00111111, sum =00111110
+# ERROR: a=00000000, b = 01000000, sum =00111111
+# ERROR: a=00000000, b = 01000001, sum =01000000
+# ERROR: a=00000000, b = 01000010, sum =01000001
+# ERROR: a=00000000, b = 01000011, sum =01000010
+# ERROR: a=00000000, b = 01000100, sum =01000011
+# ERROR: a=00000000, b = 01000101, sum =01000100
+run
+# ERROR: a=00000000, b = 01000110, sum =01000101
+# ERROR: a=00000000, b = 01000111, sum =01000110
+# ERROR: a=00000000, b = 01001000, sum =01000111
+# ERROR: a=00000000, b = 01001001, sum =01001000
+# ERROR: a=00000000, b = 01001010, sum =01001001
+# ERROR: a=00000000, b = 01001011, sum =01001010
+# ERROR: a=00000000, b = 01001100, sum =01001011
+# ERROR: a=00000000, b = 01001101, sum =01001100
+# ERROR: a=00000000, b = 01001110, sum =01001101
+# ERROR: a=00000000, b = 01001111, sum =01001110
+run
+# ERROR: a=00000000, b = 01010000, sum =01001111
+# ERROR: a=00000000, b = 01010001, sum =01010000
+# ERROR: a=00000000, b = 01010010, sum =01010001
+# ERROR: a=00000000, b = 01010011, sum =01010010
+# ERROR: a=00000000, b = 01010100, sum =01010011
+# ERROR: a=00000000, b = 01010101, sum =01010100
+# ERROR: a=00000000, b = 01010110, sum =01010101
+# ERROR: a=00000000, b = 01010111, sum =01010110
+# ERROR: a=00000000, b = 01011000, sum =01010111
+# ERROR: a=00000000, b = 01011001, sum =01011000
+run
+# ERROR: a=00000000, b = 01011010, sum =01011001
+# ERROR: a=00000000, b = 01011011, sum =01011010
+# ERROR: a=00000000, b = 01011100, sum =01011011
+# ERROR: a=00000000, b = 01011101, sum =01011100
+# ERROR: a=00000000, b = 01011110, sum =01011101
+# ERROR: a=00000000, b = 01011111, sum =01011110
+# ERROR: a=00000000, b = 01100000, sum =01011111
+# ERROR: a=00000000, b = 01100001, sum =01100000
+# ERROR: a=00000000, b = 01100010, sum =01100001
+# ERROR: a=00000000, b = 01100011, sum =01100010
+run
+# ERROR: a=00000000, b = 01100100, sum =01100011
+# ERROR: a=00000000, b = 01100101, sum =01100100
+# ERROR: a=00000000, b = 01100110, sum =01100101
+# ERROR: a=00000000, b = 01100111, sum =01100110
+# ERROR: a=00000000, b = 01101000, sum =01100111
+# ERROR: a=00000000, b = 01101001, sum =01101000
+# ERROR: a=00000000, b = 01101010, sum =01101001
+# ERROR: a=00000000, b = 01101011, sum =01101010
+# ERROR: a=00000000, b = 01101100, sum =01101011
+# ERROR: a=00000000, b = 01101101, sum =01101100
+run
+# ERROR: a=00000000, b = 01101110, sum =01101101
+# ERROR: a=00000000, b = 01101111, sum =01101110
+# ERROR: a=00000000, b = 01110000, sum =01101111
+# ERROR: a=00000000, b = 01110001, sum =01110000
+# ERROR: a=00000000, b = 01110010, sum =01110001
+# ERROR: a=00000000, b = 01110011, sum =01110010
+# ERROR: a=00000000, b = 01110100, sum =01110011
+# ERROR: a=00000000, b = 01110101, sum =01110100
+# ERROR: a=00000000, b = 01110110, sum =01110101
+# ERROR: a=00000000, b = 01110111, sum =01110110
+run
+# ERROR: a=00000000, b = 01111000, sum =01110111
+# ERROR: a=00000000, b = 01111001, sum =01111000
+# ERROR: a=00000000, b = 01111010, sum =01111001
+# ERROR: a=00000000, b = 01111011, sum =01111010
+# ERROR: a=00000000, b = 01111100, sum =01111011
+# ERROR: a=00000000, b = 01111101, sum =01111100
+# ERROR: a=00000000, b = 01111110, sum =01111101
+# ERROR: a=00000000, b = 01111111, sum =01111110
+# ERROR: a=00000001, b = 00000000, sum =01111111
+# ERROR: a=00000001, b = 00000001, sum =00000001
+run
+# ERROR: a=00000001, b = 00000010, sum =00000010
+# ERROR: a=00000001, b = 00000011, sum =00000011
+# ERROR: a=00000001, b = 00000100, sum =00000100
+# ERROR: a=00000001, b = 00000101, sum =00000101
+# ERROR: a=00000001, b = 00000110, sum =00000110
+# ERROR: a=00000001, b = 00000111, sum =00000111
+# ERROR: a=00000001, b = 00001000, sum =00001000
+# ERROR: a=00000001, b = 00001001, sum =00001001
+# ERROR: a=00000001, b = 00001010, sum =00001010
+# ERROR: a=00000001, b = 00001011, sum =00001011
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v failed with 1 errors.
+# 3 compiles, 1 failed with 1 error.
+# Compile of part1.v was successful.
+# Compile of FullAdder.v was successful.
+# Compile of tb_part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# End time: 16:09:05 on Jan 15,2025, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_part1 
+# Start time: 16:09:05 on Jan 15,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.FullAdder
+add wave -position insertpoint sim:/tb_part1/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ERROR: overflow = 1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ERROR: overflow = 1
+# ERROR: overflow = 1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ERROR: overflow = 1
+run
+# ERROR: overflow = 1
+# ERROR: overflow = 1
+run
+run
+run
+run

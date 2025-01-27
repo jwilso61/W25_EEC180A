@@ -1,0 +1,50 @@
+# Compile of tb_part1.v was successful.
+# Compile of part1.v was successful.
+# Compile of LZD_4.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# vsim -gui work.tb_part1 
+# Start time: 14:18:47 on Jan 22,2025
+# Loading work.tb_part1
+# ** Error: (vsim-3033) C:/EEC 180/lab3/test/tb_part1.v(8): Instantiation of 'part2' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_part1 File: C:/EEC 180/lab3/test/tb_part1.v
+#         Searched libraries:
+#             C:/EEC 180/lab3/simulation/tb_part1/work
+# Error loading design
+# End time: 14:18:47 on Jan 22,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Load canceled
+# Compile of tb_part1.v was successful.
+# Compile of part1.v was successful.
+# Compile of LZD_4.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_part1
+# vsim -gui work.tb_part1 
+# Start time: 14:20:36 on Jan 22,2025
+# Loading work.tb_part1
+# Loading work.part1
+# Loading work.LZD_4
+add wave -position insertpoint  \
+sim:/tb_part1/count
+add wave -position insertpoint  \
+sim:/tb_part1/LEDR
+add wave -position insertpoint  \
+sim:/tb_part1/SW
+run
+# input = 0000, leading zeros = 100
+# input = 0001, leading zeros = 011
+# input = 0010, leading zeros = 010
+# input = 0011, leading zeros = 010
+# input = 0100, leading zeros = 001
+# input = 0101, leading zeros = 001
+# input = 0110, leading zeros = 001
+# input = 0111, leading zeros = 001
+# input = 1000, leading zeros = 000
+# input = 1001, leading zeros = 000
+run
+# input = 1010, leading zeros = 000
+# input = 1011, leading zeros = 000
+# input = 1100, leading zeros = 000
+# input = 1101, leading zeros = 000
+# input = 1110, leading zeros = 000
+# input = 1111, leading zeros = 000

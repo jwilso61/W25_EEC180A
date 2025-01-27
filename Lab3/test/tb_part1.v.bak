@@ -1,0 +1,11 @@
+module tb_part1;
+	
+	
+	
+	
+	part2 UUT (
+		.SW(SW),
+		.LEDR(LEDR)
+		);
+		
+	

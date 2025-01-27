@@ -1,0 +1,141 @@
+|part1
+sum[0] <= FullAdder:RCAdder0.port1
+sum[1] <= FullAdder:RCAdder1.port1
+sum[2] <= FullAdder:RCAdder2.port1
+sum[3] <= FullAdder:RCAdder3.port1
+sum[4] <= FullAdder:RCAdder4.port1
+sum[5] <= FullAdder:RCAdder5.port1
+sum[6] <= FullAdder:RCAdder6.port1
+sum[7] <= FullAdder:RCAdder7.port1
+overflow <= overflow.DB_MAX_OUTPUT_PORT_TYPE
+carryIn => carryIn.IN1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+
+
+|part1|FullAdder:RCAdder0
+cO <= cO.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => cO.IN0
+a => cO.IN0
+a => s.IN0
+b => cO.IN1
+b => cO.IN0
+b => s.IN1
+cI => cO.IN1
+cI => cO.IN1
+cI => s.IN1
+
+
+|part1|FullAdder:RCAdder1
+cO <= cO.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => cO.IN0
+a => cO.IN0
+a => s.IN0
+b => cO.IN1
+b => cO.IN0
+b => s.IN1
+cI => cO.IN1
+cI => cO.IN1
+cI => s.IN1
+
+
+|part1|FullAdder:RCAdder2
+cO <= cO.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => cO.IN0
+a => cO.IN0
+a => s.IN0
+b => cO.IN1
+b => cO.IN0
+b => s.IN1
+cI => cO.IN1
+cI => cO.IN1
+cI => s.IN1
+
+
+|part1|FullAdder:RCAdder3
+cO <= cO.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => cO.IN0
+a => cO.IN0
+a => s.IN0
+b => cO.IN1
+b => cO.IN0
+b => s.IN1
+cI => cO.IN1
+cI => cO.IN1
+cI => s.IN1
+
+
+|part1|FullAdder:RCAdder4
+cO <= cO.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => cO.IN0
+a => cO.IN0
+a => s.IN0
+b => cO.IN1
+b => cO.IN0
+b => s.IN1
+cI => cO.IN1
+cI => cO.IN1
+cI => s.IN1
+
+
+|part1|FullAdder:RCAdder5
+cO <= cO.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => cO.IN0
+a => cO.IN0
+a => s.IN0
+b => cO.IN1
+b => cO.IN0
+b => s.IN1
+cI => cO.IN1
+cI => cO.IN1
+cI => s.IN1
+
+
+|part1|FullAdder:RCAdder6
+cO <= cO.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => cO.IN0
+a => cO.IN0
+a => s.IN0
+b => cO.IN1
+b => cO.IN0
+b => s.IN1
+cI => cO.IN1
+cI => cO.IN1
+cI => s.IN1
+
+
+|part1|FullAdder:RCAdder7
+cO <= cO.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+a => cO.IN0
+a => cO.IN0
+a => s.IN0
+b => cO.IN1
+b => cO.IN0
+b => s.IN1
+cI => cO.IN1
+cI => cO.IN1
+cI => s.IN1
+
+
