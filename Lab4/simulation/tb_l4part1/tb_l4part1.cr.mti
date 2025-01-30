@@ -1,0 +1,8 @@
+C:/Users/John/Desktop/EEC180/Lab4/synthesis/l4part1/l4part1.v {1 {vlog -work work -stats=none C:/Users/John/Desktop/EEC180/Lab4/synthesis/l4part1/l4part1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module l4part1
+
+Top level modules:
+	l4part1
+
+} {} {}}
