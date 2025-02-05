@@ -1,0 +1,14 @@
+module hwQ7 (
+    output reg G
+    input wire A, B, CLK,
+);
+    reg C, F;
+
+    always @(posedge CLK) begin
+        C <= A & B;             
+        G <= C | F;             
+    end
+
+    assign F = G;
+
+endmodule

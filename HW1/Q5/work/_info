@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/Lab3/simulation/tb_part2
+vprime
+Z0 !s110 1738739964
+!i10b 1
+!s100 iSOVlK]]Q6104:F>DKgH<1
+IgW[B`LzgldX63MUn;V2Za1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5
+Z3 w1738739925
+Z4 8C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q12/180hw1Q121.v
+Z5 FC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q12/180hw1Q121.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1738739963.000000
+Z8 !s107 C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q12/180hw1Q121.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q12/180hw1Q121.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vtb_prime
+R0
+!i10b 1
+!s100 IhhYBBKK;Hh_eH<=l5mlV0
+IKDAg7X5<KT[zUH2>G072z1
+R1
+R2
+R3
+R4
+R5
+L0 16
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtb_twoBitDownCounter
+Z12 !s110 1738741490
+!i10b 1
+!s100 ecbS_QQ`G3UPl]TDWfjeg3
+IQmoR<IN>T8dk2m7jS^G5z1
+R1
+R2
+Z13 w1738731001
+Z14 8C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5/180hw1Q5.v
+Z15 FC:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5/180hw1Q5.v
+L0 22
+R6
+r1
+!s85 0
+31
+Z16 !s108 1738741490.000000
+Z17 !s107 C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5/180hw1Q5.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5/180hw1Q5.v|
+!i113 1
+R10
+R11
+ntb_two@bit@down@counter
+vtwoBitDownCounter
+R12
+!i10b 1
+!s100 Hgl0z2mEY8[5^E5C_lR0L3
+I:daaU_6Djm1Tm3=8Nj9]81
+R1
+R2
+R13
+R14
+R15
+L0 1
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+R11
+ntwo@bit@down@counter

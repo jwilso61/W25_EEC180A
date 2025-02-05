@@ -1,0 +1,101 @@
+# Compile of 180hw1Q5.v was successful.
+# Compile of 180hw1Q121.v was successful.
+# Compile of 180hw1Q121.v was successful.
+run 100
+# No Design Loaded!
+# Load canceled
+# Compile of 180hw1Q121.v was successful.
+vsim -gui work.tb_prime work.prime
+# vsim -gui work.tb_prime work.prime 
+# Start time: 23:19:47 on Feb 04,2025
+# Loading work.tb_prime
+# Loading work.prime
+run 100
+# Start...
+# PASS: Input =  0 | Output = 0
+# FAIL: Input =  1 | Expected = 0 | Actual = 1
+# PASS: Input =  2 | Output = 1
+# PASS: Input =  3 | Output = 1
+# PASS: Input =  4 | Output = 0
+# PASS: Input =  5 | Output = 1
+# PASS: Input =  6 | Output = 0
+# PASS: Input =  7 | Output = 1
+# PASS: Input =  8 | Output = 0
+# PASS: Input =  9 | Output = 0
+# PASS: Input = 10 | Output = 0
+# FAIL: Input = 11 | Expected = 1 | Actual = 0
+# FAIL: Input = 12 | Expected = 0 | Actual = 1
+# PASS: Input = 13 | Output = 1
+# PASS: Input = 14 | Output = 0
+# PASS: Input = 15 | Output = 0
+# PASS: Input =  0 | Output = 0
+# FAIL: Input =  1 | Expected = 0 | Actual = 1
+# PASS: Input =  2 | Output = 1
+# PASS: Input =  3 | Output = 1
+quit -sim
+# End time: 23:44:17 on Feb 04,2025, Elapsed time: 0:24:30
+# Errors: 0, Warnings: 0
+# Compile of 180hw1Q5.v was successful.
+
+
+
+
+
+
+
+vsim -gui work.twoBitDownCounter work.tb_twoBitDownCounter
+# vsim -gui work.twoBitDownCounter work.tb_twoBitDownCounter 
+# Start time: 23:46:20 on Feb 04,2025
+# Loading work.twoBitDownCounter
+# Loading work.tb_twoBitDownCounter
+run 1000
+#                    0 ns | clk = 0 | reset = 1 | count = 00
+#                    5 ns | clk = 1 | reset = 1 | count = 00
+#                   10 ns | clk = 0 | reset = 0 | count = 00
+#                   15 ns | clk = 1 | reset = 0 | count = 11
+#                   20 ns | clk = 0 | reset = 0 | count = 11
+#                   25 ns | clk = 1 | reset = 0 | count = 10
+#                   30 ns | clk = 0 | reset = 0 | count = 10
+#                   35 ns | clk = 1 | reset = 0 | count = 01
+#                   40 ns | clk = 0 | reset = 0 | count = 01
+#                   45 ns | clk = 1 | reset = 0 | count = 00
+#                   50 ns | clk = 0 | reset = 0 | count = 00
+#                   55 ns | clk = 1 | reset = 0 | count = 11
+#                   60 ns | clk = 0 | reset = 0 | count = 11
+#                   65 ns | clk = 1 | reset = 0 | count = 10
+#                   70 ns | clk = 0 | reset = 0 | count = 10
+#                   75 ns | clk = 1 | reset = 0 | count = 01
+#                   80 ns | clk = 0 | reset = 0 | count = 01
+#                   85 ns | clk = 1 | reset = 0 | count = 00
+#                   90 ns | clk = 0 | reset = 0 | count = 00
+#                   95 ns | clk = 1 | reset = 0 | count = 11
+#                  100 ns | clk = 0 | reset = 0 | count = 11
+#                  105 ns | clk = 1 | reset = 0 | count = 10
+#                  110 ns | clk = 0 | reset = 1 | count = 00
+#                  115 ns | clk = 1 | reset = 1 | count = 00
+#                  120 ns | clk = 0 | reset = 0 | count = 00
+#                  125 ns | clk = 1 | reset = 0 | count = 11
+#                  130 ns | clk = 0 | reset = 0 | count = 11
+#                  135 ns | clk = 1 | reset = 0 | count = 10
+#                  140 ns | clk = 0 | reset = 0 | count = 10
+#                  145 ns | clk = 1 | reset = 0 | count = 01
+#                  150 ns | clk = 0 | reset = 0 | count = 01
+#                  155 ns | clk = 1 | reset = 0 | count = 00
+#                  160 ns | clk = 0 | reset = 0 | count = 00
+#                  165 ns | clk = 1 | reset = 0 | count = 11
+#                  170 ns | clk = 0 | reset = 0 | count = 11
+#                  175 ns | clk = 1 | reset = 0 | count = 10
+#                  180 ns | clk = 0 | reset = 0 | count = 10
+#                  185 ns | clk = 1 | reset = 0 | count = 01
+#                  190 ns | clk = 0 | reset = 0 | count = 01
+#                  195 ns | clk = 1 | reset = 0 | count = 00
+#                  200 ns | clk = 0 | reset = 0 | count = 00
+#                  205 ns | clk = 1 | reset = 0 | count = 11
+#                  210 ns | clk = 0 | reset = 0 | count = 11
+#                  215 ns | clk = 1 | reset = 0 | count = 10
+# ** Note: $finish    : C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5/180hw1Q5.v(48)
+#    Time: 220 ps  Iteration: 0  Instance: /tb_twoBitDownCounter
+# 1
+# Break in Module tb_twoBitDownCounter at C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5/180hw1Q5.v line 48
+# End time: 23:47:07 on Feb 04,2025, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 0

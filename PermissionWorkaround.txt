@@ -1,0 +1,27 @@
+https://www.intel.com/content/www/us/en/support/programmable/articles/000084612.html
+
+Description
+You may get this error when you open a project in the Nios® II IDE.
+
+The problem is that the write protection bits to several files and directories has been set.
+
+You can check this by pointing to your project directory (Example: C:\Projects) and right-clicking on your mouse button over the bar where Name, Size, Type and Date Modified columns are shown. Select the Attributes field. If an 'R' is shown for any of the files or directories in your project directory, then you have this problem.
+
+To solve this:
+
+   1. Open a command shell (Start menu -> Run... -> Enter cmd and press OK).
+
+   2. Change to the project directory, i.e. cd <project path> and press Enter.
+
+   3. Run the one of the following commands:
+
+      attrib -R /S /D *
+
+      or
+
+      attrib -R /S /D .
+
+
+This should clear the write protection flags for all the files and subdirectories in this project direcotry.
+
+It is not necessary to delete or reinstall any files or directories.

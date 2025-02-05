@@ -1,0 +1,9 @@
+C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5/180hw1Q5.v {1 {vlog -work work -stats=none C:/Users/jwils/OneDrive/Desktop/Academics/W25/EEC180/HW1/Q5/180hw1Q5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module twoBitDownCounter
+-- Compiling module tb_twoBitDownCounter
+
+Top level modules:
+	tb_twoBitDownCounter
+
+} {} {}}
