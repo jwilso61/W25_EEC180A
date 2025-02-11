@@ -8,10 +8,7 @@ module accumulator(
 );
   reg [7:0] B_next;
   always @(posedge clk or negedge rst) begin
-    if (!rst) begin
-      B <= 8'b00000001;
-      sqrt <= 4'b0000;
-    end else if (load) begin
+    if (!rst or load) begin
       B <= 8'b00000001;
       sqrt <= 4'b0000;
     end else if (incr) begin

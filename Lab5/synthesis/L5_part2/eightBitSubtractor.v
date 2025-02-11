@@ -1,11 +1,10 @@
-
 module eightBitSubtractor(
     output [7:0] D, 
     output borrowOut,     
     input [7:0] N, oddIn
 );
 
-wire [7:0] borrow;
+wire [8:0] borrow;
 assign borrow[0] = 0;
 
 genvar i;
@@ -20,5 +19,5 @@ generate
 );
     end
 endgenerate
-assign borrowOut = borrow[7];
+assign borrowOut = borrow[8];
 endmodule

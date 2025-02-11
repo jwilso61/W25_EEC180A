@@ -23,23 +23,11 @@ module L5_part1(
 	
 );
 
-
-
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
-
-
-
-
-//=======================================================
-//  Structural coding
-//=======================================================
-
 (* ram_init_file = "Mif1.mif" *) reg [3:0] memory1 [15:0] /* synthesis ramstyle = "M9K" */;
 (* ram_init_file = "Mif2.mif" *)reg [3:0] memory2 [15:0] /* synthesis ramstyle = "M9K" */;
-
-
 
 wire writeEN = SW[9];
 wire memSel = SW[8];
@@ -50,8 +38,9 @@ wire [3:0] dataOut;
 reg [3:0]memory1Out;
 reg [3:0]memory2Out;
  
-
-
+//=======================================================
+//  Structural coding
+//=======================================================
 always @ (posedge clk) begin
 	if (memSel) 
 		if (writeEN) 
@@ -69,7 +58,5 @@ bit2Hex addrDisplay (HEX3, addr);
 bit2Hex dataInDisplay (HEX2, dataIn);
 bit2Hex ram1OutDisplay (HEX1, memory1Out[3:0]);
 bit2Hex ram2OutDisplay (HEX0, memory2Out[3:0]);
-
-
 
 endmodule

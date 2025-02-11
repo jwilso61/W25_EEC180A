@@ -1,0 +1,29 @@
+{C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v} {1 {vlog -work work -stats=none {C:\EEC 180\Lab5\synthesis\L5_part2\8bSqRtUnit.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module eightBSqrt
+
+Top level modules:
+	eightBSqrt
+
+} {} {}} {C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v} {1 {vlog -work work -stats=none {C:\EEC 180\Lab5\synthesis\L5_part2\accumulator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module accumulator
+
+Top level modules:
+	accumulator
+
+} {} {}} {C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v} {1 {vlog -work work -stats=none {C:\EEC 180\Lab5\synthesis\L5_part2\eightBitSubtractor.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module eightBitSubtractor
+
+Top level modules:
+	eightBitSubtractor
+
+} {} {}} {C:/EEC 180/Lab5/synthesis/L5_part2/FS.v} {1 {vlog -work work -stats=none {C:\EEC 180\Lab5\synthesis\L5_part2\FS.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FullSubtractor
+
+Top level modules:
+	FullSubtractor
+
+} {} {}}
