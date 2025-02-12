@@ -27,11 +27,12 @@ begin
         InputVal = vectors[i]; // load input value
         #20 Start = 1'b1; // Start = 'true'
         wait (Done == 1);
-        $display("Input=0x%h, SqRt=0x%h, done=0x%h", 
+        $display("Input=%d, SqRt=%d, done=%h", 
                  InputVal, OutputSqrt, Done);
-        #20 Start = 1'b0; // After data is captured, reset Start
+        #40 Start = 1'b0; // After data is captured, reset Start
         wait (Done == 0);
-        
+        #40 Resetn = 1'b0; // reset high for 1 Clock period
+	#40 Resetn = 1'b1; // reset low for 1 Clock period
     end
     $finish;
 end

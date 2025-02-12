@@ -1,402 +1,45 @@
-# Compile of L5part2.v failed with 1 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 2 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# 5 compiles, 2 failed with 3 errors.
-# Error opening C:/EEC 180/Lab5/simulation/tb_l5part2/(vlog-13069) C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# Path name 'C:/EEC 180/Lab5/simulation/tb_l5part2/(vlog-13069) C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v' doesn't exist.
-# Compile of L5part2.v failed with 1 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 1 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# 5 compiles, 2 failed with 2 errors.
-# Error opening C:/EEC 180/Lab5/simulation/tb_l5part2/(vlog-13069) C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# Path name 'C:/EEC 180/Lab5/simulation/tb_l5part2/(vlog-13069) C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v' doesn't exist.
-# Compile of L5part2.v failed with 1 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 4 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# 5 compiles, 2 failed with 5 errors.
-# Compile of L5part2.v failed with 1 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# 5 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# 4 compiles, 0 failed with no errors.
-
 # Compile of 8bSqRtUnit.v was successful.
 # Compile of accumulator.v was successful.
 # Compile of eightBitSubtractor.v was successful.
 # Compile of FS.v was successful.
 # Compile of tb_l5part2.v was successful.
 # 5 compiles, 0 failed with no errors.
-# can't read "Startup(-L)": no such element in array
-# Load canceled
-# can't read "Startup(-L)": no such element in array
-# Load canceled
+vsim -gui work.tb_sqrt
+# vsim -gui work.tb_sqrt 
+# Start time: 00:53:52 on Feb 12,2025
+# Loading work.tb_sqrt
+# Loading work.eightBSqrt
+# Loading work.eightBitSubtractor
+# Loading work.accumulator
+# Loading work.FullSubtractor
+# ** Error: (vsim-3389) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): Port 'rst' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
+# ** Error: (vsim-3389) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): Port 'load' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
+# ** Fatal: (vsim-3365) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): Too many port connections. Expected 5, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 00:53:52 on Feb 12,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
 # Compile of 8bSqRtUnit.v was successful.
 # Compile of accumulator.v was successful.
 # Compile of eightBitSubtractor.v was successful.
 # Compile of FS.v was successful.
 # Compile of tb_l5part2.v was successful.
 # 5 compiles, 0 failed with no errors.
-# can't read "Startup(-L)": no such element in array
-# Load canceled
-vsim -do simulate.do
-# No design specified
-vsim -L work tb_sqrt
-# vsim -L work tb_sqrt 
-# Start time: 01:22:41 on Feb 11,2025
+vsim -gui work.tb_sqrt
+# vsim -gui work.tb_sqrt 
+# Start time: 00:54:27 on Feb 12,2025
 # Loading work.tb_sqrt
 # Loading work.eightBSqrt
 # Loading work.eightBitSubtractor
 # Loading work.accumulator
 # Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-vsim -L work work.tb_sqrt work.eightBSqrt
-# End time: 01:24:26 on Feb 11,2025, Elapsed time: 0:01:45
-# Errors: 0, Warnings: 1
-# vsim -L work work.tb_sqrt work.eightBSqrt 
-# Start time: 01:24:26 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 100
-quit -sim
-# End time: 01:25:35 on Feb 11,2025, Elapsed time: 0:01:09
-# Errors: 0, Warnings: 1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 01:28:47 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 1000
-# Input=0xxx, SqRt=0x0
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 01:34:25 on Feb 11,2025, Elapsed time: 0:05:38
-# Errors: 0, Warnings: 1
-# vsim -L work work.tb_sqrt 
-# Start time: 01:34:25 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 100
-# Just before readme
-run 100
-run 100
-# Input=0xxx, SqRt=0x0
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 01:36:00 on Feb 11,2025, Elapsed time: 0:01:35
-# Errors: 0, Warnings: 1
-# vsim -L work work.tb_sqrt 
-# Start time: 01:36:00 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 100
-# Just before readme
-# vectors: xx
-quit -sim
-# End time: 01:36:55 on Feb 11,2025, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# Compile of testvecs failed with 1 errors.
-# 6 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# Compile of testvecs failed with 1 errors.
-# 6 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 01:43:19 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 100
-# Just before readme
-# vectors: 01
-run 100
-run 100
-# Input=0x01, SqRt=0x0
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 1000
-
-# Break key hit
-
-
-
-
-vsim -L work work.tb_sqrt
-# End time: 01:44:01 on Feb 11,2025, Elapsed time: 0:00:42
-# Errors: 0, Warnings: 1
-# vsim -L work work.tb_sqrt 
-# Start time: 01:44:01 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 1000
-# Just before readme
-# vectors: 01
-# Input=0x01, SqRt=0x0
-quit -sim
-# End time: 01:46:26 on Feb 11,2025, Elapsed time: 0:02:25
-# Errors: 0, Warnings: 1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 01:48:20 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 1000
-# Input=0x01, SqRt=0x0
-quit -sim
-# End time: 01:48:44 on Feb 11,2025, Elapsed time: 0:00:24
-# Errors: 0, Warnings: 1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 01:50:27 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 1000
-# Input=0x01, SqRt=0x0
-quit -sim
-# End time: 02:01:30 on Feb 11,2025, Elapsed time: 0:11:03
-# Errors: 0, Warnings: 1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:01:46 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-run 1000
-# Input=0x01, SqRt=0x0
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 02:03:11 on Feb 11,2025, Elapsed time: 0:01:25
-# Errors: 0, Warnings: 1
-# vsim -L work work.tb_sqrt 
-# Start time: 02:03:12 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-# ** Error (suppressible): (vsim-3053) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(26): Illegal output or inout port connection for port 'sqrt'.
+# ** Error: (vsim-3063) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): Port 'rst' not found in the connected module (4th connection).
 #    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
 # Error loading design
-# End time: 02:03:12 on Feb 11,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 1
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:03:45 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-# ** Error (suppressible): (vsim-3053) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(26): Illegal output or inout port connection for port 'sqrt'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# Error loading design
-# End time: 02:03:45 on Feb 11,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-# Load canceled
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:04:21 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3015) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [PCDPC] - Port size (4) does not match connection size (1) for port 'sqrt'. The port definition is at: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 02:10:33 on Feb 11,2025, Elapsed time: 0:06:12
-# Errors: 0, Warnings: 1
-# vsim -L work work.tb_sqrt 
-# Start time: 02:10:33 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 100
-run 100
-run 100
-# Input=0x01, SqRt=0x0
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-
-end
-# wrong # args: should be "endpoint_image option ?arg arg ...?"
-
-quit -sim
-# End time: 02:11:04 on Feb 11,2025, Elapsed time: 0:00:31
+# End time: 00:54:27 on Feb 12,2025, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # Compile of 8bSqRtUnit.v was successful.
 # Compile of accumulator.v was successful.
@@ -404,37 +47,36 @@ quit -sim
 # Compile of FS.v was successful.
 # Compile of tb_l5part2.v was successful.
 # 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:12:07 on Feb 11,2025
+vsim -gui work.tb_sqrt
+# vsim -gui work.tb_sqrt 
+# Start time: 00:55:21 on Feb 12,2025
 # Loading work.tb_sqrt
 # Loading work.eightBSqrt
 # Loading work.eightBitSubtractor
 # Loading work.accumulator
 # Loading work.FullSubtractor
 run 1000
-# Input=0x01, SqRt=0x0
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 02:15:40 on Feb 11,2025, Elapsed time: 0:03:33
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 02:15:40 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
+# Input=0x01, SqRt=0x0, done=0x1
+# Input=0x04, SqRt=0x1, done=0x1
+# Input=0x09, SqRt=0x2, done=0x1
 run 1000
-# Input=0x01, SqRt=0x0
-# Input=0x04, SqRt=0x0
+# Input=0x10, SqRt=0x4, done=0x1
+# Input=0x19, SqRt=0x6, done=0x1
+# Input=0x24, SqRt=0x8, done=0x1
+run 1000
+# Input=0x31, SqRt=0xa, done=0x1
+# Input=0x40, SqRt=0xc, done=0x1
+# Input=0x00, SqRt=0xc, done=0x1
+run 1000
+# Input=0x06, SqRt=0xc, done=0x1
+# Input=0x0d, SqRt=0xc, done=0x1
+# Input=0x15, SqRt=0xc, done=0x1
+# Input=0x1b, SqRt=0xd, done=0x1
+# Input=0x2c, SqRt=0xe, done=0x1
+run 1000
+# Input=0xe1, SqRt=0x4, done=0x1
 quit -sim
-# End time: 02:21:01 on Feb 11,2025, Elapsed time: 0:05:21
+# End time: 00:58:04 on Feb 12,2025, Elapsed time: 0:02:43
 # Errors: 0, Warnings: 0
 # Compile of 8bSqRtUnit.v was successful.
 # Compile of accumulator.v was successful.
@@ -442,1003 +84,256 @@ quit -sim
 # Compile of FS.v was successful.
 # Compile of tb_l5part2.v was successful.
 # 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:21:37 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'B'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'borrowOut'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'tempDifference'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# Error loading design
-# End time: 02:21:37 on Feb 11,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# Ctrl+G  ==>  Goto
-# Ctrl+H  ==>  Replace
-# Ctrl+U  ==>  Delete Line
-# Ctrl+W  ==>  Add Selection To Wave
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:22:00 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'B'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'borrowOut'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'tempDifference'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# Error loading design
-# End time: 02:22:00 on Feb 11,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:24:42 on Feb 11,2025
+vsim -gui work.tb_sqrt
+# vsim -gui work.tb_sqrt 
+# Start time: 01:03:36 on Feb 12,2025
 # Loading work.tb_sqrt
 # Loading work.eightBSqrt
 # Loading work.eightBitSubtractor
 # Loading work.accumulator
 # Loading work.FullSubtractor
 run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
+# Input=01, SqRt=0, done=1
+# Input=04, SqRt=1, done=1
+# Input=09, SqRt=2, done=1
+run 1000
+# Input=10, SqRt=4, done=1
+# Input=19, SqRt=6, done=1
+run 1000
+# Input=24, SqRt=8, done=1
+# Input=31, SqRt=a, done=1
+# Input=40, SqRt=c, done=1
+run 1000
+# Input=00, SqRt=c, done=1
+# Input=06, SqRt=c, done=1
+# Input=0d, SqRt=c, done=1
+# Input=15, SqRt=c, done=1
+run 1000
+# Input=1b, SqRt=d, done=1
+# Input=2c, SqRt=e, done=1
+run 1000
+# Input=e1, SqRt=4, done=1
+# Input=ff, SqRt=9, done=1
+# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(36)
+#    Time: 5980 ps  Iteration: 0  Instance: /tb_sqrt
+# 1
+# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 36
 # Compile of 8bSqRtUnit.v was successful.
 # Compile of accumulator.v was successful.
 # Compile of eightBitSubtractor.v was successful.
 # Compile of FS.v was successful.
 # Compile of tb_l5part2.v was successful.
 # 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 02:29:13 on Feb 11,2025, Elapsed time: 0:04:31
+vsim -gui work.tb_sqrt
+# End time: 01:05:11 on Feb 12,2025, Elapsed time: 0:01:35
 # Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 02:29:13 on Feb 11,2025
+# vsim -gui work.tb_sqrt 
+# Start time: 01:05:11 on Feb 12,2025
 # Loading work.tb_sqrt
 # Loading work.eightBSqrt
 # Loading work.eightBitSubtractor
 # Loading work.accumulator
 # Loading work.FullSubtractor
 run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
+# Input=01, SqRt=1, done=1
+# Input=04, SqRt=2, done=1
+# Input=09, SqRt=3, done=1
+run 1000
+# Input=10, SqRt=5, done=1
+# Input=19, SqRt=7, done=1
 # Compile of 8bSqRtUnit.v was successful.
 # Compile of accumulator.v was successful.
 # Compile of eightBitSubtractor.v was successful.
 # Compile of FS.v was successful.
 # Compile of tb_l5part2.v was successful.
 # 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 02:31:24 on Feb 11,2025, Elapsed time: 0:02:11
+vsim -gui work.tb_sqrt
+# End time: 01:06:03 on Feb 12,2025, Elapsed time: 0:00:52
 # Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 02:31:24 on Feb 11,2025
+# vsim -gui work.tb_sqrt 
+# Start time: 01:06:03 on Feb 12,2025
 # Loading work.tb_sqrt
 # Loading work.eightBSqrt
 # Loading work.eightBitSubtractor
 # Loading work.accumulator
 # Loading work.FullSubtractor
 run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-quit -sim
-# End time: 02:33:18 on Feb 11,2025, Elapsed time: 0:01:54
+# Input=01, SqRt=1, done=1
+# Input=04, SqRt=3, done=1
+# Input=09, SqRt=5, done=1
+# Compile of 8bSqRtUnit.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of eightBitSubtractor.v was successful.
+# Compile of FS.v was successful.
+# Compile of tb_l5part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_sqrt
+# End time: 01:08:10 on Feb 12,2025, Elapsed time: 0:02:07
 # Errors: 0, Warnings: 0
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:35:38 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(46): Unresolved reference to 'B'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(46): Unresolved reference to 'borrowOut'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(46): Unresolved reference to 'loadedN'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(46): Unresolved reference to 'tempDifference'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# Error loading design
-# End time: 02:35:38 on Feb 11,2025, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-# Compile of 8bSqRtUnit.v failed with 5 errors.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 5 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 02:38:59 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Too few port connections. Expected 10, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_B'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_loadedN'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_tempDifference'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_borrowOut'.
-run 1000
-# loadedN = 0x00, B = 0x01, tempDifference = 0xff, borrowOut = 1
-# Input=0x01, SqRt=0x0, done=0x1
-# loadedN = 0x00, B = 0x01, tempDifference = 0xff, borrowOut = 1
-# Input=0x04, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v failed with 4 errors.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 4 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 02:42:17 on Feb 11,2025, Elapsed time: 0:03:18
-# Errors: 0, Warnings: 5
-# vsim -L work work.tb_sqrt 
-# Start time: 02:42:17 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Too few port connections. Expected 10, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_B'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_loadedN'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_tempDifference'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_borrowOut'.
-run 1000
-# loadedN = 0x00, B = 0x01, tempDifference = 0xff, borrowOut = 1
-# Input=0x01, SqRt=0x0, done=0x1
-# loadedN = 0x00, B = 0x01, tempDifference = 0xff, borrowOut = 1
-# Input=0x04, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v failed with 1 errors.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:00:08 on Feb 11,2025, Elapsed time: 0:17:51
-# Errors: 0, Warnings: 5
-# vsim -L work work.tb_sqrt 
-# Start time: 03:00:08 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Too few port connections. Expected 10, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_B'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_loadedN'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_tempDifference'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_borrowOut'.
-run 1000
-# loadedN = 0x00, B = 0x01, tempDifference = 0xff, borrowOut = 1
-# Input=0x01, SqRt=0x0, done=0x1
-# loadedN = 0x00, B = 0x01, tempDifference = 0xff, borrowOut = 1
-# Input=0x04, SqRt=0x0, done=0x1
-quit -sim
-# End time: 03:01:14 on Feb 11,2025, Elapsed time: 0:01:06
-# Errors: 0, Warnings: 5
-# Compile of FS.v was successful.
-# Compile of 8bSqRtUnit.v failed with 3 errors.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 3 errors.
-# Compile of 8bSqRtUnit.v failed with 3 errors.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 3 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 03:12:06 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Too few port connections. Expected 10, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_B'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_loadedN'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_tempDifference'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_borrowOut'.
-run 1000
-
-
-run 100
-
-
-# Compile of FS.v was successful.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:14:45 on Feb 11,2025, Elapsed time: 0:02:39
-# Errors: 0, Warnings: 5
-# vsim -L work work.tb_sqrt 
-# Start time: 03:14:45 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Too few port connections. Expected 10, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_B'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_loadedN'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_tempDifference'.
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(11): [TFMPC] - Missing connection for port 'debug_borrowOut'.
-run 1000
-
-
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:22:31 on Feb 11,2025, Elapsed time: 0:07:46
-# Errors: 0, Warnings: 5
-# vsim -L work work.tb_sqrt 
-# Start time: 03:22:31 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3008) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): [CNNODP] - Component name (debug_B) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'debug_B' in UUT.debug_B.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Warning: (vsim-3008) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): [CNNODP] - Component name (debug_borrowOut) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'debug_borrowOut' in UUT.debug_borrowOut.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Warning: (vsim-3008) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): [CNNODP] - Component name (debug_loadedN) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'debug_loadedN' in UUT.debug_loadedN.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Warning: (vsim-3008) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): [CNNODP] - Component name (debug_tempDifference) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# ** Error: (vsim-3043) C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(47): Unresolved reference to 'debug_tempDifference' in UUT.debug_tempDifference.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt File: C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
-# Error loading design
-# End time: 03:22:32 on Feb 11,2025, Elapsed time: 0:00:01
-# Errors: 4, Warnings: 4
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 03:23:06 on Feb 11,2025
+# vsim -gui work.tb_sqrt 
+# Start time: 01:08:10 on Feb 12,2025
 # Loading work.tb_sqrt
 # Loading work.eightBSqrt
 # Loading work.eightBitSubtractor
 # Loading work.accumulator
 # Loading work.FullSubtractor
 run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-run 1000
-# Input=0x09, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x10, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x19, SqRt=0x0, done=0x1
-run 1000
-run 1000
-run 1000
-# Input=0x24, SqRt=0x0, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Input=0x31, SqRt=0x0, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Input=0x40, SqRt=0x0, done=0x1
-# Input=0x00, SqRt=0x0, done=0x1
-run 1000
-# Input=0x06, SqRt=0x0, done=0x1
-run 1000
-# Input=0x0d, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x15, SqRt=0x0, done=0x1
-run 1000
-run 1000
-run 1000
-# Input=0x1b, SqRt=0x0, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-# Input=0x2c, SqRt=0x0, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Input=0xe1, SqRt=0x0, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-
-run 1000
-run 1000
-run 1000
-run 1000
-
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-quit -sim
-# End time: 03:25:05 on Feb 11,2025, Elapsed time: 0:01:59
+# Input=01, SqRt=1, done=1
+# Input=04, SqRt=2, done=1
+# Input=09, SqRt=3, done=1
+run 1000
+# Input=10, SqRt=5, done=1
+# Input=19, SqRt=7, done=1
+run 1000
+# Input=24, SqRt=9, done=1
+# Input=31, SqRt=b, done=1
+# Input=40, SqRt=d, done=1
+run 1000
+# Input=00, SqRt=d, done=1
+# Input=06, SqRt=d, done=1
+# Input=0d, SqRt=d, done=1
+# Input=15, SqRt=d, done=1
+run 1000
+# Input=1b, SqRt=e, done=1
+# Input=2c, SqRt=f, done=1
+run 1000
+# Input=e1, SqRt=5, done=1
+# Input=ff, SqRt=a, done=1
+# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(36)
+#    Time: 5980 ps  Iteration: 0  Instance: /tb_sqrt
+# 1
+# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 36
+# Compile of 8bSqRtUnit.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of eightBitSubtractor.v was successful.
+# Compile of FS.v was successful.
+# Compile of tb_l5part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_sqrt
+# End time: 01:15:56 on Feb 12,2025, Elapsed time: 0:07:46
 # Errors: 0, Warnings: 0
-vsim -L work work.tb_sqrt
-# vsim -L work work.tb_sqrt 
-# Start time: 03:25:12 on Feb 11,2025
+# vsim -gui work.tb_sqrt 
+# Start time: 01:15:56 on Feb 12,2025
+# Loading work.tb_sqrt
+# Loading work.eightBSqrt
+# Loading work.eightBitSubtractor
+# Loading work.accumulator
+# Loading work.FullSubtractor
+run 1000
+# Input=01, SqRt=1, done=1
+# Input=04, SqRt=2, done=1
+run 1000
+# Input=09, SqRt=3, done=1
+# Input=10, SqRt=4, done=1
+run 1000
+# Input=19, SqRt=5, done=1
+run 1000
+# Input=24, SqRt=6, done=1
+run 1000
+# Input=31, SqRt=7, done=1
+run 1000
+# Input=40, SqRt=8, done=1
+# Input=00, SqRt=0, done=1
+# Input=06, SqRt=2, done=1
+run 1000
+# Input=0d, SqRt=3, done=1
+# Input=15, SqRt=4, done=1
+run 1000
+# Input=1b, SqRt=5, done=1
+# Compile of 8bSqRtUnit.v was successful.
+# Compile of accumulator.v was successful.
+# Compile of eightBitSubtractor.v was successful.
+# Compile of FS.v was successful.
+# Compile of tb_l5part2.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.tb_sqrt
+# End time: 01:17:00 on Feb 12,2025, Elapsed time: 0:01:04
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_sqrt 
+# Start time: 01:17:00 on Feb 12,2025
+# Loading work.tb_sqrt
+# Loading work.eightBSqrt
+# Loading work.eightBitSubtractor
+# Loading work.accumulator
+# Loading work.FullSubtractor
+run 1000
+# Input=  1, SqRt= 1, done=1
+# Input=  4, SqRt= 2, done=1
+run 1000
+# Input=  9, SqRt= 3, done=1
+# Input= 16, SqRt= 4, done=1
+run 1000
+# Input= 25, SqRt= 5, done=1
+run 1000
+# Input= 36, SqRt= 6, done=1
+run 1000
+# Input= 49, SqRt= 7, done=1
+run 1000
+# Input= 64, SqRt= 8, done=1
+# Input=  0, SqRt= 0, done=1
+# Input=  6, SqRt= 2, done=1
+run 1000
+# Input= 13, SqRt= 3, done=1
+# Input= 21, SqRt= 4, done=1
+run 1000
+# Input= 27, SqRt= 5, done=1
+run 1000
+# Input= 44, SqRt= 6, done=1
+run 1000
+# Input=225, SqRt=15, done=1
+run 1000
+run 1000
+# Input=255, SqRt=15, done=1
+# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(37)
+#    Time: 11420 ps  Iteration: 0  Instance: /tb_sqrt
+# 1
+# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 37
+vsim -gui work.tb_sqrt
+# End time: 01:19:21 on Feb 12,2025, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_sqrt 
+# Start time: 01:19:21 on Feb 12,2025
 # Loading work.tb_sqrt
 # Loading work.eightBSqrt
 # Loading work.eightBitSubtractor
 # Loading work.accumulator
 # Loading work.FullSubtractor
 run 10000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-# Input=0x09, SqRt=0x0, done=0x1
-# Input=0x10, SqRt=0x0, done=0x1
-# Input=0x19, SqRt=0x0, done=0x1
-# Input=0x24, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 1 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 1 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 1 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 1 error.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:32:09 on Feb 11,2025, Elapsed time: 0:06:57
+# Input=  1, SqRt= 1, done=1
+# Input=  4, SqRt= 2, done=1
+# Input=  9, SqRt= 3, done=1
+# Input= 16, SqRt= 4, done=1
+# Input= 25, SqRt= 5, done=1
+# Input= 36, SqRt= 6, done=1
+# Input= 49, SqRt= 7, done=1
+# Input= 64, SqRt= 8, done=1
+# Input=  0, SqRt= 0, done=1
+# Input=  6, SqRt= 2, done=1
+# Input= 13, SqRt= 3, done=1
+# Input= 21, SqRt= 4, done=1
+# Input= 27, SqRt= 5, done=1
+# Input= 44, SqRt= 6, done=1
+# Input=225, SqRt=15, done=1
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+run 100
+# Input=255, SqRt=15, done=1
+run 100
+run 100
+# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(37)
+#    Time: 11420 ps  Iteration: 0  Instance: /tb_sqrt
+# 1
+# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 37
+quit -sim
+# End time: 01:22:25 on Feb 12,2025, Elapsed time: 0:03:04
 # Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 03:32:09 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Missing connection for port 'clk'.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:33:35 on Feb 11,2025, Elapsed time: 0:01:26
-# Errors: 0, Warnings: 2
-# vsim -L work work.tb_sqrt 
-# Start time: 03:33:35 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:36:02 on Feb 11,2025, Elapsed time: 0:02:27
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 03:36:02 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:44:18 on Feb 11,2025, Elapsed time: 0:08:16
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 03:44:19 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-run 1000
-# Input=0x09, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x10, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x19, SqRt=0x0, done=0x1
-
-run 1000
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:45:52 on Feb 11,2025, Elapsed time: 0:01:33
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 03:45:52 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-run 1000
-# Input=0x09, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x10, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x19, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:53:46 on Feb 11,2025, Elapsed time: 0:07:54
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 03:53:46 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-run 1000
-# Input=0x09, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x10, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x19, SqRt=0x0, done=0x1
-run 1000
-run 1000
-run 1000
-# Input=0x24, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:54:50 on Feb 11,2025, Elapsed time: 0:01:04
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 03:54:50 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-run 1000
-# Input=0x09, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x10, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:56:26 on Feb 11,2025, Elapsed time: 0:01:36
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 03:56:26 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x0, done=0x1
-run 1000
-# Input=0x09, SqRt=0x0, done=0x1
-run 1000
-run 1000
-# Input=0x10, SqRt=0x0, done=0x1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 03:57:28 on Feb 11,2025, Elapsed time: 0:01:02
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 03:57:28 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x1, done=0x1
-# Input=0x04, SqRt=0x2, done=0x1
-run 1000
-# Input=0x09, SqRt=0x3, done=0x1
-# Input=0x10, SqRt=0x5, done=0x1
-# Input=0x19, SqRt=0x7, done=0x1
-run 1000
-# Input=0x24, SqRt=0x9, done=0x1
-# Input=0x31, SqRt=0xb, done=0x1
-run 1000
-# Input=0x40, SqRt=0xd, done=0x1
-# Input=0x00, SqRt=0xd, done=0x1
-# Input=0x06, SqRt=0xd, done=0x1
-run 1000
-# Input=0x0d, SqRt=0xd, done=0x1
-# Input=0x15, SqRt=0xd, done=0x1
-# Input=0x1b, SqRt=0xe, done=0x1
-# Compile of accumulator.v was successful.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:01:59 on Feb 11,2025, Elapsed time: 0:04:31
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 04:01:59 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Missing connection for port 'load'.
-run 1000
-# Input=0x01, SqRt=0x1, done=0x1
-# Input=0x04, SqRt=0x2, done=0x1
-run 1000
-# Input=0x09, SqRt=0x3, done=0x1
-# Input=0x10, SqRt=0x5, done=0x1
-# Input=0x19, SqRt=0x7, done=0x1
-run 1000
-# Input=0x24, SqRt=0x9, done=0x1
-# Input=0x31, SqRt=0xb, done=0x1
-run 1000
-# Input=0x40, SqRt=0xd, done=0x1
-# Input=0x00, SqRt=0xd, done=0x1
-# Input=0x06, SqRt=0xd, done=0x1
-# Compile of 8bSqRtUnit.v failed with 2 errors.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 2 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:10:06 on Feb 11,2025, Elapsed time: 0:08:07
-# Errors: 0, Warnings: 2
-# vsim -L work work.tb_sqrt 
-# Start time: 04:10:06 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Missing connection for port 'load'.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:18:34 on Feb 11,2025, Elapsed time: 0:08:28
-# Errors: 0, Warnings: 2
-# vsim -L work work.tb_sqrt 
-# Start time: 04:18:34 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Missing connection for port 'load'.
-run 1000
-# Input=0x01, SqRt=0x1, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:19:46 on Feb 11,2025, Elapsed time: 0:01:12
-# Errors: 0, Warnings: 2
-# vsim -L work work.tb_sqrt 
-# Start time: 04:19:46 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Warning: (vsim-3017) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Too few port connections. Expected 6, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# ** Warning: (vsim-3722) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): [TFMPC] - Missing connection for port 'load'.
-run 1000
-# Input=0x01, SqRt=0x1, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 3 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 3 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 3 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 3 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v failed with 3 errors.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 1 failed with 3 errors.
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:27:55 on Feb 11,2025, Elapsed time: 0:08:09
-# Errors: 0, Warnings: 2
-# vsim -L work work.tb_sqrt 
-# Start time: 04:27:55 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x1, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:35:11 on Feb 11,2025, Elapsed time: 0:07:16
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 04:35:12 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:36:28 on Feb 11,2025, Elapsed time: 0:01:16
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 04:36:28 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 100
-run 100
-run 100
-run 100
-# Input=0x01, SqRt=0x0, done=0x1
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:37:14 on Feb 11,2025, Elapsed time: 0:00:46
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 04:37:14 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x1, done=0x1
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:38:43 on Feb 11,2025, Elapsed time: 0:01:29
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 04:38:43 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-run 1000
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -L work work.tb_sqrt
-# End time: 04:39:51 on Feb 11,2025, Elapsed time: 0:01:08
-# Errors: 0, Warnings: 0
-# vsim -L work work.tb_sqrt 
-# Start time: 04:39:51 on Feb 11,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x1, done=0x1
-# Input=0x04, SqRt=0x2, done=0x1
-run 1000
-# Input=0x09, SqRt=0x3, done=0x1
-# Input=0x10, SqRt=0x5, done=0x1
-# Input=0x19, SqRt=0x7, done=0x1
-run 1000
-# Input=0x24, SqRt=0x9, done=0x1
-# Input=0x31, SqRt=0xb, done=0x1
-run 1000
-# Input=0x40, SqRt=0xd, done=0x1
-# Input=0x00, SqRt=0xd, done=0x1
-# Input=0x06, SqRt=0xd, done=0x1

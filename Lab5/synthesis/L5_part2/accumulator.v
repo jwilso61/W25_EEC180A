@@ -2,23 +2,16 @@ module accumulator(
     output reg [7:0] B,
     output reg [3:0] sqrt,
     input clk,
-    input rst,    // active-low reset
-    input incr,
-    input load    // new load signal to reinitialize
+    input rstN,
+    input incr  
 );
-  reg [7:0] B_next;
-  always @(posedge clk or negedge rst) begin
-    if (!rst) begin
-      B <= 8'b00000001;
-      sqrt <= 4'b0000;
-    end else if (load) begin
+always @(posedge clk or negedge rstN) begin
+    if (!rstN) begin
       B <= 8'b00000001;
       sqrt <= 4'b0000;
     end else if (incr) begin
-      B_next = B + 2;
-      B <= B_next;
-      sqrt <= (B_next - 1) >> 1; // (B_next-1)/2 gives the number of subtractions.
+      B <= B + 2;
+      sqrt <= B+1 >> 1;
     end
   end
 endmodule
-

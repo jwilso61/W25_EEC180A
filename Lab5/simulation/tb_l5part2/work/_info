@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/19.1
 vaccumulator
-Z0 !s110 1739277583
+Z0 !s110 1739351812
 !i10b 1
-!s100 cT[c:BUcP8k6Dl^e[JS2E3
-IcH4;Zzm`g=XKhRbF8:8Rn0
+!s100 Kb9XMKQiDZQB8@[mE:]`<3
+IVgiiLCFh]@:WKO[JSCR=J0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/EEC 180/Lab5/simulation/tb_l5part2
-w1739276844
-8C:\EEC 180\Lab5\synthesis\L5_part2\accumulator.v
-FC:\EEC 180\Lab5\synthesis\L5_part2\accumulator.v
+w1739351279
+8C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
+FC:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1739277583.000000
-!s107 C:\EEC 180\Lab5\synthesis\L5_part2\accumulator.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\EEC 180\Lab5\synthesis\L5_part2\accumulator.v|
+Z4 !s108 1739351812.000000
+!s107 C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
@@ -33,20 +33,20 @@ veightBitSubtractor
 R0
 !i10b 1
 !s100 c[fEdAS1Jgd:PFQECC6Te3
-IF9eOb4iMJhBl`VPP<8SS^1
+Ilm4EQMnS5Zggnljhn<2JR2
 R1
 R2
 w1739270956
-8C:\EEC 180\Lab5\synthesis\L5_part2\eightBitSubtractor.v
-FC:\EEC 180\Lab5\synthesis\L5_part2\eightBitSubtractor.v
+8C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v
+FC:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:\EEC 180\Lab5\synthesis\L5_part2\eightBitSubtractor.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\EEC 180\Lab5\synthesis\L5_part2\eightBitSubtractor.v|
+!s107 C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v|
 !i113 1
 R5
 R6
@@ -54,21 +54,21 @@ neight@bit@subtractor
 veightBSqrt
 R0
 !i10b 1
-!s100 fd_<^D[EhRX5Mm[MkQmT50
-IEXogSMhR8SYCWS2CZ_]gc0
+!s100 ^So=XF7_7:FbDYd5:<_FS0
+IOAdOcWz0mS]@^Xe1kG4Yk2
 R1
 R2
-w1739277423
-8C:\EEC 180\Lab5\synthesis\L5_part2\8bSqRtUnit.v
-FC:\EEC 180\Lab5\synthesis\L5_part2\8bSqRtUnit.v
+w1739350511
+8C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
+FC:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:\EEC 180\Lab5\synthesis\L5_part2\8bSqRtUnit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\EEC 180\Lab5\synthesis\L5_part2\8bSqRtUnit.v|
+!s107 C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v|
 !i113 1
 R5
 R6
@@ -77,20 +77,20 @@ vFullSubtractor
 R0
 !i10b 1
 !s100 YdLaYWShLZKl@GOCnJ1^C0
-I0POHJkk8=8;Y@0dA]fOPX1
+Icl7R6e<A<P[1jPF[e78PP1
 R1
 R2
 w1739224747
-8C:\EEC 180\Lab5\synthesis\L5_part2\FS.v
-FC:\EEC 180\Lab5\synthesis\L5_part2\FS.v
+8C:/EEC 180/Lab5/synthesis/L5_part2/FS.v
+FC:/EEC 180/Lab5/synthesis/L5_part2/FS.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:\EEC 180\Lab5\synthesis\L5_part2\FS.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\EEC 180\Lab5\synthesis\L5_part2\FS.v|
+!s107 C:/EEC 180/Lab5/synthesis/L5_part2/FS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/synthesis/L5_part2/FS.v|
 !i113 1
 R5
 R6
@@ -98,21 +98,21 @@ n@full@subtractor
 vtb_sqrt
 R0
 !i10b 1
-!s100 ee6h=>haYS40J<;>@`7<22
-IZRXFNeoK?z7oB_8:bIC?o0
+!s100 zIebeedEPb@36d61KQjBG2
+IhW;cIzg?XJF>Go<0m4zcm3
 R1
 R2
-w1739277576
-8C:\EEC 180\Lab5\simulation\tb_l5part2\tb_l5part2.v
-FC:\EEC 180\Lab5\simulation\tb_l5part2\tb_l5part2.v
+w1739351808
+8C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
+FC:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:\EEC 180\Lab5\simulation\tb_l5part2\tb_l5part2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\EEC 180\Lab5\simulation\tb_l5part2\tb_l5part2.v|
+!s107 C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v|
 !i113 1
 R5
 R6

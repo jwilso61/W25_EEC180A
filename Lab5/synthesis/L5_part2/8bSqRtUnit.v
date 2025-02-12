@@ -13,7 +13,7 @@ wire borrowOut;
 reg [7:0] loadedN;
 reg Su;
 reg [2:0] state;
-parameter IDLE = 3'b000, LOAD = 3'b001, PROP = 3'b010, SUBTRACT = 3'b011, DONE = 3'b100;
+parameter IDLE = 2'b00, LOAD = 2'b01, SUBTRACT = 2'b10, DONE = 2'b11;
 
 eightBitSubtractor s0 (
     .D(tempDifference),
@@ -26,9 +26,8 @@ accumulator a0 (
     .B(B),
     .sqrt(sqrt),
     .clk(clk),
-    .rst(rstN),
-    .incr(Su),
-    .load(1'b0)
+    .rstN(rstN),
+    .incr(Su)
 );
 
 
@@ -43,25 +42,21 @@ always @(posedge clk or negedge rstN) begin
             IDLE: begin
                 done <= 0;
                 if (St) begin
-                    state <= LOAD;
+		    loadedN <= N;
+                    state <= SUBTRACT;
                 end
             end
 
             LOAD: begin
-		        loadedN <= N;
-                state <= PROP;
-            end
-
-	       PROP: begin
-                state <= SUBTRACT;
-		        Su <= 0;
+		Su <= 0;
+		loadedN <= tempDifference;
+		state <= SUBTRACT;
             end
 
             SUBTRACT: begin
                 if (!borrowOut) begin
-                    loadedN <= tempDifference;
                     Su <= 1;
-		            state <= PROP;
+		    state <= LOAD;
                 end else begin
                     Su <= 0;
                     state <= DONE;
