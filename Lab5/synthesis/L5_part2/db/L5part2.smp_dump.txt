@@ -1,0 +1,7 @@
+
+State Machine - |L5part2|eightBSqrt:eightBSqrt0|state
+Name state.DONE state.SUBTRACT state.LOAD state.IDLE 
+state.IDLE 0 0 0 0 
+state.LOAD 0 0 1 1 
+state.SUBTRACT 0 1 0 1 
+state.DONE 1 0 0 1 

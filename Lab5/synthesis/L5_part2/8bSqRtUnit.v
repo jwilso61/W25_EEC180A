@@ -56,7 +56,7 @@ always @(posedge clk or negedge rstN) begin
             SUBTRACT: begin
                 if (!borrowOut) begin
                     Su <= 1;
-		    state <= LOAD;
+							state <= LOAD;
                 end else begin
                     Su <= 0;
                     state <= DONE;

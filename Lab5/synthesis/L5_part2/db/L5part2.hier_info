@@ -1,0 +1,454 @@
+|L5part2
+LEDR[0] <= eightBSqrt:eightBSqrt0.done
+HEX0[0] <= bit2Hex:sqrtDisplay.port0
+HEX0[1] <= bit2Hex:sqrtDisplay.port0
+HEX0[2] <= bit2Hex:sqrtDisplay.port0
+HEX0[3] <= bit2Hex:sqrtDisplay.port0
+HEX0[4] <= bit2Hex:sqrtDisplay.port0
+HEX0[5] <= bit2Hex:sqrtDisplay.port0
+HEX0[6] <= bit2Hex:sqrtDisplay.port0
+HEX0[7] <= bit2Hex:sqrtDisplay.port0
+HEX2[0] <= bit2Hex:N30Display.port0
+HEX2[1] <= bit2Hex:N30Display.port0
+HEX2[2] <= bit2Hex:N30Display.port0
+HEX2[3] <= bit2Hex:N30Display.port0
+HEX2[4] <= bit2Hex:N30Display.port0
+HEX2[5] <= bit2Hex:N30Display.port0
+HEX2[6] <= bit2Hex:N30Display.port0
+HEX2[7] <= bit2Hex:N30Display.port0
+HEX3[0] <= bit2Hex:N74Display.port0
+HEX3[1] <= bit2Hex:N74Display.port0
+HEX3[2] <= bit2Hex:N74Display.port0
+HEX3[3] <= bit2Hex:N74Display.port0
+HEX3[4] <= bit2Hex:N74Display.port0
+HEX3[5] <= bit2Hex:N74Display.port0
+HEX3[6] <= bit2Hex:N74Display.port0
+HEX3[7] <= bit2Hex:N74Display.port0
+KEY[0] => KEY[0].IN3
+KEY[1] => KEY[1].IN1
+MAX10_CLK1_50 => Clock.IN3
+
+
+|L5part2|buttonEdgeDet:buttonED
+button_edge <= button_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => button_edge~reg0.CLK
+clk => button_prev.CLK
+rstN => button_edge~reg0.ACLR
+rstN => button_prev.ACLR
+button => button_edge.IN1
+button => button_prev.DATAIN
+
+
+|L5part2|memBlock:m1
+N[0] <= N[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+N[1] <= N[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+N[2] <= N[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+N[3] <= N[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+N[4] <= N[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+N[5] <= N[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+N[6] <= N[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+N[7] <= N[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => N[0]~reg0.CLK
+clk => N[1]~reg0.CLK
+clk => N[2]~reg0.CLK
+clk => N[3]~reg0.CLK
+clk => N[4]~reg0.CLK
+clk => N[5]~reg0.CLK
+clk => N[6]~reg0.CLK
+clk => N[7]~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+rstN => counter.OUTPUTSELECT
+rstN => counter.OUTPUTSELECT
+rstN => counter.OUTPUTSELECT
+rstN => counter.OUTPUTSELECT
+rstN => N[0]~reg0.ENA
+rstN => N[1]~reg0.ENA
+rstN => N[2]~reg0.ENA
+rstN => N[3]~reg0.ENA
+rstN => N[4]~reg0.ENA
+rstN => N[5]~reg0.ENA
+rstN => N[6]~reg0.ENA
+rstN => N[7]~reg0.ENA
+St => N.OUTPUTSELECT
+St => N.OUTPUTSELECT
+St => N.OUTPUTSELECT
+St => N.OUTPUTSELECT
+St => N.OUTPUTSELECT
+St => N.OUTPUTSELECT
+St => N.OUTPUTSELECT
+St => N.OUTPUTSELECT
+St => counter.OUTPUTSELECT
+St => counter.OUTPUTSELECT
+St => counter.OUTPUTSELECT
+St => counter.OUTPUTSELECT
+
+
+|L5part2|eightBSqrt:eightBSqrt0
+done <= done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqrt[0] <= accumulator:a0.sqrt
+sqrt[1] <= accumulator:a0.sqrt
+sqrt[2] <= accumulator:a0.sqrt
+sqrt[3] <= accumulator:a0.sqrt
+clk => clk.IN1
+rstN => rstN.IN1
+St => loadedN.OUTPUTSELECT
+St => loadedN.OUTPUTSELECT
+St => loadedN.OUTPUTSELECT
+St => loadedN.OUTPUTSELECT
+St => loadedN.OUTPUTSELECT
+St => loadedN.OUTPUTSELECT
+St => loadedN.OUTPUTSELECT
+St => loadedN.OUTPUTSELECT
+St => state.OUTPUTSELECT
+St => state.OUTPUTSELECT
+St => state.OUTPUTSELECT
+St => state.OUTPUTSELECT
+St => state.OUTPUTSELECT
+St => state.OUTPUTSELECT
+St => state.OUTPUTSELECT
+St => state.OUTPUTSELECT
+N[0] => loadedN.DATAB
+N[1] => loadedN.DATAB
+N[2] => loadedN.DATAB
+N[3] => loadedN.DATAB
+N[4] => loadedN.DATAB
+N[5] => loadedN.DATAB
+N[6] => loadedN.DATAB
+N[7] => loadedN.DATAB
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0
+D[0] <= FullSubtractor:FSgen[0].u0.D
+D[1] <= FullSubtractor:FSgen[1].u0.D
+D[2] <= FullSubtractor:FSgen[2].u0.D
+D[3] <= FullSubtractor:FSgen[3].u0.D
+D[4] <= FullSubtractor:FSgen[4].u0.D
+D[5] <= FullSubtractor:FSgen[5].u0.D
+D[6] <= FullSubtractor:FSgen[6].u0.D
+D[7] <= FullSubtractor:FSgen[7].u0.D
+borrowOut <= FullSubtractor:FSgen[7].u0.Bo
+N[0] => N[0].IN1
+N[1] => N[1].IN1
+N[2] => N[2].IN1
+N[3] => N[3].IN1
+N[4] => N[4].IN1
+N[5] => N[5].IN1
+N[6] => N[6].IN1
+N[7] => N[7].IN1
+oddIn[0] => oddIn[0].IN1
+oddIn[1] => oddIn[1].IN1
+oddIn[2] => oddIn[2].IN1
+oddIn[3] => oddIn[3].IN1
+oddIn[4] => oddIn[4].IN1
+oddIn[5] => oddIn[5].IN1
+oddIn[6] => oddIn[6].IN1
+oddIn[7] => oddIn[7].IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[0].u0
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+a => Bo.IN0
+a => Bo.IN0
+b => Bo.IN1
+b => Bo.IN1
+bI => Bo.IN1
+bI => D.IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[1].u0
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+a => Bo.IN0
+a => Bo.IN0
+b => Bo.IN1
+b => Bo.IN1
+bI => Bo.IN1
+bI => D.IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[2].u0
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+a => Bo.IN0
+a => Bo.IN0
+b => Bo.IN1
+b => Bo.IN1
+bI => Bo.IN1
+bI => D.IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[3].u0
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+a => Bo.IN0
+a => Bo.IN0
+b => Bo.IN1
+b => Bo.IN1
+bI => Bo.IN1
+bI => D.IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[4].u0
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+a => Bo.IN0
+a => Bo.IN0
+b => Bo.IN1
+b => Bo.IN1
+bI => Bo.IN1
+bI => D.IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[5].u0
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+a => Bo.IN0
+a => Bo.IN0
+b => Bo.IN1
+b => Bo.IN1
+bI => Bo.IN1
+bI => D.IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[6].u0
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+a => Bo.IN0
+a => Bo.IN0
+b => Bo.IN1
+b => Bo.IN1
+bI => Bo.IN1
+bI => D.IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[7].u0
+Bo <= Bo.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+a => Bo.IN0
+a => Bo.IN0
+b => Bo.IN1
+b => Bo.IN1
+bI => Bo.IN1
+bI => D.IN1
+
+
+|L5part2|eightBSqrt:eightBSqrt0|accumulator:a0
+B[0] <= <VCC>
+B[1] <= B[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B[2] <= B[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B[3] <= B[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B[4] <= B[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B[5] <= B[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B[6] <= B[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B[7] <= B[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqrt[0] <= sqrt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqrt[1] <= sqrt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqrt[2] <= sqrt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sqrt[3] <= sqrt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => sqrt[0]~reg0.CLK
+clk => sqrt[1]~reg0.CLK
+clk => sqrt[2]~reg0.CLK
+clk => sqrt[3]~reg0.CLK
+clk => B[1]~reg0.CLK
+clk => B[2]~reg0.CLK
+clk => B[3]~reg0.CLK
+clk => B[4]~reg0.CLK
+clk => B[5]~reg0.CLK
+clk => B[6]~reg0.CLK
+clk => B[7]~reg0.CLK
+rstN => sqrt[0]~reg0.ACLR
+rstN => sqrt[1]~reg0.ACLR
+rstN => sqrt[2]~reg0.ACLR
+rstN => sqrt[3]~reg0.ACLR
+rstN => B[1]~reg0.ACLR
+rstN => B[2]~reg0.ACLR
+rstN => B[3]~reg0.ACLR
+rstN => B[4]~reg0.ACLR
+rstN => B[5]~reg0.ACLR
+rstN => B[6]~reg0.ACLR
+rstN => B[7]~reg0.ACLR
+incr => sqrt[0]~reg0.ENA
+incr => B[7]~reg0.ENA
+incr => B[6]~reg0.ENA
+incr => B[5]~reg0.ENA
+incr => B[4]~reg0.ENA
+incr => B[3]~reg0.ENA
+incr => B[2]~reg0.ENA
+incr => sqrt[3]~reg0.ENA
+incr => sqrt[2]~reg0.ENA
+incr => sqrt[1]~reg0.ENA
+incr => B[1]~reg0.ENA
+
+
+|L5part2|bit2Hex:N74Display
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[7] <= <VCC>
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN0
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN1
+SW[2] => HEX.IN1
+SW[2] => HEX.IN0
+SW[2] => HEX.IN1
+SW[2] => HEX.IN1
+SW[2] => HEX.IN0
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+
+
+|L5part2|bit2Hex:N30Display
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[7] <= <VCC>
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN0
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN1
+SW[2] => HEX.IN1
+SW[2] => HEX.IN0
+SW[2] => HEX.IN1
+SW[2] => HEX.IN1
+SW[2] => HEX.IN0
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+
+
+|L5part2|bit2Hex:sqrtDisplay
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[7] <= <VCC>
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN0
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[0] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN1
+SW[1] => HEX.IN0
+SW[1] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN0
+SW[2] => HEX.IN1
+SW[2] => HEX.IN1
+SW[2] => HEX.IN0
+SW[2] => HEX.IN1
+SW[2] => HEX.IN1
+SW[2] => HEX.IN0
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+SW[3] => HEX.IN1
+
+

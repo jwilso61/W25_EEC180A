@@ -1,0 +1,20 @@
+module button_edge_detector(
+    input  wire clk,       // System clock
+    input  wire rstN,      // Active-low reset
+    input  wire button,    // Physical button input
+    output reg  button_edge // High for **one clock cycle** on press
+);
+
+    reg button_prev; // Register to store previous button state
+
+    always @(posedge clk or negedge rstN) begin
+        if (!rstN) begin
+            button_prev  <= 0;
+            button_edge <= 0;
+        end else begin
+            button_edge <= button & ~button_prev; // Detect rising edge
+            button_prev <= button; // Store previous button state
+        end
+    end
+
+endmodule
