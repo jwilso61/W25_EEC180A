@@ -14,7 +14,7 @@ eightBSqrt UUT (.done(Done), .sqrt(OutputSqrt), .clk(Clock), .rstN(Resetn),
 initial // Clock generator
 	begin
 	Clock = 1'b0;
-	forever #20 Clock = ~Clock; // Clock period = 40 ns
+	forever #10 Clock = ~Clock; // Clock period = 40 ns
 end
 
 initial // Test stimulus
@@ -32,7 +32,7 @@ begin
         #40 Start = 1'b0; // After data is captured, reset Start
         wait (Done == 0);
         #40 Resetn = 1'b0; // reset high for 1 Clock period
-	#40 Resetn = 1'b1; // reset low for 1 Clock period
+			#40 Resetn = 1'b1; // reset low for 1 Clock period
     end
     $finish;
 end

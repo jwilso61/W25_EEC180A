@@ -5,7 +5,7 @@ module buttonEdgeDet(
     input  wire button    // Physical button input  
 );
 
-reg button_prev = 1'b0; 
+reg button_prev = 1'b1; 
 
 always @(posedge clk or negedge rstN) begin
 	if (!rstN) begin

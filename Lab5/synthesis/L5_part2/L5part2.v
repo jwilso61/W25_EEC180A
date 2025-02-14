@@ -6,9 +6,9 @@ module L5part2(
 	input 		     [1:0]		KEY,
 	input wire	MAX10_CLK1_50
 );
+
 wire Clock = MAX10_CLK1_50;
 wire StEdge;
-wire St;
 wire [3:0] Sqrt;
 wire [7:0] N;
 

@@ -6,299 +6,13 @@
 # 5 compiles, 0 failed with no errors.
 vsim -gui work.tb_sqrt
 # vsim -gui work.tb_sqrt 
-# Start time: 00:53:52 on Feb 12,2025
+# Start time: 13:03:07 on Feb 14,2025
 # Loading work.tb_sqrt
 # Loading work.eightBSqrt
 # Loading work.eightBitSubtractor
 # Loading work.accumulator
 # Loading work.FullSubtractor
-# ** Error: (vsim-3389) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): Port 'rst' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# ** Error: (vsim-3389) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): Port 'load' not found in the connected module (6th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# ** Fatal: (vsim-3365) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): Too many port connections. Expected 5, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 00:53:52 on Feb 12,2025, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_sqrt
-# vsim -gui work.tb_sqrt 
-# Start time: 00:54:27 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-# ** Error: (vsim-3063) C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v(25): Port 'rst' not found in the connected module (4th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_sqrt/UUT/a0 File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
-# Error loading design
-# End time: 00:54:27 on Feb 12,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_sqrt
-# vsim -gui work.tb_sqrt 
-# Start time: 00:55:21 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=0x01, SqRt=0x0, done=0x1
-# Input=0x04, SqRt=0x1, done=0x1
-# Input=0x09, SqRt=0x2, done=0x1
-run 1000
-# Input=0x10, SqRt=0x4, done=0x1
-# Input=0x19, SqRt=0x6, done=0x1
-# Input=0x24, SqRt=0x8, done=0x1
-run 1000
-# Input=0x31, SqRt=0xa, done=0x1
-# Input=0x40, SqRt=0xc, done=0x1
-# Input=0x00, SqRt=0xc, done=0x1
-run 1000
-# Input=0x06, SqRt=0xc, done=0x1
-# Input=0x0d, SqRt=0xc, done=0x1
-# Input=0x15, SqRt=0xc, done=0x1
-# Input=0x1b, SqRt=0xd, done=0x1
-# Input=0x2c, SqRt=0xe, done=0x1
-run 1000
-# Input=0xe1, SqRt=0x4, done=0x1
-quit -sim
-# End time: 00:58:04 on Feb 12,2025, Elapsed time: 0:02:43
-# Errors: 0, Warnings: 0
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_sqrt
-# vsim -gui work.tb_sqrt 
-# Start time: 01:03:36 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=01, SqRt=0, done=1
-# Input=04, SqRt=1, done=1
-# Input=09, SqRt=2, done=1
-run 1000
-# Input=10, SqRt=4, done=1
-# Input=19, SqRt=6, done=1
-run 1000
-# Input=24, SqRt=8, done=1
-# Input=31, SqRt=a, done=1
-# Input=40, SqRt=c, done=1
-run 1000
-# Input=00, SqRt=c, done=1
-# Input=06, SqRt=c, done=1
-# Input=0d, SqRt=c, done=1
-# Input=15, SqRt=c, done=1
-run 1000
-# Input=1b, SqRt=d, done=1
-# Input=2c, SqRt=e, done=1
-run 1000
-# Input=e1, SqRt=4, done=1
-# Input=ff, SqRt=9, done=1
-# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(36)
-#    Time: 5980 ps  Iteration: 0  Instance: /tb_sqrt
-# 1
-# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 36
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_sqrt
-# End time: 01:05:11 on Feb 12,2025, Elapsed time: 0:01:35
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_sqrt 
-# Start time: 01:05:11 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=01, SqRt=1, done=1
-# Input=04, SqRt=2, done=1
-# Input=09, SqRt=3, done=1
-run 1000
-# Input=10, SqRt=5, done=1
-# Input=19, SqRt=7, done=1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_sqrt
-# End time: 01:06:03 on Feb 12,2025, Elapsed time: 0:00:52
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_sqrt 
-# Start time: 01:06:03 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=01, SqRt=1, done=1
-# Input=04, SqRt=3, done=1
-# Input=09, SqRt=5, done=1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_sqrt
-# End time: 01:08:10 on Feb 12,2025, Elapsed time: 0:02:07
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_sqrt 
-# Start time: 01:08:10 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=01, SqRt=1, done=1
-# Input=04, SqRt=2, done=1
-# Input=09, SqRt=3, done=1
-run 1000
-# Input=10, SqRt=5, done=1
-# Input=19, SqRt=7, done=1
-run 1000
-# Input=24, SqRt=9, done=1
-# Input=31, SqRt=b, done=1
-# Input=40, SqRt=d, done=1
-run 1000
-# Input=00, SqRt=d, done=1
-# Input=06, SqRt=d, done=1
-# Input=0d, SqRt=d, done=1
-# Input=15, SqRt=d, done=1
-run 1000
-# Input=1b, SqRt=e, done=1
-# Input=2c, SqRt=f, done=1
-run 1000
-# Input=e1, SqRt=5, done=1
-# Input=ff, SqRt=a, done=1
-# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(36)
-#    Time: 5980 ps  Iteration: 0  Instance: /tb_sqrt
-# 1
-# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 36
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_sqrt
-# End time: 01:15:56 on Feb 12,2025, Elapsed time: 0:07:46
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_sqrt 
-# Start time: 01:15:56 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=01, SqRt=1, done=1
-# Input=04, SqRt=2, done=1
-run 1000
-# Input=09, SqRt=3, done=1
-# Input=10, SqRt=4, done=1
-run 1000
-# Input=19, SqRt=5, done=1
-run 1000
-# Input=24, SqRt=6, done=1
-run 1000
-# Input=31, SqRt=7, done=1
-run 1000
-# Input=40, SqRt=8, done=1
-# Input=00, SqRt=0, done=1
-# Input=06, SqRt=2, done=1
-run 1000
-# Input=0d, SqRt=3, done=1
-# Input=15, SqRt=4, done=1
-run 1000
-# Input=1b, SqRt=5, done=1
-# Compile of 8bSqRtUnit.v was successful.
-# Compile of accumulator.v was successful.
-# Compile of eightBitSubtractor.v was successful.
-# Compile of FS.v was successful.
-# Compile of tb_l5part2.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_sqrt
-# End time: 01:17:00 on Feb 12,2025, Elapsed time: 0:01:04
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_sqrt 
-# Start time: 01:17:00 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 1000
-# Input=  1, SqRt= 1, done=1
-# Input=  4, SqRt= 2, done=1
-run 1000
-# Input=  9, SqRt= 3, done=1
-# Input= 16, SqRt= 4, done=1
-run 1000
-# Input= 25, SqRt= 5, done=1
-run 1000
-# Input= 36, SqRt= 6, done=1
-run 1000
-# Input= 49, SqRt= 7, done=1
-run 1000
-# Input= 64, SqRt= 8, done=1
-# Input=  0, SqRt= 0, done=1
-# Input=  6, SqRt= 2, done=1
-run 1000
-# Input= 13, SqRt= 3, done=1
-# Input= 21, SqRt= 4, done=1
-run 1000
-# Input= 27, SqRt= 5, done=1
-run 1000
-# Input= 44, SqRt= 6, done=1
-run 1000
-# Input=225, SqRt=15, done=1
-run 1000
-run 1000
-# Input=255, SqRt=15, done=1
-# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(37)
-#    Time: 11420 ps  Iteration: 0  Instance: /tb_sqrt
-# 1
-# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 37
-vsim -gui work.tb_sqrt
-# End time: 01:19:21 on Feb 12,2025, Elapsed time: 0:02:21
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_sqrt 
-# Start time: 01:19:21 on Feb 12,2025
-# Loading work.tb_sqrt
-# Loading work.eightBSqrt
-# Loading work.eightBitSubtractor
-# Loading work.accumulator
-# Loading work.FullSubtractor
-run 10000
+run 15000
 # Input=  1, SqRt= 1, done=1
 # Input=  4, SqRt= 2, done=1
 # Input=  9, SqRt= 3, done=1
@@ -314,26 +28,79 @@ run 10000
 # Input= 27, SqRt= 5, done=1
 # Input= 44, SqRt= 6, done=1
 # Input=225, SqRt=15, done=1
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
-run 100
 # Input=255, SqRt=15, done=1
-run 100
-run 100
 # ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(37)
-#    Time: 11420 ps  Iteration: 0  Instance: /tb_sqrt
+#    Time: 6410 ps  Iteration: 0  Instance: /tb_sqrt
 # 1
 # Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 37
+add wave -position insertpoint sim:/tb_sqrt/*
+run 15000
 quit -sim
-# End time: 01:22:25 on Feb 12,2025, Elapsed time: 0:03:04
+# End time: 13:04:18 on Feb 14,2025, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0
+vsim -gui work.tb_sqrt work.eightBSqrt work.accumulator
+# vsim -gui work.tb_sqrt work.eightBSqrt work.accumulator 
+# Start time: 13:04:43 on Feb 14,2025
+# Loading work.tb_sqrt
+# Loading work.eightBSqrt
+# Loading work.eightBitSubtractor
+# Loading work.accumulator
+# Loading work.FullSubtractor
+add wave -position insertpoint sim:/eightBSqrt/*
+add wave -position insertpoint sim:/accumulator/*
+run 15000
+# Input=  1, SqRt= 1, done=1
+# Input=  4, SqRt= 2, done=1
+# Input=  9, SqRt= 3, done=1
+# Input= 16, SqRt= 4, done=1
+# Input= 25, SqRt= 5, done=1
+# Input= 36, SqRt= 6, done=1
+# Input= 49, SqRt= 7, done=1
+# Input= 64, SqRt= 8, done=1
+# Input=  0, SqRt= 0, done=1
+# Input=  6, SqRt= 2, done=1
+# Input= 13, SqRt= 3, done=1
+# Input= 21, SqRt= 4, done=1
+# Input= 27, SqRt= 5, done=1
+# Input= 44, SqRt= 6, done=1
+# Input=225, SqRt=15, done=1
+# Input=255, SqRt=15, done=1
+# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(37)
+#    Time: 6410 ps  Iteration: 0  Instance: /tb_sqrt
+# 1
+# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 37
+add wave -position insertpoint sim:/tb_sqrt/UUT/*
+vsim -gui work.tb_sqrt
+# End time: 13:06:48 on Feb 14,2025, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_sqrt 
+# Start time: 13:06:48 on Feb 14,2025
+# Loading work.tb_sqrt
+# Loading work.eightBSqrt
+# Loading work.eightBitSubtractor
+# Loading work.accumulator
+# Loading work.FullSubtractor
+add wave -position insertpoint sim:/tb_sqrt/UUT/*
+run 15000
+# Input=  1, SqRt= 1, done=1
+# Input=  4, SqRt= 2, done=1
+# Input=  9, SqRt= 3, done=1
+# Input= 16, SqRt= 4, done=1
+# Input= 25, SqRt= 5, done=1
+# Input= 36, SqRt= 6, done=1
+# Input= 49, SqRt= 7, done=1
+# Input= 64, SqRt= 8, done=1
+# Input=  0, SqRt= 0, done=1
+# Input=  6, SqRt= 2, done=1
+# Input= 13, SqRt= 3, done=1
+# Input= 21, SqRt= 4, done=1
+# Input= 27, SqRt= 5, done=1
+# Input= 44, SqRt= 6, done=1
+# Input=225, SqRt=15, done=1
+# Input=255, SqRt=15, done=1
+# ** Note: $finish    : C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v(37)
+#    Time: 6410 ps  Iteration: 0  Instance: /tb_sqrt
+# 1
+# Break in Module tb_sqrt at C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v line 37
+# End time: 13:55:26 on Feb 14,2025, Elapsed time: 0:48:38
 # Errors: 0, Warnings: 0

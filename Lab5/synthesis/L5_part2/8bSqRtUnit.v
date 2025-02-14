@@ -10,10 +10,14 @@ module eightBSqrt(
 wire [7:0] B;
 wire [7:0] tempDifference;
 wire borrowOut;
+wire aRst;
 reg [7:0] loadedN;
 reg Su;
-reg [2:0] state;
+reg aRstReg;
+reg [1:0] state;
 parameter IDLE = 2'b00, LOAD = 2'b01, SUBTRACT = 2'b10, DONE = 2'b11;
+
+assign aRst = aRstReg;
 
 eightBitSubtractor s0 (
     .D(tempDifference),
@@ -27,35 +31,41 @@ accumulator a0 (
     .sqrt(sqrt),
     .clk(clk),
     .rstN(rstN),
-    .incr(Su)
+    .incr(Su),
+	 .aRst(aRst)
 );
+
 
 
 always @(posedge clk or negedge rstN) begin
     if (!rstN) begin
-        state <= IDLE;
-        loadedN <= 8'b0;
+        loadedN <= 8'b00000000;
         Su <= 0;
         done <= 0;
+		  aRstReg <= 1'b1;
+		  state <= IDLE;
     end else begin
         case (state)
             IDLE: begin
                 done <= 0;
+					 aRstReg <= 1'b0;
                 if (St) begin
-		    loadedN <= N;
-                    state <= SUBTRACT;
+					   loadedN <= N;
+						aRstReg <= 1'b1;
+						state <= SUBTRACT;
                 end
             end
 
             LOAD: begin
-		Su <= 0;
-		loadedN <= tempDifference;
-		state <= SUBTRACT;
+					Su <= 0;
+					loadedN <= tempDifference;
+					state <= SUBTRACT;
             end
 
             SUBTRACT: begin
                 if (!borrowOut) begin
                     Su <= 1;
+						  aRstReg <= 1'b0;
 							state <= LOAD;
                 end else begin
                     Su <= 0;
@@ -65,7 +75,8 @@ always @(posedge clk or negedge rstN) begin
 
             DONE: begin
                 done <= 1;
-                if (!St) begin  
+                if (St) begin
+						  aRstReg <= 1'b1;
                     state <= IDLE;
                 end
             end

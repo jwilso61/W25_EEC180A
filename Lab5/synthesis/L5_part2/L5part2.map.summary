@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed Feb 12 17:38:12 2025
+Analysis & Synthesis Status : Successful - Fri Feb 14 13:54:03 2025
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : L5part2
 Top-level Entity Name : L5part2
 Family : MAX 10
-Total logic elements : 69
-    Total combinational functions : 68
-    Dedicated logic registers : 29
-Total registers : 29
+Total logic elements : 73
+    Total combinational functions : 72
+    Dedicated logic registers : 30
+Total registers : 30
 Total pins : 28
 Total virtual pins : 0
 Total memory bits : 128
