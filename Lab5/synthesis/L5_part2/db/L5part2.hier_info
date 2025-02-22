@@ -1,42 +1,53 @@
 |L5part2
-LEDR[0] << eightBSqrt:eightBSqrt0.done
-HEX0[0] << bit2Hex:sqrtDisplay.port0
-HEX0[1] << bit2Hex:sqrtDisplay.port0
-HEX0[2] << bit2Hex:sqrtDisplay.port0
-HEX0[3] << bit2Hex:sqrtDisplay.port0
-HEX0[4] << bit2Hex:sqrtDisplay.port0
-HEX0[5] << bit2Hex:sqrtDisplay.port0
-HEX0[6] << bit2Hex:sqrtDisplay.port0
-HEX0[7] << bit2Hex:sqrtDisplay.port0
-HEX2[0] << bit2Hex:N30Display.port0
-HEX2[1] << bit2Hex:N30Display.port0
-HEX2[2] << bit2Hex:N30Display.port0
-HEX2[3] << bit2Hex:N30Display.port0
-HEX2[4] << bit2Hex:N30Display.port0
-HEX2[5] << bit2Hex:N30Display.port0
-HEX2[6] << bit2Hex:N30Display.port0
-HEX2[7] << bit2Hex:N30Display.port0
-HEX3[0] << bit2Hex:N74Display.port0
-HEX3[1] << bit2Hex:N74Display.port0
-HEX3[2] << bit2Hex:N74Display.port0
-HEX3[3] << bit2Hex:N74Display.port0
-HEX3[4] << bit2Hex:N74Display.port0
-HEX3[5] << bit2Hex:N74Display.port0
-HEX3[6] << bit2Hex:N74Display.port0
-HEX3[7] << bit2Hex:N74Display.port0
-KEY[0] => KEY[0].IN3
-KEY[1] => KEY[1].IN1
+LEDR[0] <= eightBSqrt:eightBSqrt0.done
+HEX0[0] <= bit2Hex:sqrtDisplay.port0
+HEX0[1] <= bit2Hex:sqrtDisplay.port0
+HEX0[2] <= bit2Hex:sqrtDisplay.port0
+HEX0[3] <= bit2Hex:sqrtDisplay.port0
+HEX0[4] <= bit2Hex:sqrtDisplay.port0
+HEX0[5] <= bit2Hex:sqrtDisplay.port0
+HEX0[6] <= bit2Hex:sqrtDisplay.port0
+HEX0[7] <= bit2Hex:sqrtDisplay.port0
+HEX2[0] <= bit2Hex:N30Display.port0
+HEX2[1] <= bit2Hex:N30Display.port0
+HEX2[2] <= bit2Hex:N30Display.port0
+HEX2[3] <= bit2Hex:N30Display.port0
+HEX2[4] <= bit2Hex:N30Display.port0
+HEX2[5] <= bit2Hex:N30Display.port0
+HEX2[6] <= bit2Hex:N30Display.port0
+HEX2[7] <= bit2Hex:N30Display.port0
+HEX3[0] <= bit2Hex:N74Display.port0
+HEX3[1] <= bit2Hex:N74Display.port0
+HEX3[2] <= bit2Hex:N74Display.port0
+HEX3[3] <= bit2Hex:N74Display.port0
+HEX3[4] <= bit2Hex:N74Display.port0
+HEX3[5] <= bit2Hex:N74Display.port0
+HEX3[6] <= bit2Hex:N74Display.port0
+HEX3[7] <= bit2Hex:N74Display.port0
+KEY[0] => KEY[0].IN4
+KEY[1] => _.IN1
+SW[0] => SW[0].IN1
 MAX10_CLK1_50 => Clock.IN3
 
 
-|L5part2|buttonEdgeDet:buttonED
-button_edge <= button_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
-clk => button_edge~reg0.CLK
-clk => button_prev.CLK
-rstN => button_edge~reg0.ACLR
-rstN => button_prev.ACLR
-button => button_edge.IN1
-button => button_prev.DATAIN
+|L5part2|edge2pulse:swTogPulse
+out_pulse <= out_pulse~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => out_pulse~reg0.CLK
+clk => in_prev.CLK
+rstN => out_pulse~reg0.ACLR
+rstN => in_prev.ACLR
+in => out_pulse.IN1
+in => in_prev.DATAIN
+
+
+|L5part2|edge2pulse:tickerButton
+out_pulse <= out_pulse~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => out_pulse~reg0.CLK
+clk => in_prev.CLK
+rstN => out_pulse~reg0.ACLR
+rstN => in_prev.ACLR
+in => out_pulse.IN1
+in => in_prev.DATAIN
 
 
 |L5part2|memBlock:m1
@@ -92,24 +103,19 @@ sqrt[0] <= accumulator:a0.sqrt
 sqrt[1] <= accumulator:a0.sqrt
 sqrt[2] <= accumulator:a0.sqrt
 sqrt[3] <= accumulator:a0.sqrt
-clk => clk.IN1
+clk => done~reg0.CLK
+clk => Su.CLK
+clk => loadedN[0].CLK
+clk => loadedN[1].CLK
+clk => loadedN[2].CLK
+clk => loadedN[3].CLK
+clk => loadedN[4].CLK
+clk => loadedN[5].CLK
+clk => loadedN[6].CLK
+clk => loadedN[7].CLK
+clk => state~5.DATAIN
 rstN => rstN.IN1
-St => loadedN.OUTPUTSELECT
-St => loadedN.OUTPUTSELECT
-St => loadedN.OUTPUTSELECT
-St => loadedN.OUTPUTSELECT
-St => loadedN.OUTPUTSELECT
-St => loadedN.OUTPUTSELECT
-St => loadedN.OUTPUTSELECT
-St => loadedN.OUTPUTSELECT
-St => state.OUTPUTSELECT
-St => state.OUTPUTSELECT
-St => state.OUTPUTSELECT
-St => state.OUTPUTSELECT
-St => aRstReg.OUTPUTSELECT
-St => state.OUTPUTSELECT
-St => state.OUTPUTSELECT
-St => Selector1.IN2
+St => St.IN1
 N[0] => loadedN.DATAB
 N[1] => loadedN.DATAB
 N[2] => loadedN.DATAB
@@ -260,7 +266,17 @@ clk => B[4]~reg0.CLK
 clk => B[5]~reg0.CLK
 clk => B[6]~reg0.CLK
 clk => B[7]~reg0.CLK
-rstN => always0.IN0
+rstN => sqrt[0]~reg0.ACLR
+rstN => sqrt[1]~reg0.ACLR
+rstN => sqrt[2]~reg0.ACLR
+rstN => sqrt[3]~reg0.ACLR
+rstN => B[1]~reg0.ACLR
+rstN => B[2]~reg0.ACLR
+rstN => B[3]~reg0.ACLR
+rstN => B[4]~reg0.ACLR
+rstN => B[5]~reg0.ACLR
+rstN => B[6]~reg0.ACLR
+rstN => B[7]~reg0.ACLR
 incr => sqrt[0]~reg0.ENA
 incr => B[7]~reg0.ENA
 incr => B[6]~reg0.ENA
@@ -272,7 +288,6 @@ incr => sqrt[3]~reg0.ENA
 incr => sqrt[2]~reg0.ENA
 incr => sqrt[1]~reg0.ENA
 incr => B[1]~reg0.ENA
-aRst => always0.IN1
 
 
 |L5part2|bit2Hex:N74Display

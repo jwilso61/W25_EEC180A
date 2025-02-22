@@ -1,15 +1,15 @@
-Fitter Status : Successful - Fri Feb 14 13:54:08 2025
+Fitter Status : Successful - Sat Feb 22 01:22:54 2025
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : L5part2
 Top-level Entity Name : L5part2
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 74 / 49,760 ( < 1 % )
+Total logic elements : 76 / 49,760 ( < 1 % )
     Total combinational functions : 73 / 49,760 ( < 1 % )
-    Dedicated logic registers : 30 / 49,760 ( < 1 % )
-Total registers : 30
-Total pins : 28 / 360 ( 8 % )
+    Dedicated logic registers : 33 / 49,760 ( < 1 % )
+Total registers : 33
+Total pins : 29 / 360 ( 8 % )
 Total virtual pins : 0
 Total memory bits : 128 / 1,677,312 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
