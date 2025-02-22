@@ -1,10 +1,9 @@
 module memBlock(
-	output reg	[7:0]		N,
-	input wire				clk,
-	input					   rstN,
-	input	wire				St
+	output reg	[7:0]	N,
+	input wire			clk,
+	input				rstN,
+	input	wire		St
 );
-
 
 (* ram_init_file = "memInFile1.mif"*) reg [7:0] memory1 [15:0] /* synthesis ramstyle = "M9K" */;
  

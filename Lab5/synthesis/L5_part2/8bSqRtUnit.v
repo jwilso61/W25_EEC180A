@@ -32,41 +32,39 @@ accumulator a0 (
     .clk(clk),
     .rstN(rstN),
     .incr(Su),
-	 .aRst(aRst)
+	.aRst(aRst)
 );
-
-
 
 always @(posedge clk or negedge rstN) begin
     if (!rstN) begin
         loadedN <= 8'b00000000;
         Su <= 0;
         done <= 0;
-		  aRstReg <= 1'b1;
-		  state <= IDLE;
+		aRstReg <= 1'b1;
+		state <= IDLE;
     end else begin
         case (state)
             IDLE: begin
                 done <= 0;
-					 aRstReg <= 1'b0;
+				aRstReg <= 1'b0;
                 if (St) begin
-					   loadedN <= N;
-						aRstReg <= 1'b1;
-						state <= SUBTRACT;
+                    loadedN <= N;
+					aRstReg <= 1'b1;
+					state <= SUBTRACT;
                 end
             end
 
             LOAD: begin
-					Su <= 0;
-					loadedN <= tempDifference;
-					state <= SUBTRACT;
+				Su <= 0;
+				loadedN <= tempDifference;
+				state <= SUBTRACT;
             end
 
             SUBTRACT: begin
                 if (!borrowOut) begin
                     Su <= 1;
-						  aRstReg <= 1'b0;
-							state <= LOAD;
+					aRstReg <= 1'b0;
+					state <= LOAD;
                 end else begin
                     Su <= 0;
                     state <= DONE;
@@ -76,7 +74,7 @@ always @(posedge clk or negedge rstN) begin
             DONE: begin
                 done <= 1;
                 if (St) begin
-						  aRstReg <= 1'b1;
+					aRstReg <= 1'b1;
                     state <= IDLE;
                 end
             end
