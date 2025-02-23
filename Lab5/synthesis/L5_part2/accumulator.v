@@ -1,12 +1,12 @@
 module accumulator(
     output reg [7:0] B,
     output reg [3:0] sqrt,
-    input clk,
+    input  clk,
     input rstN,
     input incr
 );
 
-always @(posedge clk or negedge rstN) begin
+always @(posedge incr or negedge rstN) begin
     if (!rstN) begin
       B <= 8'b00000001;
       sqrt <= 4'b0000;

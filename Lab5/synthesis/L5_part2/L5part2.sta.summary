@@ -2,112 +2,112 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'edge2pulse:tickerButton|out_pulse'
-Slack : -3.376
-TNS   : -36.430
-
-Type  : Slow 1200mV 85C Model Setup 'edge2pulse:swTogPulse|out_pulse'
-Slack : -1.347
-TNS   : -11.805
+Type  : Slow 1200mV 85C Model Setup 'KEY[0]'
+Slack : -3.439
+TNS   : -35.766
 
 Type  : Slow 1200mV 85C Model Setup 'MAX10_CLK1_50'
-Slack : -1.102
-TNS   : -3.405
+Slack : -0.784
+TNS   : -3.715
+
+Type  : Slow 1200mV 85C Model Setup 'eightBSqrt:eightBSqrt0|Su'
+Slack : -0.757
+TNS   : -4.255
 
 Type  : Slow 1200mV 85C Model Hold 'MAX10_CLK1_50'
-Slack : 0.211
+Slack : 0.227
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'edge2pulse:tickerButton|out_pulse'
-Slack : 0.331
+Type  : Slow 1200mV 85C Model Hold 'KEY[0]'
+Slack : 0.294
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'edge2pulse:swTogPulse|out_pulse'
+Type  : Slow 1200mV 85C Model Hold 'eightBSqrt:eightBSqrt0|Su'
 Slack : 0.343
 TNS   : 0.000
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : -3.000
+TNS   : -20.108
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAX10_CLK1_50'
 Slack : -3.000
-TNS   : -16.246
+TNS   : -13.804
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'edge2pulse:tickerButton|out_pulse'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'eightBSqrt:eightBSqrt0|Su'
 Slack : -1.222
-TNS   : -17.108
+TNS   : -10.998
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'edge2pulse:swTogPulse|out_pulse'
-Slack : -1.222
-TNS   : -12.220
-
-Type  : Slow 1200mV 0C Model Setup 'edge2pulse:tickerButton|out_pulse'
-Slack : -3.021
-TNS   : -32.283
-
-Type  : Slow 1200mV 0C Model Setup 'edge2pulse:swTogPulse|out_pulse'
-Slack : -1.151
-TNS   : -10.024
+Type  : Slow 1200mV 0C Model Setup 'KEY[0]'
+Slack : -3.014
+TNS   : -31.093
 
 Type  : Slow 1200mV 0C Model Setup 'MAX10_CLK1_50'
-Slack : -0.897
-TNS   : -2.550
+Slack : -0.611
+TNS   : -2.816
+
+Type  : Slow 1200mV 0C Model Setup 'eightBSqrt:eightBSqrt0|Su'
+Slack : -0.599
+TNS   : -3.158
+
+Type  : Slow 1200mV 0C Model Hold 'KEY[0]'
+Slack : 0.203
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'MAX10_CLK1_50'
-Slack : 0.211
+Slack : 0.222
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'edge2pulse:tickerButton|out_pulse'
-Slack : 0.300
+Type  : Slow 1200mV 0C Model Hold 'eightBSqrt:eightBSqrt0|Su'
+Slack : 0.312
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'edge2pulse:swTogPulse|out_pulse'
-Slack : 0.313
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -3.000
+TNS   : -20.108
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
 Slack : -3.000
-TNS   : -16.077
+TNS   : -13.631
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'edge2pulse:tickerButton|out_pulse'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'eightBSqrt:eightBSqrt0|Su'
 Slack : -1.222
-TNS   : -17.108
+TNS   : -10.998
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'edge2pulse:swTogPulse|out_pulse'
-Slack : -1.222
-TNS   : -12.220
-
-Type  : Fast 1200mV 0C Model Setup 'edge2pulse:tickerButton|out_pulse'
-Slack : -1.094
-TNS   : -10.171
+Type  : Fast 1200mV 0C Model Setup 'KEY[0]'
+Slack : -1.336
+TNS   : -12.067
 
 Type  : Fast 1200mV 0C Model Setup 'MAX10_CLK1_50'
-Slack : -0.416
-TNS   : -0.416
+Slack : 0.147
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'edge2pulse:swTogPulse|out_pulse'
-Slack : -0.142
-TNS   : -0.806
+Type  : Fast 1200mV 0C Model Setup 'eightBSqrt:eightBSqrt0|Su'
+Slack : 0.169
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'MAX10_CLK1_50'
-Slack : 0.095
+Slack : 0.104
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'edge2pulse:tickerButton|out_pulse'
-Slack : 0.152
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'edge2pulse:swTogPulse|out_pulse'
+Type  : Fast 1200mV 0C Model Hold 'eightBSqrt:eightBSqrt0|Su'
 Slack : 0.156
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Hold 'KEY[0]'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -3.000
+TNS   : -20.296
+
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAX10_CLK1_50'
 Slack : -3.000
-TNS   : -14.811
+TNS   : -12.422
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'edge2pulse:tickerButton|out_pulse'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'eightBSqrt:eightBSqrt0|Su'
 Slack : -1.000
-TNS   : -14.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'edge2pulse:swTogPulse|out_pulse'
-Slack : -1.000
-TNS   : -10.000
+TNS   : -9.000
 
 ------------------------------------------------------------

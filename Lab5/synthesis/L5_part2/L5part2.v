@@ -20,25 +20,17 @@ reg dtick;
 
 assign LEDR[0] = done;
 
-
-edge2pulse swTogPulse (
-	.out_pulse(stPulse),
-	.clk(Clock),
-   .rstN(KEY[0]),
-	.in(SW[0])	
-);
-
 edge2pulse tickerButton (
 	.out_pulse(tp),
 	.clk(Clock),
-   .rstN(KEY[0]),
+   .rstN(SW[0]),
 	.in(!KEY[1])	
 );
 
 memBlock m1 (
 	.N(N),
 	.clk(Clock),
-	.rstN(KEY[0]),
+	.rstN(SW[0]),
 	.St(dtick)
 );
 
@@ -46,16 +38,16 @@ eightBSqrt eightBSqrt0 (
 	.done(done),
 	.sqrt(Sqrt),
 	.clk(tp),
-	.rstN(KEY[0]),
-	.St(SW[0]),
+	.rstN(SW[0]),
+	.St(KEY[0]),
 	.N(N)
 );
 
-always @ (posedge Clock) begin
+always @(posedge Clock) begin
 	if (done) begin
-		dtick <= tp;
+		dtick = tp;
 	end else begin
-		dtick <= 1'b0;
+		dtick = 1'b0;
 	end
 end
 

@@ -1,5 +1,5 @@
 Timing Analyzer report for L5part2
-Sat Feb 22 01:22:58 2025
+Sat Feb 22 15:46:01 2025
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -90,16 +90,17 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 28          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.16        ;
-; Maximum used               ; 16          ;
+; Average used               ; 1.06        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.0%      ;
-;     Processors 3-16        ;   1.0%      ;
+;     Processor 2            ;   1.9%      ;
+;     Processor 3            ;   1.9%      ;
+;     Processor 4            ;   1.9%      ;
 +----------------------------+-------------+
 
 
@@ -108,53 +109,53 @@ https://fpgasoftware.intel.com/eula.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; L5part2.SDC   ; OK     ; Sat Feb 22 01:22:57 2025 ;
+; L5part2.SDC   ; OK     ; Sat Feb 22 15:45:59 2025 ;
 +---------------+--------+--------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                                               ;
-+-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
-; Clock Name                        ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                               ;
-+-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
-; edge2pulse:swTogPulse|out_pulse   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { edge2pulse:swTogPulse|out_pulse }   ;
-; edge2pulse:tickerButton|out_pulse ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { edge2pulse:tickerButton|out_pulse } ;
-; MAX10_CLK1_50                     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { MAX10_CLK1_50 }                     ;
-+-----------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                               ;
++---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
+; Clock Name                ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                       ;
++---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
+; eightBSqrt:eightBSqrt0|Su ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { eightBSqrt:eightBSqrt0|Su } ;
+; KEY[0]                    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { KEY[0] }                    ;
+; MAX10_CLK1_50             ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { MAX10_CLK1_50 }             ;
++---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                                               ;
-+------------+-----------------+-----------------------------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name                        ; Note                                                          ;
-+------------+-----------------+-----------------------------------+---------------------------------------------------------------+
-; 299.49 MHz ; 299.49 MHz      ; edge2pulse:tickerButton|out_pulse ;                                                               ;
-; 564.33 MHz ; 450.05 MHz      ; edge2pulse:swTogPulse|out_pulse   ; limit due to minimum period restriction (tmin)                ;
-; 612.0 MHz  ; 250.0 MHz       ; MAX10_CLK1_50                     ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+-----------------------------------+---------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                                       ;
++------------+-----------------+---------------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                ; Note                                                          ;
++------------+-----------------+---------------------------+---------------------------------------------------------------+
+; 270.64 MHz ; 250.0 MHz       ; KEY[0]                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 560.54 MHz ; 250.0 MHz       ; MAX10_CLK1_50             ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 569.15 MHz ; 450.05 MHz      ; eightBSqrt:eightBSqrt0|Su ; limit due to minimum period restriction (tmin)                ;
++------------+-----------------+---------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+------------------------------------------------------------+
-; Slow 1200mV 85C Model Setup Summary                        ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; edge2pulse:tickerButton|out_pulse ; -3.376 ; -36.430       ;
-; edge2pulse:swTogPulse|out_pulse   ; -1.347 ; -11.805       ;
-; MAX10_CLK1_50                     ; -1.102 ; -3.405        ;
-+-----------------------------------+--------+---------------+
++----------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                ;
++---------------------------+--------+---------------+
+; Clock                     ; Slack  ; End Point TNS ;
++---------------------------+--------+---------------+
+; KEY[0]                    ; -3.439 ; -35.766       ;
+; MAX10_CLK1_50             ; -0.784 ; -3.715        ;
+; eightBSqrt:eightBSqrt0|Su ; -0.757 ; -4.255        ;
++---------------------------+--------+---------------+
 
 
-+-----------------------------------------------------------+
-; Slow 1200mV 85C Model Hold Summary                        ;
-+-----------------------------------+-------+---------------+
-; Clock                             ; Slack ; End Point TNS ;
-+-----------------------------------+-------+---------------+
-; MAX10_CLK1_50                     ; 0.211 ; 0.000         ;
-; edge2pulse:tickerButton|out_pulse ; 0.331 ; 0.000         ;
-; edge2pulse:swTogPulse|out_pulse   ; 0.343 ; 0.000         ;
-+-----------------------------------+-------+---------------+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                ;
++---------------------------+-------+---------------+
+; Clock                     ; Slack ; End Point TNS ;
++---------------------------+-------+---------------+
+; MAX10_CLK1_50             ; 0.227 ; 0.000         ;
+; KEY[0]                    ; 0.294 ; 0.000         ;
+; eightBSqrt:eightBSqrt0|Su ; 0.343 ; 0.000         ;
++---------------------------+-------+---------------+
 
 
 ------------------------------------------
@@ -169,15 +170,15 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width Summary          ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; MAX10_CLK1_50                     ; -3.000 ; -16.246       ;
-; edge2pulse:tickerButton|out_pulse ; -1.222 ; -17.108       ;
-; edge2pulse:swTogPulse|out_pulse   ; -1.222 ; -12.220       ;
-+-----------------------------------+--------+---------------+
++----------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary  ;
++---------------------------+--------+---------------+
+; Clock                     ; Slack  ; End Point TNS ;
++---------------------------+--------+---------------+
+; KEY[0]                    ; -3.000 ; -20.108       ;
+; MAX10_CLK1_50             ; -3.000 ; -13.804       ;
+; eightBSqrt:eightBSqrt0|Su ; -1.222 ; -10.998       ;
++---------------------------+--------+---------------+
 
 
 -----------------------------------------------
@@ -186,38 +187,38 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                                                ;
-+------------+-----------------+-----------------------------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name                        ; Note                                                          ;
-+------------+-----------------+-----------------------------------+---------------------------------------------------------------+
-; 326.69 MHz ; 326.69 MHz      ; edge2pulse:tickerButton|out_pulse ;                                                               ;
-; 620.35 MHz ; 450.05 MHz      ; edge2pulse:swTogPulse|out_pulse   ; limit due to minimum period restriction (tmin)                ;
-; 675.68 MHz ; 250.0 MHz       ; MAX10_CLK1_50                     ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+-----------------------------------+---------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                                        ;
++------------+-----------------+---------------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                ; Note                                                          ;
++------------+-----------------+---------------------------+---------------------------------------------------------------+
+; 292.4 MHz  ; 250.0 MHz       ; KEY[0]                    ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 620.73 MHz ; 250.0 MHz       ; MAX10_CLK1_50             ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 625.39 MHz ; 450.05 MHz      ; eightBSqrt:eightBSqrt0|Su ; limit due to minimum period restriction (tmin)                ;
++------------+-----------------+---------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+------------------------------------------------------------+
-; Slow 1200mV 0C Model Setup Summary                         ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; edge2pulse:tickerButton|out_pulse ; -3.021 ; -32.283       ;
-; edge2pulse:swTogPulse|out_pulse   ; -1.151 ; -10.024       ;
-; MAX10_CLK1_50                     ; -0.897 ; -2.550        ;
-+-----------------------------------+--------+---------------+
++----------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                 ;
++---------------------------+--------+---------------+
+; Clock                     ; Slack  ; End Point TNS ;
++---------------------------+--------+---------------+
+; KEY[0]                    ; -3.014 ; -31.093       ;
+; MAX10_CLK1_50             ; -0.611 ; -2.816        ;
+; eightBSqrt:eightBSqrt0|Su ; -0.599 ; -3.158        ;
++---------------------------+--------+---------------+
 
 
-+-----------------------------------------------------------+
-; Slow 1200mV 0C Model Hold Summary                         ;
-+-----------------------------------+-------+---------------+
-; Clock                             ; Slack ; End Point TNS ;
-+-----------------------------------+-------+---------------+
-; MAX10_CLK1_50                     ; 0.211 ; 0.000         ;
-; edge2pulse:tickerButton|out_pulse ; 0.300 ; 0.000         ;
-; edge2pulse:swTogPulse|out_pulse   ; 0.313 ; 0.000         ;
-+-----------------------------------+-------+---------------+
++---------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                 ;
++---------------------------+-------+---------------+
+; Clock                     ; Slack ; End Point TNS ;
++---------------------------+-------+---------------+
+; KEY[0]                    ; 0.203 ; 0.000         ;
+; MAX10_CLK1_50             ; 0.222 ; 0.000         ;
+; eightBSqrt:eightBSqrt0|Su ; 0.312 ; 0.000         ;
++---------------------------+-------+---------------+
 
 
 -----------------------------------------
@@ -232,15 +233,15 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width Summary           ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; MAX10_CLK1_50                     ; -3.000 ; -16.077       ;
-; edge2pulse:tickerButton|out_pulse ; -1.222 ; -17.108       ;
-; edge2pulse:swTogPulse|out_pulse   ; -1.222 ; -12.220       ;
-+-----------------------------------+--------+---------------+
++----------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary   ;
++---------------------------+--------+---------------+
+; Clock                     ; Slack  ; End Point TNS ;
++---------------------------+--------+---------------+
+; KEY[0]                    ; -3.000 ; -20.108       ;
+; MAX10_CLK1_50             ; -3.000 ; -13.631       ;
+; eightBSqrt:eightBSqrt0|Su ; -1.222 ; -10.998       ;
++---------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -249,26 +250,26 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------------------+
-; Fast 1200mV 0C Model Setup Summary                         ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; edge2pulse:tickerButton|out_pulse ; -1.094 ; -10.171       ;
-; MAX10_CLK1_50                     ; -0.416 ; -0.416        ;
-; edge2pulse:swTogPulse|out_pulse   ; -0.142 ; -0.806        ;
-+-----------------------------------+--------+---------------+
++----------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary                 ;
++---------------------------+--------+---------------+
+; Clock                     ; Slack  ; End Point TNS ;
++---------------------------+--------+---------------+
+; KEY[0]                    ; -1.336 ; -12.067       ;
+; MAX10_CLK1_50             ; 0.147  ; 0.000         ;
+; eightBSqrt:eightBSqrt0|Su ; 0.169  ; 0.000         ;
++---------------------------+--------+---------------+
 
 
-+-----------------------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary                         ;
-+-----------------------------------+-------+---------------+
-; Clock                             ; Slack ; End Point TNS ;
-+-----------------------------------+-------+---------------+
-; MAX10_CLK1_50                     ; 0.095 ; 0.000         ;
-; edge2pulse:tickerButton|out_pulse ; 0.152 ; 0.000         ;
-; edge2pulse:swTogPulse|out_pulse   ; 0.156 ; 0.000         ;
-+-----------------------------------+-------+---------------+
++---------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                 ;
++---------------------------+-------+---------------+
+; Clock                     ; Slack ; End Point TNS ;
++---------------------------+-------+---------------+
+; MAX10_CLK1_50             ; 0.104 ; 0.000         ;
+; eightBSqrt:eightBSqrt0|Su ; 0.156 ; 0.000         ;
+; KEY[0]                    ; 0.166 ; 0.000         ;
++---------------------------+-------+---------------+
 
 
 -----------------------------------------
@@ -283,15 +284,15 @@ No paths to report.
 No paths to report.
 
 
-+------------------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width Summary           ;
-+-----------------------------------+--------+---------------+
-; Clock                             ; Slack  ; End Point TNS ;
-+-----------------------------------+--------+---------------+
-; MAX10_CLK1_50                     ; -3.000 ; -14.811       ;
-; edge2pulse:tickerButton|out_pulse ; -1.000 ; -14.000       ;
-; edge2pulse:swTogPulse|out_pulse   ; -1.000 ; -10.000       ;
-+-----------------------------------+--------+---------------+
++----------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary   ;
++---------------------------+--------+---------------+
+; Clock                     ; Slack  ; End Point TNS ;
++---------------------------+--------+---------------+
+; KEY[0]                    ; -3.000 ; -20.296       ;
+; MAX10_CLK1_50             ; -3.000 ; -12.422       ;
+; eightBSqrt:eightBSqrt0|Su ; -1.000 ; -9.000        ;
++---------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -300,20 +301,20 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                             ;
-+------------------------------------+---------+-------+----------+---------+---------------------+
-; Clock                              ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+------------------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack                   ; -3.376  ; 0.095 ; N/A      ; N/A     ; -3.000              ;
-;  MAX10_CLK1_50                     ; -1.102  ; 0.095 ; N/A      ; N/A     ; -3.000              ;
-;  edge2pulse:swTogPulse|out_pulse   ; -1.347  ; 0.156 ; N/A      ; N/A     ; -1.222              ;
-;  edge2pulse:tickerButton|out_pulse ; -3.376  ; 0.152 ; N/A      ; N/A     ; -1.222              ;
-; Design-wide TNS                    ; -51.64  ; 0.0   ; 0.0      ; 0.0     ; -45.574             ;
-;  MAX10_CLK1_50                     ; -3.405  ; 0.000 ; N/A      ; N/A     ; -16.246             ;
-;  edge2pulse:swTogPulse|out_pulse   ; -11.805 ; 0.000 ; N/A      ; N/A     ; -12.220             ;
-;  edge2pulse:tickerButton|out_pulse ; -36.430 ; 0.000 ; N/A      ; N/A     ; -17.108             ;
-+------------------------------------+---------+-------+----------+---------+---------------------+
++-----------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                     ;
++----------------------------+---------+-------+----------+---------+---------------------+
+; Clock                      ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack           ; -3.439  ; 0.104 ; N/A      ; N/A     ; -3.000              ;
+;  KEY[0]                    ; -3.439  ; 0.166 ; N/A      ; N/A     ; -3.000              ;
+;  MAX10_CLK1_50             ; -0.784  ; 0.104 ; N/A      ; N/A     ; -3.000              ;
+;  eightBSqrt:eightBSqrt0|Su ; -0.757  ; 0.156 ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS            ; -43.736 ; 0.0   ; 0.0      ; 0.0     ; -44.91              ;
+;  KEY[0]                    ; -35.766 ; 0.000 ; N/A      ; N/A     ; -20.296             ;
+;  MAX10_CLK1_50             ; -3.715  ; 0.000 ; N/A      ; N/A     ; -13.804             ;
+;  eightBSqrt:eightBSqrt0|Su ; -4.255  ; 0.000 ; N/A      ; N/A     ; -10.998             ;
++----------------------------+---------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -356,9 +357,9 @@ No synchronizer chains to report.
 ; Pin                 ; I/O Standard          ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+-----------------------+-----------------+-----------------+
 ; KEY[0]              ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; SW[0]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; MAX10_CLK1_50       ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; KEY[1]              ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
-; SW[0]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TDI~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -471,35 +472,33 @@ No synchronizer chains to report.
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                                   ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; From Clock                        ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; edge2pulse:swTogPulse|out_pulse   ; edge2pulse:swTogPulse|out_pulse   ; 37       ; 0        ; 0        ; 0        ;
-; edge2pulse:tickerButton|out_pulse ; edge2pulse:swTogPulse|out_pulse   ; 10       ; 0        ; 0        ; 0        ;
-; edge2pulse:swTogPulse|out_pulse   ; edge2pulse:tickerButton|out_pulse ; 71       ; 11       ; 0        ; 0        ;
-; edge2pulse:tickerButton|out_pulse ; edge2pulse:tickerButton|out_pulse ; 119      ; 0        ; 0        ; 0        ;
-; MAX10_CLK1_50                     ; edge2pulse:tickerButton|out_pulse ; 8        ; 0        ; 0        ; 0        ;
-; edge2pulse:tickerButton|out_pulse ; MAX10_CLK1_50                     ; 2        ; 1        ; 0        ; 0        ;
-; MAX10_CLK1_50                     ; MAX10_CLK1_50                     ; 21       ; 0        ; 0        ; 0        ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                   ;
++---------------------------+---------------------------+----------+----------+----------+----------+
+; From Clock                ; To Clock                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------+---------------------------+----------+----------+----------+----------+
+; eightBSqrt:eightBSqrt0|Su ; eightBSqrt:eightBSqrt0|Su ; 35       ; 0        ; 0        ; 0        ;
+; eightBSqrt:eightBSqrt0|Su ; KEY[0]                    ; 52       ; 1        ; 0        ; 0        ;
+; KEY[0]                    ; KEY[0]                    ; 96       ; 0        ; 0        ; 0        ;
+; MAX10_CLK1_50             ; KEY[0]                    ; 11       ; 0        ; 0        ; 0        ;
+; KEY[0]                    ; MAX10_CLK1_50             ; 1        ; 0        ; 0        ; 0        ;
+; MAX10_CLK1_50             ; MAX10_CLK1_50             ; 21       ; 0        ; 0        ; 0        ;
++---------------------------+---------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                                    ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; From Clock                        ; To Clock                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
-; edge2pulse:swTogPulse|out_pulse   ; edge2pulse:swTogPulse|out_pulse   ; 37       ; 0        ; 0        ; 0        ;
-; edge2pulse:tickerButton|out_pulse ; edge2pulse:swTogPulse|out_pulse   ; 10       ; 0        ; 0        ; 0        ;
-; edge2pulse:swTogPulse|out_pulse   ; edge2pulse:tickerButton|out_pulse ; 71       ; 11       ; 0        ; 0        ;
-; edge2pulse:tickerButton|out_pulse ; edge2pulse:tickerButton|out_pulse ; 119      ; 0        ; 0        ; 0        ;
-; MAX10_CLK1_50                     ; edge2pulse:tickerButton|out_pulse ; 8        ; 0        ; 0        ; 0        ;
-; edge2pulse:tickerButton|out_pulse ; MAX10_CLK1_50                     ; 2        ; 1        ; 0        ; 0        ;
-; MAX10_CLK1_50                     ; MAX10_CLK1_50                     ; 21       ; 0        ; 0        ; 0        ;
-+-----------------------------------+-----------------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                    ;
++---------------------------+---------------------------+----------+----------+----------+----------+
+; From Clock                ; To Clock                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------+---------------------------+----------+----------+----------+----------+
+; eightBSqrt:eightBSqrt0|Su ; eightBSqrt:eightBSqrt0|Su ; 35       ; 0        ; 0        ; 0        ;
+; eightBSqrt:eightBSqrt0|Su ; KEY[0]                    ; 52       ; 1        ; 0        ; 0        ;
+; KEY[0]                    ; KEY[0]                    ; 96       ; 0        ; 0        ; 0        ;
+; MAX10_CLK1_50             ; KEY[0]                    ; 11       ; 0        ; 0        ; 0        ;
+; KEY[0]                    ; MAX10_CLK1_50             ; 1        ; 0        ; 0        ; 0        ;
+; MAX10_CLK1_50             ; MAX10_CLK1_50             ; 21       ; 0        ; 0        ; 0        ;
++---------------------------+---------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -522,22 +521,22 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 3     ; 3    ;
-; Unconstrained Input Port Paths  ; 37    ; 37   ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 32    ; 32   ;
 ; Unconstrained Output Ports      ; 22    ; 22   ;
 ; Unconstrained Output Port Paths ; 43    ; 43   ;
 +---------------------------------+-------+------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Clock Status Summary                                                                       ;
-+-----------------------------------+-----------------------------------+------+-------------+
-; Target                            ; Clock                             ; Type ; Status      ;
-+-----------------------------------+-----------------------------------+------+-------------+
-; MAX10_CLK1_50                     ; MAX10_CLK1_50                     ; Base ; Constrained ;
-; edge2pulse:swTogPulse|out_pulse   ; edge2pulse:swTogPulse|out_pulse   ; Base ; Constrained ;
-; edge2pulse:tickerButton|out_pulse ; edge2pulse:tickerButton|out_pulse ; Base ; Constrained ;
-+-----------------------------------+-----------------------------------+------+-------------+
++----------------------------------------------------------------------------+
+; Clock Status Summary                                                       ;
++---------------------------+---------------------------+------+-------------+
+; Target                    ; Clock                     ; Type ; Status      ;
++---------------------------+---------------------------+------+-------------+
+; KEY[0]                    ; KEY[0]                    ; Base ; Constrained ;
+; MAX10_CLK1_50             ; MAX10_CLK1_50             ; Base ; Constrained ;
+; eightBSqrt:eightBSqrt0|Su ; eightBSqrt:eightBSqrt0|Su ; Base ; Constrained ;
++---------------------------+---------------------------+------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -545,7 +544,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; KEY[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
@@ -586,7 +584,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; KEY[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; KEY[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
@@ -628,100 +625,100 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Feb 22 01:22:57 2025
+    Info: Processing started: Sat Feb 22 15:45:58 2025
 Info: Command: quartus_sta L5part2 -c L5part2
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'L5part2.SDC'
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name eightBSqrt:eightBSqrt0|Su eightBSqrt:eightBSqrt0|Su
+    Info (332105): create_clock -period 1.000 -name KEY[0] KEY[0]
     Info (332105): create_clock -period 1.000 -name MAX10_CLK1_50 MAX10_CLK1_50
-    Info (332105): create_clock -period 1.000 -name edge2pulse:tickerButton|out_pulse edge2pulse:tickerButton|out_pulse
-    Info (332105): create_clock -period 1.000 -name edge2pulse:swTogPulse|out_pulse edge2pulse:swTogPulse|out_pulse
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.376
+Info (332146): Worst-case setup slack is -3.439
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.376             -36.430 edge2pulse:tickerButton|out_pulse 
-    Info (332119):    -1.347             -11.805 edge2pulse:swTogPulse|out_pulse 
-    Info (332119):    -1.102              -3.405 MAX10_CLK1_50 
-Info (332146): Worst-case hold slack is 0.211
+    Info (332119):    -3.439             -35.766 KEY[0] 
+    Info (332119):    -0.784              -3.715 MAX10_CLK1_50 
+    Info (332119):    -0.757              -4.255 eightBSqrt:eightBSqrt0|Su 
+Info (332146): Worst-case hold slack is 0.227
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.211               0.000 MAX10_CLK1_50 
-    Info (332119):     0.331               0.000 edge2pulse:tickerButton|out_pulse 
-    Info (332119):     0.343               0.000 edge2pulse:swTogPulse|out_pulse 
+    Info (332119):     0.227               0.000 MAX10_CLK1_50 
+    Info (332119):     0.294               0.000 KEY[0] 
+    Info (332119):     0.343               0.000 eightBSqrt:eightBSqrt0|Su 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -16.246 MAX10_CLK1_50 
-    Info (332119):    -1.222             -17.108 edge2pulse:tickerButton|out_pulse 
-    Info (332119):    -1.222             -12.220 edge2pulse:swTogPulse|out_pulse 
+    Info (332119):    -3.000             -20.108 KEY[0] 
+    Info (332119):    -3.000             -13.804 MAX10_CLK1_50 
+    Info (332119):    -1.222             -10.998 eightBSqrt:eightBSqrt0|Su 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.021
+Info (332146): Worst-case setup slack is -3.014
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.021             -32.283 edge2pulse:tickerButton|out_pulse 
-    Info (332119):    -1.151             -10.024 edge2pulse:swTogPulse|out_pulse 
-    Info (332119):    -0.897              -2.550 MAX10_CLK1_50 
-Info (332146): Worst-case hold slack is 0.211
+    Info (332119):    -3.014             -31.093 KEY[0] 
+    Info (332119):    -0.611              -2.816 MAX10_CLK1_50 
+    Info (332119):    -0.599              -3.158 eightBSqrt:eightBSqrt0|Su 
+Info (332146): Worst-case hold slack is 0.203
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.211               0.000 MAX10_CLK1_50 
-    Info (332119):     0.300               0.000 edge2pulse:tickerButton|out_pulse 
-    Info (332119):     0.313               0.000 edge2pulse:swTogPulse|out_pulse 
+    Info (332119):     0.203               0.000 KEY[0] 
+    Info (332119):     0.222               0.000 MAX10_CLK1_50 
+    Info (332119):     0.312               0.000 eightBSqrt:eightBSqrt0|Su 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -16.077 MAX10_CLK1_50 
-    Info (332119):    -1.222             -17.108 edge2pulse:tickerButton|out_pulse 
-    Info (332119):    -1.222             -12.220 edge2pulse:swTogPulse|out_pulse 
+    Info (332119):    -3.000             -20.108 KEY[0] 
+    Info (332119):    -3.000             -13.631 MAX10_CLK1_50 
+    Info (332119):    -1.222             -10.998 eightBSqrt:eightBSqrt0|Su 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.094
+Info (332146): Worst-case setup slack is -1.336
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.094             -10.171 edge2pulse:tickerButton|out_pulse 
-    Info (332119):    -0.416              -0.416 MAX10_CLK1_50 
-    Info (332119):    -0.142              -0.806 edge2pulse:swTogPulse|out_pulse 
-Info (332146): Worst-case hold slack is 0.095
+    Info (332119):    -1.336             -12.067 KEY[0] 
+    Info (332119):     0.147               0.000 MAX10_CLK1_50 
+    Info (332119):     0.169               0.000 eightBSqrt:eightBSqrt0|Su 
+Info (332146): Worst-case hold slack is 0.104
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.095               0.000 MAX10_CLK1_50 
-    Info (332119):     0.152               0.000 edge2pulse:tickerButton|out_pulse 
-    Info (332119):     0.156               0.000 edge2pulse:swTogPulse|out_pulse 
+    Info (332119):     0.104               0.000 MAX10_CLK1_50 
+    Info (332119):     0.156               0.000 eightBSqrt:eightBSqrt0|Su 
+    Info (332119):     0.166               0.000 KEY[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -14.811 MAX10_CLK1_50 
-    Info (332119):    -1.000             -14.000 edge2pulse:tickerButton|out_pulse 
-    Info (332119):    -1.000             -10.000 edge2pulse:swTogPulse|out_pulse 
+    Info (332119):    -3.000             -20.296 KEY[0] 
+    Info (332119):    -3.000             -12.422 MAX10_CLK1_50 
+    Info (332119):    -1.000              -9.000 eightBSqrt:eightBSqrt0|Su 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4974 megabytes
-    Info: Processing ended: Sat Feb 22 01:22:58 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4821 megabytes
+    Info: Processing ended: Sat Feb 22 15:46:01 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
 
 

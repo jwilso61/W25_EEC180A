@@ -24,20 +24,10 @@ HEX3[4] <= bit2Hex:N74Display.port0
 HEX3[5] <= bit2Hex:N74Display.port0
 HEX3[6] <= bit2Hex:N74Display.port0
 HEX3[7] <= bit2Hex:N74Display.port0
-KEY[0] => KEY[0].IN4
+KEY[0] => KEY[0].IN1
 KEY[1] => _.IN1
-SW[0] => SW[0].IN1
-MAX10_CLK1_50 => Clock.IN3
-
-
-|L5part2|edge2pulse:swTogPulse
-out_pulse <= out_pulse~reg0.DB_MAX_OUTPUT_PORT_TYPE
-clk => out_pulse~reg0.CLK
-clk => in_prev.CLK
-rstN => out_pulse~reg0.ACLR
-rstN => in_prev.ACLR
-in => out_pulse.IN1
-in => in_prev.DATAIN
+SW[0] => SW[0].IN3
+MAX10_CLK1_50 => Clock.IN2
 
 
 |L5part2|edge2pulse:tickerButton
@@ -103,27 +93,21 @@ sqrt[0] <= accumulator:a0.sqrt
 sqrt[1] <= accumulator:a0.sqrt
 sqrt[2] <= accumulator:a0.sqrt
 sqrt[3] <= accumulator:a0.sqrt
-clk => done~reg0.CLK
-clk => Su.CLK
-clk => loadedN[0].CLK
-clk => loadedN[1].CLK
-clk => loadedN[2].CLK
-clk => loadedN[3].CLK
-clk => loadedN[4].CLK
-clk => loadedN[5].CLK
-clk => loadedN[6].CLK
-clk => loadedN[7].CLK
-clk => state~5.DATAIN
+clk => state.OUTPUTSELECT
+clk => state.OUTPUTSELECT
+clk => state.OUTPUTSELECT
+clk => state.OUTPUTSELECT
+clk => done~reg0.DATAIN
 rstN => rstN.IN1
 St => St.IN1
-N[0] => loadedN.DATAB
-N[1] => loadedN.DATAB
-N[2] => loadedN.DATAB
-N[3] => loadedN.DATAB
-N[4] => loadedN.DATAB
-N[5] => loadedN.DATAB
-N[6] => loadedN.DATAB
-N[7] => loadedN.DATAB
+N[0] => Selector7.IN1
+N[1] => Selector6.IN1
+N[2] => Selector5.IN1
+N[3] => Selector4.IN1
+N[4] => Selector3.IN1
+N[5] => Selector2.IN1
+N[6] => Selector1.IN1
+N[7] => Selector0.IN1
 
 
 |L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0
@@ -255,17 +239,7 @@ sqrt[0] <= sqrt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sqrt[1] <= sqrt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sqrt[2] <= sqrt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sqrt[3] <= sqrt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-clk => sqrt[0]~reg0.CLK
-clk => sqrt[1]~reg0.CLK
-clk => sqrt[2]~reg0.CLK
-clk => sqrt[3]~reg0.CLK
-clk => B[1]~reg0.CLK
-clk => B[2]~reg0.CLK
-clk => B[3]~reg0.CLK
-clk => B[4]~reg0.CLK
-clk => B[5]~reg0.CLK
-clk => B[6]~reg0.CLK
-clk => B[7]~reg0.CLK
+clk => ~NO_FANOUT~
 rstN => sqrt[0]~reg0.ACLR
 rstN => sqrt[1]~reg0.ACLR
 rstN => sqrt[2]~reg0.ACLR
@@ -277,17 +251,17 @@ rstN => B[4]~reg0.ACLR
 rstN => B[5]~reg0.ACLR
 rstN => B[6]~reg0.ACLR
 rstN => B[7]~reg0.ACLR
-incr => sqrt[0]~reg0.ENA
-incr => B[7]~reg0.ENA
-incr => B[6]~reg0.ENA
-incr => B[5]~reg0.ENA
-incr => B[4]~reg0.ENA
-incr => B[3]~reg0.ENA
-incr => B[2]~reg0.ENA
-incr => sqrt[3]~reg0.ENA
-incr => sqrt[2]~reg0.ENA
-incr => sqrt[1]~reg0.ENA
-incr => B[1]~reg0.ENA
+incr => sqrt[0]~reg0.CLK
+incr => sqrt[1]~reg0.CLK
+incr => sqrt[2]~reg0.CLK
+incr => sqrt[3]~reg0.CLK
+incr => B[1]~reg0.CLK
+incr => B[2]~reg0.CLK
+incr => B[3]~reg0.CLK
+incr => B[4]~reg0.CLK
+incr => B[5]~reg0.CLK
+incr => B[6]~reg0.CLK
+incr => B[7]~reg0.CLK
 
 
 |L5part2|bit2Hex:N74Display

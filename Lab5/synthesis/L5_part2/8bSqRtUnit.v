@@ -30,22 +30,19 @@ accumulator a0 (
     .incr(Su)
 );
 
-always @(posedge clk or negedge rstN) begin
+always @(posedge St or negedge rstN) begin
     if (!rstN) begin
         loadedN <= 8'b00000000;
         Su <= 0;
         done <= 0;
-		state <= IDLE;
+		  state <= IDLE;
     end else begin
         case (state)
             IDLE: begin
-                done <= 0;
-                if (St) begin
 						loadedN <= N;
 						state <= SUBTRACT;
-                end
             end
-
+ 
             LOAD: begin
 					Su <= 0;
 					loadedN <= tempDifference;
@@ -55,17 +52,19 @@ always @(posedge clk or negedge rstN) begin
             SUBTRACT: begin
                 if (!borrowOut) begin
                     Su <= 1;
-							state <= LOAD;
+						  state <= LOAD;
                 end else begin
-                    Su <= 0;
+                    Su <= 1;
                     state <= DONE;
                 end
             end
 
             DONE: begin
+					Su <= 0;
                 done <= 1;
-                if (St) begin
+                if (clk) begin
                     state <= IDLE;
+						  done <= 0;
                 end
             end
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for L5part2
-Sat Feb 22 01:22:49 2025
+Sat Feb 22 15:45:43 2025
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -54,15 +54,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Feb 22 01:22:49 2025       ;
+; Analysis & Synthesis Status        ; Successful - Sat Feb 22 15:45:43 2025       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; L5part2                                     ;
 ; Top-level Entity Name              ; L5part2                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 74                                          ;
-;     Total combinational functions  ; 72                                          ;
-;     Dedicated logic registers      ; 33                                          ;
-; Total registers                    ; 33                                          ;
+; Total logic elements               ; 69                                          ;
+;     Total combinational functions  ; 69                                          ;
+;     Dedicated logic registers      ; 30                                          ;
+; Total registers                    ; 30                                          ;
 ; Total pins                         ; 29                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 128                                         ;
@@ -164,16 +164,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 28          ;
-; Maximum allowed            ; 16          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-16        ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -204,37 +203,37 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 74           ;
-;                                             ;              ;
-; Total combinational functions               ; 72           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 37           ;
-;     -- 3 input functions                    ; 14           ;
-;     -- <=2 input functions                  ; 21           ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 64           ;
-;     -- arithmetic mode                      ; 8            ;
-;                                             ;              ;
-; Total registers                             ; 33           ;
-;     -- Dedicated logic registers            ; 33           ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 29           ;
-; Total memory bits                           ; 128          ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 33           ;
-; Total fan-out                               ; 443          ;
-; Average fan-out                             ; 2.59         ;
-+---------------------------------------------+--------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 69          ;
+;                                             ;             ;
+; Total combinational functions               ; 69          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 34          ;
+;     -- 3 input functions                    ; 12          ;
+;     -- <=2 input functions                  ; 23          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 61          ;
+;     -- arithmetic mode                      ; 8           ;
+;                                             ;             ;
+; Total registers                             ; 30          ;
+;     -- Dedicated logic registers            ; 30          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 29          ;
+; Total memory bits                           ; 128         ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[0]~input ;
+; Maximum fan-out                             ; 30          ;
+; Total fan-out                               ; 410         ;
+; Average fan-out                             ; 2.48        ;
++---------------------------------------------+-------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -242,14 +241,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                              ; Entity Name        ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------+--------------------+--------------+
-; |L5part2                                  ; 72 (1)              ; 33 (1)                    ; 128         ; 0          ; 0            ; 0       ; 0         ; 29   ; 0            ; 0          ; |L5part2                                                                         ; L5part2            ; work         ;
+; |L5part2                                  ; 69 (1)              ; 30 (1)                    ; 128         ; 0          ; 0            ; 0       ; 0         ; 29   ; 0            ; 0          ; |L5part2                                                                         ; L5part2            ; work         ;
 ;    |bit2Hex:N30Display|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|bit2Hex:N30Display                                                      ; bit2Hex            ; work         ;
 ;    |bit2Hex:N74Display|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|bit2Hex:N74Display                                                      ; bit2Hex            ; work         ;
 ;    |bit2Hex:sqrtDisplay|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|bit2Hex:sqrtDisplay                                                     ; bit2Hex            ; work         ;
-;    |edge2pulse:swTogPulse|                ; 1 (1)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|edge2pulse:swTogPulse                                                   ; edge2pulse         ; work         ;
 ;    |edge2pulse:tickerButton|              ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|edge2pulse:tickerButton                                                 ; edge2pulse         ; work         ;
-;    |eightBSqrt:eightBSqrt0|               ; 42 (18)             ; 24 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|eightBSqrt:eightBSqrt0                                                  ; eightBSqrt         ; work         ;
-;       |accumulator:a0|                    ; 9 (9)               ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|eightBSqrt:eightBSqrt0|accumulator:a0                                   ; accumulator        ; work         ;
+;    |eightBSqrt:eightBSqrt0|               ; 40 (16)             ; 23 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|eightBSqrt:eightBSqrt0                                                  ; eightBSqrt         ; work         ;
+;       |accumulator:a0|                    ; 9 (9)               ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|eightBSqrt:eightBSqrt0|accumulator:a0                                   ; accumulator        ; work         ;
 ;       |eightBitSubtractor:s0|             ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0                            ; eightBitSubtractor ; work         ;
 ;          |FullSubtractor:FSgen[1].u0|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[1].u0 ; FullSubtractor     ; work         ;
 ;          |FullSubtractor:FSgen[2].u0|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |L5part2|eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[2].u0 ; FullSubtractor     ; work         ;
@@ -289,14 +287,15 @@ Encoding Type:  One-Hot
 
 +--------------------------------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                                                     ;
-+-----------------------------------------------+--------------------------------------------------------+
-; Register name                                 ; Reason for Removal                                     ;
-+-----------------------------------------------+--------------------------------------------------------+
-; eightBSqrt:eightBSqrt0|state~8                ; Lost fanout                                            ;
-; eightBSqrt:eightBSqrt0|state~9                ; Lost fanout                                            ;
-; eightBSqrt:eightBSqrt0|accumulator:a0|sqrt[0] ; Merged with eightBSqrt:eightBSqrt0|accumulator:a0|B[1] ;
-; Total Number of Removed Registers = 3         ;                                                        ;
-+-----------------------------------------------+--------------------------------------------------------+
++--------------------------------------------+-----------------------------------------------------------+
+; Register name                              ; Reason for Removal                                        ;
++--------------------------------------------+-----------------------------------------------------------+
+; eightBSqrt:eightBSqrt0|accumulator:a0|B[1] ; Merged with eightBSqrt:eightBSqrt0|accumulator:a0|sqrt[0] ;
+; eightBSqrt:eightBSqrt0|state~8             ; Lost fanout                                               ;
+; eightBSqrt:eightBSqrt0|state~9             ; Lost fanout                                               ;
+; eightBSqrt:eightBSqrt0|accumulator:a0|B[2] ; Merged with eightBSqrt:eightBSqrt0|accumulator:a0|sqrt[1] ;
+; Total Number of Removed Registers = 4      ;                                                           ;
++--------------------------------------------+-----------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -304,12 +303,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
+; Total registers                              ; 30    ;
 ; Number of registers using Synchronous Clear  ; 4     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Clear ; 25    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 18    ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -328,8 +327,7 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |L5part2|eightBSqrt:eightBSqrt0|loadedN[2] ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |L5part2|eightBSqrt:eightBSqrt0|Selector12 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |L5part2|eightBSqrt:eightBSqrt0|loadedN[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 
 
@@ -451,25 +449,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 29                          ;
-; cycloneiii_ff         ; 33                          ;
-;     CLR               ; 10                          ;
-;     ENA CLR           ; 18                          ;
+; cycloneiii_ff         ; 30                          ;
+;     CLR               ; 17                          ;
+;     ENA CLR           ; 8                           ;
 ;     SCLR              ; 4                           ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 73                          ;
+; cycloneiii_lcell_comb ; 70                          ;
 ;     arith             ; 8                           ;
 ;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 2                           ;
-;     normal            ; 65                          ;
+;     normal            ; 62                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 37                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 34                          ;
 ; cycloneiii_ram_block  ; 8                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.23                        ;
+; Average LUT depth     ; 2.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -488,10 +486,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Feb 22 01:22:44 2025
+    Info: Processing started: Sat Feb 22 15:45:33 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off L5part2 -c L5part2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 20 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file 8bsqrtunit.v
     Info (12023): Found entity 1: eightBSqrt File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fs.v
@@ -508,10 +506,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file l5part2
 Info (12127): Elaborating entity "L5part2" for the top level hierarchy
 Warning (12125): Using design file edge2pulse.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: edge2pulse File: C:/EEC 180/Lab5/synthesis/L5_part2/edge2pulse.v Line: 1
-Info (12128): Elaborating entity "edge2pulse" for hierarchy "edge2pulse:swTogPulse" File: C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.v Line: 29
-Info (12128): Elaborating entity "memBlock" for hierarchy "memBlock:m1" File: C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.v Line: 43
+Info (12128): Elaborating entity "edge2pulse" for hierarchy "edge2pulse:tickerButton" File: C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.v Line: 28
+Info (12128): Elaborating entity "memBlock" for hierarchy "memBlock:m1" File: C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.v Line: 35
 Warning (10858): Verilog HDL warning at MemoryBlock.v(8): object memory1 used but never assigned File: C:/EEC 180/Lab5/synthesis/L5_part2/MemoryBlock.v Line: 8
-Info (12128): Elaborating entity "eightBSqrt" for hierarchy "eightBSqrt:eightBSqrt0" File: C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.v Line: 52
+Info (12128): Elaborating entity "eightBSqrt" for hierarchy "eightBSqrt:eightBSqrt0" File: C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.v Line: 44
 Info (12128): Elaborating entity "eightBitSubtractor" for hierarchy "eightBSqrt:eightBSqrt0|eightBitSubtractor:s0" File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v Line: 23
 Info (12128): Elaborating entity "FullSubtractor" for hierarchy "eightBSqrt:eightBSqrt0|eightBitSubtractor:s0|FullSubtractor:FSgen[0].u0" File: C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v Line: 19
 Info (12128): Elaborating entity "accumulator" for hierarchy "eightBSqrt:eightBSqrt0|accumulator:a0" File: C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v Line: 31
@@ -520,7 +518,7 @@ Warning (10240): Verilog HDL Always Construct warning at accumulator.v(9): infer
 Info (10041): Inferred latch for "B[0]" at accumulator.v(9) File: C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v Line: 9
 Warning (12125): Using design file bit2hex.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: bit2Hex File: C:/EEC 180/Lab5/synthesis/L5_part2/bit2hex.v Line: 1
-Info (12128): Elaborating entity "bit2Hex" for hierarchy "bit2Hex:N74Display" File: C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.v Line: 62
+Info (12128): Elaborating entity "bit2Hex" for hierarchy "bit2Hex:N74Display" File: C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.v Line: 54
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "memBlock:m1|memory1_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to ROM
@@ -558,16 +556,16 @@ Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/EEC 180/Lab5/synthesis/L5_part2/L5part2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 112 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 106 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 25 output pins
-    Info (21061): Implemented 75 logic cells
+    Info (21061): Implemented 69 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4868 megabytes
-    Info: Processing ended: Sat Feb 22 01:22:49 2025
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 4768 megabytes
+    Info: Processing ended: Sat Feb 22 15:45:43 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
