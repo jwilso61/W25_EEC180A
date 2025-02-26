@@ -1,0 +1,83 @@
+# Compile of mac.v was successful.
+# Compile of tb_macc.v was successful.
+# Compile of l6part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_macc
+# vsim -gui work.tb_macc 
+# Start time: 13:20:37 on Feb 26,2025
+# Loading work.tb_macc
+# Loading work.MAC
+add wave -position insertpoint sim:/tb_macc/*
+run -all
+# ** Note: $stop    : C:/EEC 180/Lab6/test/Part1/tb_macc.v(91)
+#    Time: 780 ns  Iteration: 0  Instance: /tb_macc
+# Break in Module tb_macc at C:/EEC 180/Lab6/test/Part1/tb_macc.v line 91
+# Break key hit
+restart -f
+run all
+# Invalid time value: all
+run -all
+# ** Note: $stop    : C:/EEC 180/Lab6/test/Part1/tb_macc.v(91)
+#    Time: 780 ns  Iteration: 0  Instance: /tb_macc
+# Break in Module tb_macc at C:/EEC 180/Lab6/test/Part1/tb_macc.v line 91
+# Compile of mac.v was successful.
+# Compile of tb_macc.v was successful.
+# Compile of l6part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Break key hit
+# Compile of mac.v was successful.
+# Compile of tb_macc.v was successful.
+# Compile of l6part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.tb_macc
+# End time: 13:24:59 on Feb 26,2025, Elapsed time: 0:04:22
+# Errors: 1, Warnings: 0
+# vsim -gui work.tb_macc 
+# Start time: 13:24:59 on Feb 26,2025
+# Loading work.tb_macc
+# Loading work.MAC
+add wave -position insertpoint sim:/tb_macc/*
+run -all
+# ** Note: $stop    : C:/EEC 180/Lab6/test/Part1/tb_macc.v(91)
+#    Time: 1440 ns  Iteration: 0  Instance: /tb_macc
+# Break in Module tb_macc at C:/EEC 180/Lab6/test/Part1/tb_macc.v line 91
+add wave -position insertpoint 300
+# (vish-4014) No objects found matching '300'.
+# Compile of mac.v was successful.
+# Compile of tb_macc.v was successful.
+# Compile of l6part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# Loading work.tb_macc
+# Loading work.MAC
+run -all
+# ** Note: $stop    : C:/EEC 180/Lab6/test/Part1/tb_macc.v(91)
+#    Time: 1240 ns  Iteration: 0  Instance: /tb_macc
+# Break in Module tb_macc at C:/EEC 180/Lab6/test/Part1/tb_macc.v line 91
+# Compile of mac.v was successful.
+# Compile of tb_macc.v was successful.
+# Compile of l6part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_macc
+# Loading work.MAC
+# ** Warning: (vsim-3015) C:/EEC 180/Lab6/test/Part1/tb_macc.v(33): [PCDPC] - Port size (19) does not match connection size (22) for port 'out'. The port definition is at: C:/EEC 180/Lab6/synthesis/Part1/mac.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_macc/DUT File: C:/EEC 180/Lab6/synthesis/Part1/mac.v
+run -all
+# ** Note: $stop    : C:/EEC 180/Lab6/test/Part1/tb_macc.v(91)
+#    Time: 1240 ns  Iteration: 0  Instance: /tb_macc
+# Break in Module tb_macc at C:/EEC 180/Lab6/test/Part1/tb_macc.v line 91
+# Compile of mac.v was successful.
+# Compile of tb_macc.v was successful.
+# Compile of l6part1.v was successful.
+# 3 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb_macc
+# Loading work.MAC
+run -all
+# ** Note: $stop    : C:/EEC 180/Lab6/test/Part1/tb_macc.v(91)
+#    Time: 1240 ns  Iteration: 0  Instance: /tb_macc
+# Break in Module tb_macc at C:/EEC 180/Lab6/test/Part1/tb_macc.v line 91
+# End time: 13:45:00 on Feb 26,2025, Elapsed time: 0:20:01
+# Errors: 2, Warnings: 1
