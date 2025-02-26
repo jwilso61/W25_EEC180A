@@ -1,0 +1,23 @@
+module MAC (
+	input clk,
+	input macc_clear,
+	input [7:0] inA,
+	input [7:0] inB,
+	output [18:0] out
+	);
+	
+	reg [19:0] D;
+	reg signed [7:0] A = [7:0] inA;
+	reg signed [7:0] B = [7:0] inB;
+	reg signed [18:0] AxB;
+	
+	assign AxB = inA * inB;
+	
+	assign S = S + AxB;
+	
+	assign D = (macc_clear == 1) ?(AxB):(S);
+	always @ (posedge clk) begin
+		out[18:0] <= D;
+	end 
+	
+endmodule 

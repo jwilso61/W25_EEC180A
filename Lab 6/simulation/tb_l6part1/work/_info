@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/thomt/Downloads
+vl6part1
+Z0 !s110 1740262605
+!i10b 1
+!s100 bm:4:nIl4fL?RV78Y7e=@2
+IlSm@Qa3HPG3f5ST8mal<<2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/EEC 180/Lab6/simulation/tb_l6part1
+w1740003649
+8C:/EEC 180/Lab6/synthesis/Part1/l6part1.v
+FC:/EEC 180/Lab6/synthesis/Part1/l6part1.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1740262605.000000
+!s107 C:/EEC 180/Lab6/synthesis/Part1/l6part1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part1/l6part1.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vMAC
+R0
+!i10b 1
+!s100 _1`dm_?B4:E:SSe0;heA:0
+Il_21zZI<K32N9BnFW@ZQW2
+R1
+R2
+w1740260785
+8C:/EEC 180/Lab6/synthesis/Part1/mac.v
+FC:/EEC 180/Lab6/synthesis/Part1/mac.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180/Lab6/synthesis/Part1/mac.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part1/mac.v|
+!i113 1
+R5
+R6
+n@m@a@c
+vtb_macc
+R0
+!i10b 1
+!s100 Sam8[mE?4f9Z_6[DAHhAW1
+ILYRVlZGGg:M>1OT9_cbhR3
+R1
+R2
+w1740262602
+8C:/EEC 180/Lab6/test/Part1/tb_macc.v
+FC:/EEC 180/Lab6/test/Part1/tb_macc.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180/Lab6/test/Part1/tb_macc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/test/Part1/tb_macc.v|
+!i113 1
+R5
+R6

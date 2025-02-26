@@ -1,0 +1,22 @@
+{C:/EEC 180/Lab6/test/Part1/tb_macc.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/test/Part1/tb_macc.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_macc
+
+Top level modules:
+	tb_macc
+
+} {} {}} {C:/EEC 180/Lab6/synthesis/Part1/mac.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part1/mac.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MAC
+
+Top level modules:
+	MAC
+
+} {} {}} {C:/EEC 180/Lab6/synthesis/Part1/l6part1.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part1/l6part1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module l6part1
+
+Top level modules:
+	l6part1
+
+} {} {}}

@@ -9,26 +9,26 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/19.1
 vaccumulator
-Z0 !s110 1739566981
+Z0 !s110 1740267885
 !i10b 1
-!s100 JY>cAQX2Ka[O2FaG<OTdX0
-IN^C>GfB=n725_JFEoX^in1
+!s100 ?MD[A]1:e7=<<2iHJzFe92
+Iog4:WbNcFiS[?eEKH<K5j1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/EEC 180/Lab5/simulation/tb_l5part2
-w1739565733
+Z3 w1740267790
 8C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
 FC:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v
 L0 1
-Z3 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1739566981.000000
+Z5 !s108 1740267885.000000
 !s107 C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 veightBitSubtractor
 R0
 !i10b 1
@@ -36,42 +36,42 @@ R0
 Ilm4EQMnS5Zggnljhn<2JR2
 R1
 R2
-w1739270956
+Z8 w1739565059
 8C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v
 FC:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v|
 !i113 1
-R5
 R6
+R7
 neight@bit@subtractor
 veightBSqrt
 R0
 !i10b 1
-!s100 i71^KZ=3``g^]nIfZZRj43
-I>aAW@iDcE^B:M`gPQlgUj0
+!s100 XGC91?zlzk1H^iN9aa7[D1
+Ii426k1zHPfJgGA^^M^C`?3
 R1
 R2
-w1739566510
+R3
 8C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
 FC:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v|
 !i113 1
-R5
 R6
+R7
 neight@b@sqrt
 vFullSubtractor
 R0
@@ -80,20 +80,20 @@ R0
 Icl7R6e<A<P[1jPF[e78PP1
 R1
 R2
-w1739224747
+R8
 8C:/EEC 180/Lab5/synthesis/L5_part2/FS.v
 FC:/EEC 180/Lab5/synthesis/L5_part2/FS.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/EEC 180/Lab5/synthesis/L5_part2/FS.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/synthesis/L5_part2/FS.v|
 !i113 1
-R5
 R6
+R7
 n@full@subtractor
 vtb_sqrt
 R0
@@ -102,17 +102,17 @@ R0
 IadLikk0@HnhmfHDUdA2R;3
 R1
 R2
-w1739566904
+w1740080914
 8C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
 FC:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v
 L0 1
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v|
 !i113 1
-R5
 R6
+R7
