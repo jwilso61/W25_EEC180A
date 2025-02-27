@@ -1,0 +1,8 @@
+module ramOutput (
+	output reg	signed [18:0] mem [63:0],
+	input wire			clk,
+	input				   rstN,
+	input	wire		   St
+)
+
+reg signed [18:0] mem [63:0] /* synthesis ramstyle = "M9K" */;

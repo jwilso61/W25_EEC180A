@@ -6,12 +6,10 @@ module MAC (
 	output reg [18:0] out
 	);
 	
-
 	reg signed [18:0] S ;
 	reg signed [18:0] product;
 	
 always @ (posedge clk) begin
-
 	 product = inA * inB;
 	 if (macc_clear == 1) begin
 		S = product;
@@ -19,5 +17,5 @@ always @ (posedge clk) begin
 		S = S + product; 
 	end 
 	out <= S;
-end 	
-endmodule 
+end
+endmodule
