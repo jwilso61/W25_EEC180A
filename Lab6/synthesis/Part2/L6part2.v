@@ -1,37 +1,33 @@
 module L6part2 (
-		output 	reg		done
-		output 	[10:0]	clock_count 
-		input 				clk
-		input 				start
-		input 				rstN
-		
-)
+		output 	reg			done,
+		output 	reg [10:0]	clock_count,
+		input 					clk,
+		input 					start,
+		input 					rstN
+);
 
-integer curA, curB, curK;
-wire macInA;
-wire macInB;
-reg done;
-reg [1:0] state;
-parameter IDLE = 2'b00, INIT = 2'b01, MAC = 2'b10, DONE = 2'b11;
+integer i, j, k;
+reg [2:0] state;
+reg signed [18:0] partial;
+parameter IDLE = 3'b000, INIT = 3'b001, MACLOAD = 3'b010, MACOP = 3'b011, PARCLR = 3'b100, DONE = 3'b101;
 
-wire macc_clear;
-reg [7:0] memA [63:0] /* synthesis ramstyle = "M9K" */;
-reg [7:0] memB [63:0] /* synthesis ramstyle = "M9K" */;
-
-initial begin
-$readmemb("C:\EEC 180\Lab6\simulation\tb_l6part2\ram_a_init.txt", mema);
-$readmemb("C:\EEC 180\Lab6\simulation\tb_l6part2\ram_b_init.txt", memb);
-macc_clear = 1;
-macc_clear
-end
+reg macc_clear;
+reg matCWen;
+reg matCaddr;
+reg signed matCin;
+reg signed macInA;
+reg signed macInB;
+reg signed macOut;
+reg signed [7:0] memA [63:0] /* synthesis ramstyle = "M9K" */;
+reg signed [7:0] memB [63:0] /* synthesis ramstyle = "M9K" */;
 
 ramOutput RAMOUTPUT(
 		.mem(),
 		.clk(clk),
-		.writeEn(matCWen), // Write enable for a single element
-		.addr(matCaddr),    // Address for the write
+		.writeEn(matCWen),// Write enable for a single element
+		.addr(matCaddr),	// Address for the write
 		.data_in(matCin)  // Data to write into mem[addr]
-)
+);
 
 MAC mac( 
 		.clk(clk),
@@ -39,40 +35,83 @@ MAC mac(
 		.inA(macInA),
 		.inB(macInB),
 		.out(macOut)
-)
+);
 
-always @(posedge start or negedge rstN) begin
-    if (!rstN) begin
-		  state = IDLE;
-    end else begin
-        case (state)
-            IDLE: begin
-					done
-            end
- 
-            INIT: begin
+initial begin
+	$readmemb("C:\EEC 180\Lab6\simulation\tb_l6part2\ram_a_init.txt", memA);
+	$readmemb("C:\EEC 180\Lab6\simulation\tb_l6part2\ram_b_init.txt", memB);
+	macc_clear = 1;
+	macc_clear = 0;
+end
+
+always @(posedge clk or negedge rstN) begin
+		if (!rstN) begin
+			done <= 0;
+		   state <= IDLE;
+		end else begin
+		case (state)  
+			IDLE: begin
+				if (start) begin
+					state <= INIT;
+				end
+			end
+
+			INIT: begin
+				clock_count <= 11'b0;
+				i <= 0;
+				j <= 0;
+				k <= 0;
+				state <= PARCLR;
+			end
+
+			MACLOAD: begin
+				macc_clear = 1'b0;
+				if (i==7 && j==7 && k==7) begin
+					i<=0;
+					state <= DONE;
+				end else if (i==7 && j==7 && k!=7) begin
+					state <= MACOP;
+				end
 				
-            end
-
-            MAC: begin
+				if (i<7 && j==7)  begin i <= i +1; 	end // column iterator 
+					
+				if (j==7 && k==7) begin j<=0;      	end // row iterator
+				if (j<7  && k==7) begin j <= j +1;  end
 				
-				for(i=0;i<8;i=i+1) begin
-					 for(j=0;j<8;j=j+1) begin
-						for(k=0;k<8;k=k+1) begin
-							macInA = memA[i][k];
-							macInB = memB[k][j]
-							matrixC[8*i+j] = matrixC[8*i+j] + matrixA[j+8*k]*matrixB[k+8*i];
-						end
-					 end
-				  end
-            end
+				if (k<7) 			begin k <= k +1;	end // pair iterator
+					
+				if (k==7) begin 
+					k<=0;
+	  				matCWen <= 1;
+					matCaddr <= i +j*8;
+					matCin <= partial;
+					state <= MACOP;
+				end
+			end
+			
+			MACOP: begin
+				if (k==0 && partial != 0) begin
+					state = PARCLR;
+				end else begin
+					macInA <= memA[j][k];
+					macInB <= memB[k][i];
+					partial <= partial + macOut;
+					macc_clear = 1'b1;
+					state <= MACLOAD;
+				end
+			end
+			
+			PARCLR: begin
+				partial <= 0;
+				state <= MACOP;
+			end
+			
+			DONE: begin
+				done <= 1;
+			end
 
-            DONE: begin
-				
-            end
-
-            default: state <= IDLE;
-        endcase
+			default: state <= IDLE;
+	  endcase
     end
 end
 endmodule

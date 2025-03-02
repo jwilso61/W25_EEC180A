@@ -4,9 +4,9 @@ module MAC (
 	input signed [7:0] inA,
 	input signed [7:0] inB,
 	output reg [18:0] out
-	);
+);
 	
-	reg signed [18:0] S ;
+	reg signed [18:0] S;
 	reg signed [18:0] product;
 	
 always @ (posedge clk) begin
