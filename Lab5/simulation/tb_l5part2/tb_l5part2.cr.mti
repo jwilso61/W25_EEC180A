@@ -1,9 +1,9 @@
-{C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v}
+{C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module eightBSqrt
+-- Compiling module tb_sqrt
 
 Top level modules:
-	eightBSqrt
+	tb_sqrt
 
 } {} {}} {C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab5/synthesis/L5_part2/accumulator.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -12,19 +12,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	accumulator
 
-} {} {}} {C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab5/simulation/tb_l5part2/tb_l5part2.v}
+} {} {}} {C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab5/synthesis/L5_part2/8bSqRtUnit.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_sqrt
+-- Compiling module eightBSqrt
 
 Top level modules:
-	tb_sqrt
-
-} {} {}} {C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module eightBitSubtractor
-
-Top level modules:
-	eightBitSubtractor
+	eightBSqrt
 
 } {} {}} {C:/EEC 180/Lab5/synthesis/L5_part2/FS.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab5/synthesis/L5_part2/FS.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -32,5 +25,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	FullSubtractor
+
+} {} {}} {C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab5/synthesis/L5_part2/eightBitSubtractor.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module eightBitSubtractor
+
+Top level modules:
+	eightBitSubtractor
 
 } {} {}}

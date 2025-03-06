@@ -1,0 +1,9 @@
+
+State Machine - |L6part2|state
+Name state.DONE state.PARCLR state.MACOP state.MACLOAD state.INIT state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.INIT 0 0 0 0 1 1 
+state.MACLOAD 0 0 0 1 0 1 
+state.MACOP 0 0 1 0 0 1 
+state.PARCLR 0 1 0 0 0 1 
+state.DONE 1 0 0 0 0 1 

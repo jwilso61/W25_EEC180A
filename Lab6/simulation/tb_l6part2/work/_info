@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/EEC 180/Lab5/simulation/tb_l5part2
+vL6part2
+Z0 !s110 1741221381
+!i10b 1
+!s100 HW^5aOVU89J=;@AC@C2gd2
+IK5m0iF[GUAOi@Rlc1E^CD3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/EEC 180/Lab6/simulation/tb_l6part2
+w1741221377
+8C:\EEC 180\Lab6\synthesis\Part2\L6part2.v
+FC:\EEC 180\Lab6\synthesis\Part2\L6part2.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1741221381.000000
+!s107 C:\EEC 180\Lab6\synthesis\Part2\L6part2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\EEC 180\Lab6\synthesis\Part2\L6part2.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@l6part2
+vMAC
+R0
+!i10b 1
+!s100 oGFBJD8BFA[PJJ?SdHIhj2
+I<02:c2IU<VOL2KQP^I<cj3
+R1
+R2
+w1741219292
+8C:/EEC 180/Lab6/synthesis/Part1/mac.v
+FC:/EEC 180/Lab6/synthesis/Part1/mac.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180/Lab6/synthesis/Part1/mac.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part1/mac.v|
+!i113 1
+R5
+R6
+n@m@a@c
+vramOutput
+!s110 1741211181
+!i10b 1
+!s100 VHeCALOl7B:loj;W4c@kk1
+I:jRhoWXVUZ^^]eO:mo8140
+R1
+R2
+w1740872661
+Z7 8C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v
+Z8 FC:/EEC 180/Lab6/synthesis/Part2/ramOutput.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1741211181.000000
+Z9 !s107 C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v|
+!i113 1
+R5
+R6
+nram@output
+vRAMOUTPUT
+R0
+!i10b 1
+!s100 jdbQR=Y0EZMP:H3QZK=kY1
+IYZFh2:5B:iKdIUaOlDGm=1
+R1
+R2
+w1741211805
+R7
+R8
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R9
+R10
+!i113 1
+R5
+R6
+n@r@a@m@o@u@t@p@u@t
+vtb_lab6
+R0
+!i10b 1
+!s100 ^DIFfnWTEkSj@nKKME1nH1
+IOEK5=S=Sf<IF4>]c`TMZT3
+R1
+R2
+w1741215181
+8C:/EEC 180/Lab6/test/Part2/tb_lab6.v
+FC:/EEC 180/Lab6/test/Part2/tb_lab6.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180/Lab6/test/Part2/tb_lab6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/test/Part2/tb_lab6.v|
+!i113 1
+R5
+R6

@@ -1,5 +1,5 @@
-module ramOutput (
-	output wire [1215:0] 		mem,		// 64 * 19 = 1216 bits
+module RAMOUTPUT (
+	output wire signed [1215:0] mem,		// 64 * 19 = 1216 bits
 	input	wire						clk,
 	input wire              	writeEn,	// Write enable for a single element
 	input wire [5:0]        	addr,    // Address for the write

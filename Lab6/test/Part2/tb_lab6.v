@@ -37,12 +37,12 @@ wire [10:0] clock_count;
 
 /*****************************************
 |------|    RENAME TO MATCH YOUR MODULE */
-toplevel DUT
+L6part2 DUT
 (
     .clk   (clk),
     .start (start),
-    .reset (reset),
-    .done       (done),
+    .rst (reset),
+    .done  (done),
     .clock_count (clock_count)
   );
 
