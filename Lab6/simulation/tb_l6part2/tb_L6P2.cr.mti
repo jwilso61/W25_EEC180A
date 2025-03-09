@@ -1,11 +1,4 @@
-{C:/EEC 180/Lab6/synthesis/Part2/L6part2.v} {1 {vlog -work work -stats=none {C:\EEC 180\Lab6\synthesis\Part2\L6part2.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module L6part2
-
-Top level modules:
-	L6part2
-
-} {} {}} {C:/EEC 180/Lab6/synthesis/Part1/mac.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part1/mac.v}
+{C:/EEC 180/Lab6/synthesis/Part1/mac.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part1/mac.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MAC
 

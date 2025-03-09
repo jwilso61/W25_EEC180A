@@ -6,11 +6,9 @@ module L6part2 (
 		input 					rst
 );
 
-integer i, j, k;
-reg [2:0] state;
-reg signed [18:0] partial;
-parameter IDLE = 3'b000, INIT = 3'b001, MACLOAD = 3'b010, MACOP = 3'b011, PARCLR = 3'b100, DONE = 3'b101;
-
+integer row, column, rcPair;
+reg [1:0] state;
+parameter IDLE = 2'b00, MACOP = 2'b01, DONE = 2'b10;
 reg macc_clear;
 reg matCWen;
 reg [5:0] matCaddr;
@@ -18,14 +16,12 @@ reg signed [18:0] matCin;
 reg signed [7:0] macInA;
 reg signed [7:0] macInB;
 wire signed [18:0] macOut;
-reg signed [7:0] memA [63:0]	/* synthesis ramstyle = "M9K" */;
-reg signed [7:0] memB [63:0]	/* synthesis ramstyle = "M9K" */;
-//(* ram_init_file = "ram_a_init.mif"*) reg [511:0] memA  /* synthesis ramstyle = "M9K" */;
-//(* ram_init_file = "ram_b_init.mif"*) reg [511:0] memB  /* synthesis ramstyle = "M9K" */;
-wire signed [1215:0] mem;
+reg signed [7:0] memA [0:63]	/* synthesis ramstyle = "M9K" */;
+reg signed [7:0] memB [0:63]	/* synthesis ramstyle = "M9K" */;
+//(* ram_init_file = "ram_a_init.mif"*) reg signed [7:0] memA [0:63]  /* synthesis ramstyle = "M9K" */;
+//(* ram_init_file = "ram_b_init.mif"*) reg signed [7:0] memB [0:63]  /* synthesis ramstyle = "M9K" */;
 
 RAMOUTPUT RAMOUTPUT(
-		.mem(mem),
 		.clk(clk),
 		.writeEn(matCWen),// Write enable for a single element
 		.addr(matCaddr),	// Address for the write
@@ -43,9 +39,15 @@ MAC mac(
 initial begin
 	$readmemb("ram_a_init.txt", memA);
 	$readmemb("ram_b_init.txt", memB);
-	i <= 0;
-	j <= 0;
-	k <= 0;
+	row <= 0;
+	column <= 0;
+	rcPair <= 0;
+	matCaddr <= 0;
+	matCin <= 0;
+	matCWen <= 0;
+	macc_clear <= 1;
+	macInA <= 0;
+	macInB <= 0;
 end
 
 
@@ -54,76 +56,49 @@ always @(posedge clk or posedge rst) begin
 			done <= 0;
 		   state <= IDLE;
 		end else begin
+		
 		case (state)  
 			IDLE: begin
 				if (start) begin
-					macc_clear = 0;
-					state <= INIT;
-				end
-			end
-
-			INIT: begin
-				clock_count <= 11'b0;
-				state <= PARCLR;
-			end
-
-			MACLOAD: begin
-				macc_clear = 1'b0;
-				if (i==7 && j==7 && k==7) begin
-					i<=0;
-					state <= DONE;
-				end else if (i==7 && j==7 && k!=7) begin
+					clock_count <= 11'b0;
 					state <= MACOP;
 				end
-				
-				if (i<7 && j==7)  begin 
-					i <= i+1;
-					state <= MACOP;	
-				end // column iterator 
-				if (j==7 && k==7) begin 
-					j <= 0;
-					state <= MACOP;
-				end // row iterator
-				if (j<7  && k==7) begin 
-					j <= j+1;
-					state <= MACOP;
-				end
-				if (k<7) begin 								// pair iterator 
-					k <= k+1;
-					state <= MACOP;
-				end 
-					
-				if (k==7) begin 
-					k<=0;
-	  				matCWen <= 1;
-					matCaddr <= i +j*8;
-					matCin <= partial;
-					state <= MACOP;
-				end
-				
 			end
 			
 			MACOP: begin
+				clock_count = clock_count+1;
+				macc_clear <= 1'b0;
 				matCWen <= 0;
-				if (k==0 && partial != 0) begin
-					macc_clear = 1'b1;
-					state = PARCLR;
-				end else if (k==0 && partial == 0) begin
-					macc_clear = 1'b1;
-					macInA <= memA[j*8 + k];
-					macInB <= memB[k + i*8];
-					state <= MACLOAD;
+
+				if (row==0 && column==0 && rcPair==0) macc_clear <= 1'b1;
+
+				if (matCaddr==6'b111111 && rcPair==2) state <= DONE;
+				
+				if (row<7  && rcPair==7)							row <= row + 1;				// row iterator
+				if (row==7 && rcPair==7)							row <= 1'b0;
+				
+				if (column<7 && row==7 && rcPair==7)		column <= column+1;		// column iterator
+				
+				if (rcPair<7)										rcPair <= rcPair+1;			// pair iterator
+				
+				if (rcPair==0 && macOut == 0) begin							// ?ensures first pair is not added to itself?
+					macInA <= memA[column + rcPair*8];
+					macInB <= memB[rcPair + row*8];
 				end else begin
-					macInA <= memA[j*8 + k];
-					macInB <= memB[k + i*8];
-					partial <= partial + macOut;
-					state <= MACLOAD;
+					macInA <= memA[column + rcPair*8];
+					macInB <= memB[rcPair + row*8];
 				end
-			end
-			
-			PARCLR: begin
-				partial <= 0;
-				state <= MACOP;
+				
+				if (rcPair==0)			macc_clear <= 1'b1;
+				if (macc_clear==1 && macOut!=0) 	matCWen <= 1;
+				
+				if (rcPair==1) 		matCin <= macOut;
+
+				if (rcPair==7) begin
+					rcPair<=0;
+					matCaddr <= row*8 + column;
+				end
+				
 			end
 			
 			DONE: begin
@@ -131,6 +106,7 @@ always @(posedge clk or posedge rst) begin
 			end
 
 			default: state <= IDLE;
+	  
 	  endcase
     end
 end

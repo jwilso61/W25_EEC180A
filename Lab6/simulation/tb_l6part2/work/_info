@@ -9,23 +9,23 @@ z2
 cModel Technology
 dC:/EEC 180/Lab5/simulation/tb_l5part2
 vL6part2
-Z0 !s110 1741221381
+Z0 !s110 1741483948
 !i10b 1
-!s100 HW^5aOVU89J=;@AC@C2gd2
-IK5m0iF[GUAOi@Rlc1E^CD3
+!s100 A`=5eYI7IX><WOl=U0YAO2
+IIRDB_U@cCj[lJYQAk5F^X1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/EEC 180/Lab6/simulation/tb_l6part2
-w1741221377
-8C:\EEC 180\Lab6\synthesis\Part2\L6part2.v
-FC:\EEC 180\Lab6\synthesis\Part2\L6part2.v
+w1741483941
+8C:/EEC 180/Lab6/synthesis/Part2/L6part2.v
+FC:/EEC 180/Lab6/synthesis/Part2/L6part2.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1741221381.000000
-!s107 C:\EEC 180\Lab6\synthesis\Part2\L6part2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\EEC 180\Lab6\synthesis\Part2\L6part2.v|
+Z4 !s108 1741483948.000000
+!s107 C:/EEC 180/Lab6/synthesis/Part2/L6part2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part2/L6part2.v|
 !i113 1
 Z5 o-work work
 Z6 tCvgOpt 0
@@ -33,11 +33,11 @@ n@l6part2
 vMAC
 R0
 !i10b 1
-!s100 oGFBJD8BFA[PJJ?SdHIhj2
-I<02:c2IU<VOL2KQP^I<cj3
+!s100 f[DRj`YJn9d4cVmb@11dc1
+I[JgPD;[W1o_3HcREiDd:d3
 R1
 R2
-w1741219292
+w1741474883
 8C:/EEC 180/Lab6/synthesis/Part1/mac.v
 FC:/EEC 180/Lab6/synthesis/Part1/mac.v
 L0 1
@@ -77,11 +77,11 @@ nram@output
 vRAMOUTPUT
 R0
 !i10b 1
-!s100 jdbQR=Y0EZMP:H3QZK=kY1
-IYZFh2:5B:iKdIUaOlDGm=1
+!s100 IJBfUzmlfEaX_g^k<S8^D3
+IzTFU=`3U0OjZnA_3AdcbV1
 R1
 R2
-w1741211805
+w1741483747
 R7
 R8
 L0 1

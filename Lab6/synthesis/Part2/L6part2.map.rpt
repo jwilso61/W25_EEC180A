@@ -1,5 +1,5 @@
 Analysis & Synthesis report for L6part2
-Wed Mar 05 15:36:57 2025
+Sat Mar 08 17:30:47 2025
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -14,16 +14,13 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |L6part2|state
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: Top-level Entity: |L6part2
- 14. Port Connectivity Checks: "RAMOUTPUT:RAMOUTPUT"
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
- 18. Analysis & Synthesis Suppressed Messages
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |L6part2
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -50,15 +47,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 05 15:36:57 2025       ;
+; Analysis & Synthesis Status        ; Successful - Sat Mar 08 17:30:47 2025       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; L6part2                                     ;
 ; Top-level Entity Name              ; L6part2                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
+; Total logic elements               ; 162                                         ;
+;     Total combinational functions  ; 159                                         ;
+;     Dedicated logic registers      ; 117                                         ;
+; Total registers                    ; 117                                         ;
 ; Total pins                         ; 15                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -164,10 +161,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -184,35 +182,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------+------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-;                                             ;             ;
-; Total combinational functions               ; 0           ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 0           ;
-;     -- 3 input functions                    ; 0           ;
-;     -- <=2 input functions                  ; 0           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 0           ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 0           ;
-;     -- Dedicated logic registers            ; 0           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 15          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; done~output ;
-; Maximum fan-out                             ; 1           ;
-; Total fan-out                               ; 15          ;
-; Average fan-out                             ; 0.50        ;
-+---------------------------------------------+-------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 162       ;
+;                                             ;           ;
+; Total combinational functions               ; 159       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 38        ;
+;     -- 3 input functions                    ; 11        ;
+;     -- <=2 input functions                  ; 110       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 55        ;
+;     -- arithmetic mode                      ; 104       ;
+;                                             ;           ;
+; Total registers                             ; 117       ;
+;     -- Dedicated logic registers            ; 117       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 15        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 117       ;
+; Total fan-out                               ; 787       ;
+; Average fan-out                             ; 2.57      ;
++---------------------------------------------+-----------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -220,101 +219,21 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |L6part2                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |L6part2            ; L6part2     ; work         ;
+; |L6part2                   ; 159 (159)           ; 117 (117)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 15   ; 0            ; 0          ; |L6part2            ; L6part2     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------+
-; State Machine - |L6part2|state                                                                    ;
-+---------------+------------+--------------+-------------+---------------+------------+------------+
-; Name          ; state.DONE ; state.PARCLR ; state.MACOP ; state.MACLOAD ; state.INIT ; state.IDLE ;
-+---------------+------------+--------------+-------------+---------------+------------+------------+
-; state.IDLE    ; 0          ; 0            ; 0           ; 0             ; 0          ; 0          ;
-; state.INIT    ; 0          ; 0            ; 0           ; 0             ; 1          ; 1          ;
-; state.MACLOAD ; 0          ; 0            ; 0           ; 1             ; 0          ; 1          ;
-; state.MACOP   ; 0          ; 0            ; 1           ; 0             ; 0          ; 1          ;
-; state.PARCLR  ; 0          ; 1            ; 0           ; 0             ; 0          ; 1          ;
-; state.DONE    ; 1          ; 0            ; 0           ; 0             ; 0          ; 1          ;
-+---------------+------------+--------------+-------------+---------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                    ;
-+-----------------------------------------+---------------------------------------------+
-; Register name                           ; Reason for Removal                          ;
-+-----------------------------------------+---------------------------------------------+
-; clock_count[10]~reg0                    ; Stuck at GND due to stuck port data_in      ;
-; clock_count[9]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[8]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[7]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[6]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[5]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[4]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[3]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[2]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[1]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; clock_count[0]~reg0                     ; Stuck at GND due to stuck port data_in      ;
-; MAC:mac|out[18]                         ; Merged with MAC:mac|S[18]                   ;
-; MAC:mac|out[17]                         ; Merged with MAC:mac|S[17]                   ;
-; MAC:mac|out[16]                         ; Merged with MAC:mac|S[16]                   ;
-; MAC:mac|out[15]                         ; Merged with MAC:mac|S[15]                   ;
-; MAC:mac|out[14]                         ; Merged with MAC:mac|S[14]                   ;
-; MAC:mac|out[13]                         ; Merged with MAC:mac|S[13]                   ;
-; MAC:mac|out[12]                         ; Merged with MAC:mac|S[12]                   ;
-; MAC:mac|out[11]                         ; Merged with MAC:mac|S[11]                   ;
-; MAC:mac|out[10]                         ; Merged with MAC:mac|S[10]                   ;
-; MAC:mac|out[9]                          ; Merged with MAC:mac|S[9]                    ;
-; MAC:mac|out[8]                          ; Merged with MAC:mac|S[8]                    ;
-; MAC:mac|out[7]                          ; Merged with MAC:mac|S[7]                    ;
-; MAC:mac|out[6]                          ; Merged with MAC:mac|S[6]                    ;
-; MAC:mac|out[5]                          ; Merged with MAC:mac|S[5]                    ;
-; MAC:mac|out[4]                          ; Merged with MAC:mac|S[4]                    ;
-; MAC:mac|out[3]                          ; Merged with MAC:mac|S[3]                    ;
-; MAC:mac|out[2]                          ; Merged with MAC:mac|S[2]                    ;
-; MAC:mac|out[1]                          ; Merged with MAC:mac|S[1]                    ;
-; MAC:mac|out[0]                          ; Merged with MAC:mac|S[0]                    ;
-; state~10                                ; Lost fanout                                 ;
-; state~11                                ; Lost fanout                                 ;
-; state~12                                ; Lost fanout                                 ;
-; i[0..31]                                ; Lost fanout                                 ;
-; j[0..31]                                ; Lost fanout                                 ;
-; k[0..31]                                ; Lost fanout                                 ;
-; partial[0..18]                          ; Lost fanout                                 ;
-; MAC:mac|S[0..18]                        ; Lost fanout                                 ;
-; macInA[0..7]                            ; Lost fanout                                 ;
-; macInB[0..7]                            ; Lost fanout                                 ;
-; macc_clear                              ; Lost fanout                                 ;
-; state.IDLE                              ; Lost fanout                                 ;
-; state.INIT                              ; Lost fanout                                 ;
-; state.MACLOAD                           ; Lost fanout                                 ;
-; state.MACOP                             ; Lost fanout                                 ;
-; state.PARCLR                            ; Lost fanout                                 ;
-; state.DONE                              ; Stuck at GND due to stuck port data_in      ;
-; done~reg0                               ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 191 ;                                             ;
-+-----------------------------------------+---------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                 ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
-; Register name ; Reason for Removal        ; Registers Removed due to This Register                                                          ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
-; partial[0]    ; Lost Fanouts              ; partial[18], partial[17], partial[16], partial[15], partial[14], partial[13], partial[12],      ;
-;               ;                           ; partial[11], partial[10], partial[9], partial[8], partial[7], partial[6], partial[5],           ;
-;               ;                           ; partial[4], partial[3], partial[2], partial[1], MAC:mac|S[18], MAC:mac|S[17], MAC:mac|S[16],    ;
-;               ;                           ; MAC:mac|S[15], MAC:mac|S[14], macInA[7], macInA[6], macInA[5], macInA[4], macInA[3], macInA[2], ;
-;               ;                           ; macc_clear, state.MACOP, state.PARCLR                                                           ;
-; state~10      ; Lost Fanouts              ; i[31], j[31], j[30], j[29], k[28], state.IDLE, state.INIT, state.MACLOAD                        ;
-; state~11      ; Lost Fanouts              ; i[30], k[31], k[30]                                                                             ;
-; i[2]          ; Lost Fanouts              ; i[1], i[0], k[29]                                                                               ;
-; k[3]          ; Lost Fanouts              ; k[2], k[1], k[0]                                                                                ;
-; j[2]          ; Lost Fanouts              ; j[1], j[0]                                                                                      ;
-; state.DONE    ; Stuck at GND              ; done~reg0                                                                                       ;
-;               ; due to stuck port data_in ;                                                                                                 ;
-+---------------+---------------------------+-------------------------------------------------------------------------------------------------+
++-----------------------------------------------------+
+; State Machine - |L6part2|state                      ;
++-------------+------------+------------+-------------+
+; Name        ; state.IDLE ; state.DONE ; state.MACOP ;
++-------------+------------+------------+-------------+
+; state.IDLE  ; 0          ; 0          ; 0           ;
+; state.MACOP ; 1          ; 0          ; 1           ;
+; state.DONE  ; 1          ; 1          ; 0           ;
++-------------+------------+------------+-------------+
 
 
 +------------------------------------------------------+
@@ -322,26 +241,26 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 117   ;
+; Number of registers using Synchronous Clear  ; 11    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 110   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |L6part2|i                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |L6part2|j                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |L6part2|k                 ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |L6part2|Selector0         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |L6part2|row[2]              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |L6part2|rcPair[13]          ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |L6part2|clock_count[7]~reg0 ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |L6part2|Selector13          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -349,23 +268,11 @@ Encoding Type:  One-Hot
 +----------------+-------+------------------------------------------------+
 ; Parameter Name ; Value ; Type                                           ;
 +----------------+-------+------------------------------------------------+
-; IDLE           ; 000   ; Unsigned Binary                                ;
-; INIT           ; 001   ; Unsigned Binary                                ;
-; MACLOAD        ; 010   ; Unsigned Binary                                ;
-; MACOP          ; 011   ; Unsigned Binary                                ;
-; PARCLR         ; 100   ; Unsigned Binary                                ;
-; DONE           ; 101   ; Unsigned Binary                                ;
+; IDLE           ; 00    ; Unsigned Binary                                ;
+; MACOP          ; 01    ; Unsigned Binary                                ;
+; DONE           ; 10    ; Unsigned Binary                                ;
 +----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "RAMOUTPUT:RAMOUTPUT"                                                                ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; mem  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -374,12 +281,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 15                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
+; cycloneiii_ff         ; 117                         ;
+;     CLR               ; 4                           ;
+;     ENA               ; 99                          ;
+;     ENA SCLR          ; 11                          ;
+;     plain             ; 3                           ;
+; cycloneiii_lcell_comb ; 159                         ;
+;     arith             ; 104                         ;
+;         2 data inputs ; 101                         ;
+;         3 data inputs ; 3                           ;
+;     normal            ; 55                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 38                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -398,7 +316,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Wed Mar 05 15:36:47 2025
+    Info: Processing started: Sat Mar 08 17:30:37 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off L6part2 -c L6part2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -409,45 +327,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file ramoutp
 Info (12021): Found 1 design units, including 1 entities, in source file /eec 180/lab6/synthesis/part1/mac.v
     Info (12023): Found entity 1: MAC File: C:/EEC 180/Lab6/synthesis/Part1/mac.v Line: 1
 Info (12127): Elaborating entity "L6part2" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at L6part2.v(88): truncated value with size 32 to match size of target (6) File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 88
+Warning (10230): Verilog HDL assignment warning at L6part2.v(69): truncated value with size 32 to match size of target (11) File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 69
+Warning (10230): Verilog HDL assignment warning at L6part2.v(99): truncated value with size 32 to match size of target (6) File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 99
 Warning (10030): Net "memA.data_a" at L6part2.v(21) has no driver or initial value, using a default initial value '0' File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 21
 Warning (10030): Net "memA.waddr_a" at L6part2.v(21) has no driver or initial value, using a default initial value '0' File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 21
 Warning (10030): Net "memB.data_a" at L6part2.v(22) has no driver or initial value, using a default initial value '0' File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 22
 Warning (10030): Net "memB.waddr_a" at L6part2.v(22) has no driver or initial value, using a default initial value '0' File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 22
 Warning (10030): Net "memA.we_a" at L6part2.v(21) has no driver or initial value, using a default initial value '0' File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 21
 Warning (10030): Net "memB.we_a" at L6part2.v(22) has no driver or initial value, using a default initial value '0' File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 22
-Info (12128): Elaborating entity "RAMOUTPUT" for hierarchy "RAMOUTPUT:RAMOUTPUT" File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 33
-Info (12128): Elaborating entity "MAC" for hierarchy "MAC:mac" File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 41
-Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276013): RAM logic "memA" is uninferred because MIF is not supported for the selected family File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 21
-    Info (276013): RAM logic "memB" is uninferred because MIF is not supported for the selected family File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 22
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "done" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 2
-    Warning (13410): Pin "clock_count[0]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[1]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[2]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[3]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[4]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[5]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[6]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[7]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[8]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[9]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-    Warning (13410): Pin "clock_count[10]" is stuck at GND File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 56
-Info (17049): 159 registers lost all their fanouts during netlist optimizations.
+Info (12128): Elaborating entity "RAMOUTPUT" for hierarchy "RAMOUTPUT:RAMOUTPUT" File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 29
+Warning (10036): Verilog HDL or VHDL warning at ramOutput.v(9): object "mem" assigned a value but never read File: C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v Line: 9
+Info (12128): Elaborating entity "MAC" for hierarchy "MAC:mac" File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 37
+Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/EEC 180/Lab6/synthesis/Part2/L6part2.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "start" File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 5
-    Warning (15610): No output dependent on input pin "clk" File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 4
-    Warning (15610): No output dependent on input pin "rst" File: C:/EEC 180/Lab6/synthesis/Part2/L6part2.v Line: 7
-Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 177 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 12 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4736 megabytes
-    Info: Processing ended: Wed Mar 05 15:36:57 2025
+    Info (21061): Implemented 162 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4764 megabytes
+    Info: Processing ended: Sat Mar 08 17:30:47 2025
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:23
 

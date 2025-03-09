@@ -1,21 +1,21 @@
 module MAC (
+	output wire signed [18:0] out,
 	input clk,
 	input macc_clear,
 	input signed [7:0] inA,
-	input signed [7:0] inB,
-	output reg signed [18:0] out
+	input signed [7:0] inB
 );
 	
-	reg signed [18:0] S;
-	reg signed [18:0] product;
+	reg signed [18:0] accumulator;
+	wire signed [18:0] product;
+	assign out = accumulator;
+	assign product = inA * inB;
 	
 always @ (posedge clk) begin
-	 product <= inA * inB;
 	 if (macc_clear == 1) begin
-		S <= product;
+		accumulator <= product;
 	 end else begin
-		S <= S + product; 
-	end 
-	out <= S;
+		accumulator <= accumulator + product; 
+	end
 end
 endmodule
