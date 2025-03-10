@@ -1,0 +1,6 @@
+
+State Machine - |l6part4|state
+Name state.IDLE state.DONE state.MACOP 
+state.IDLE 0 0 0 
+state.MACOP 1 0 1 
+state.DONE 1 1 0 

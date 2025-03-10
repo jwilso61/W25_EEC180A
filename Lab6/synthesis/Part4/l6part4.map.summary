@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Mar 10 11:00:35 2025
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : l6part4
+Top-level Entity Name : l6part4
+Family : MAX 10
+Total logic elements : 162
+    Total combinational functions : 159
+    Dedicated logic registers : 117
+Total registers : 117
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

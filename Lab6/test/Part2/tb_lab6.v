@@ -37,7 +37,7 @@ wire [10:0] clock_count;
 
 /*****************************************
 |------|    RENAME TO MATCH YOUR MODULE */
-l6part3 DUT
+l6part4 DUT
 (
     .clk   (clk),
     .start (start),
