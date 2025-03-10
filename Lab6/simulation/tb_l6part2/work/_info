@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/EEC 180/Lab5/simulation/tb_l5part2
 vL6part2
-Z0 !s110 1741483948
+Z0 !s110 1741565820
 !i10b 1
-!s100 A`=5eYI7IX><WOl=U0YAO2
-IIRDB_U@cCj[lJYQAk5F^X1
+!s100 ?DBdRSLzbGHmL9nAR<`663
+I4eZ>?=j[c_g2NfQQV9b9f0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/EEC 180/Lab6/simulation/tb_l6part2
-w1741483941
+w1741559329
 8C:/EEC 180/Lab6/synthesis/Part2/L6part2.v
 FC:/EEC 180/Lab6/synthesis/Part2/L6part2.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1741483948.000000
+Z4 !s108 1741565820.000000
 !s107 C:/EEC 180/Lab6/synthesis/Part2/L6part2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part2/L6part2.v|
 !i113 1
@@ -37,7 +37,7 @@ R0
 I[JgPD;[W1o_3HcREiDd:d3
 R1
 R2
-w1741474883
+w1741557234
 8C:/EEC 180/Lab6/synthesis/Part1/mac.v
 FC:/EEC 180/Lab6/synthesis/Part1/mac.v
 L0 1
@@ -81,7 +81,7 @@ R0
 IzTFU=`3U0OjZnA_3AdcbV1
 R1
 R2
-w1741483747
+w1741559338
 R7
 R8
 L0 1
@@ -103,7 +103,7 @@ R0
 IOEK5=S=Sf<IF4>]c`TMZT3
 R1
 R2
-w1741215181
+w1741565818
 8C:/EEC 180/Lab6/test/Part2/tb_lab6.v
 FC:/EEC 180/Lab6/test/Part2/tb_lab6.v
 L0 4

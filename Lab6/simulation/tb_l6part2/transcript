@@ -1,0 +1,98 @@
+# Compile of tb_lab6.v was successful.
+# Compile of ramOutput.v was successful.
+# Compile of L6part2.v was successful.
+# Compile of mac.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_lab6
+# vsim -gui work.tb_lab6 
+# Start time: 17:15:49 on Mar 09,2025
+# Loading work.tb_lab6
+# ** Error: (vsim-3033) C:/EEC 180/Lab6/test/Part2/tb_lab6.v(40): Instantiation of 'l6part3' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_lab6 File: C:/EEC 180/Lab6/test/Part2/tb_lab6.v
+#         Searched libraries:
+#             C:/EEC 180/Lab6/simulation/tb_l6part2/work
+# Error loading design
+# End time: 17:15:49 on Mar 09,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Compile of tb_lab6.v was successful.
+# Compile of ramOutput.v was successful.
+# Compile of L6part2.v was successful.
+# Compile of mac.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_lab6
+# vsim -gui work.tb_lab6 
+# Start time: 17:17:10 on Mar 09,2025
+# Loading work.tb_lab6
+# Loading work.L6part2
+# Loading work.RAMOUTPUT
+# Loading work.MAC
+add wave -position end  sim:/tb_lab6/DUT/IDLE
+add wave -position end  sim:/tb_lab6/DUT/MACOP
+add wave -position end  sim:/tb_lab6/DUT/DONE
+add wave -position end  sim:/tb_lab6/DUT/done
+add wave -position end  sim:/tb_lab6/DUT/clock_count
+add wave -position end  sim:/tb_lab6/DUT/clk
+add wave -position end  sim:/tb_lab6/DUT/start
+add wave -position end  sim:/tb_lab6/DUT/rst
+add wave -position end  sim:/tb_lab6/DUT/row
+add wave -position end  sim:/tb_lab6/DUT/column
+add wave -position end  sim:/tb_lab6/DUT/rcPair
+add wave -position end  sim:/tb_lab6/DUT/state
+add wave -position end  sim:/tb_lab6/DUT/macc_clear
+add wave -position end  sim:/tb_lab6/DUT/matCWen
+add wave -position end  sim:/tb_lab6/DUT/matCaddr
+add wave -position end  sim:/tb_lab6/DUT/matCin
+add wave -position end  sim:/tb_lab6/DUT/macInA
+add wave -position end  sim:/tb_lab6/DUT/macInB
+add wave -position end  sim:/tb_lab6/DUT/macOut
+add wave -position end  sim:/tb_lab6/DUT/memA
+add wave -position end  sim:/tb_lab6/DUT/memB
+add wave -position end  sim:/tb_lab6/DUT/RAMOUTPUT/mem
+run -a
+# Matrix A
+#  -12 -14 -71  63 122  53  44 -70
+# -103-100 -82  46-116 -33  15-113
+#  124   7  81  62 -20  -1-117 -87
+#   59   8  69 105 -35-126-106-124
+#  124-123 -16-118  96  95 -63 -14
+#  -66  25-107  32  85 127  61 114
+#  111  10  61 -57 107 -98  28  54
+# -106  63  91 -71-123  -9   0  48
+# 
+#  Matrix B
+# -114  19 -62  80 -24 -28 108 -39
+# -100 -35-121-104-118 103-114  13
+#  114 -93 -17   2  65-106 -66  -4
+#   81-110 110-101   8   5 -80-110
+#   84 115-113 -21  75 -45  -3 124
+#  -44  16  30 -64  67 -59  40 -32
+#   91 -76  -3-127 109 -50  18  39
+#  -62 -98-107 107 -69  73 -61  94
+# 
+# Expected Result
+#   16037  18329   5737 -25041  20156  -9192   6762   2208
+#   16199    175  49104 -12098   7831   -326   8199 -25380
+#   -7469   2860   8798   9126  -6358 -10569   5509 -27078
+#    9491  -2959  19512   2414 -11100  -2360  -6773 -30121
+#  -14199  39849 -11824  33005  17218 -22832  41142  11700
+#   -4547    301 -11770 -16788   5602   9879  -6507  19378
+#    1183   5673 -36292  19966    450  -5320   4351  24399
+#   -2505 -23865  -1915    616 -12683   9026 -21875   1947
+# 
+# Generated Result
+#   16037  18329   5737 -25041  20156  -9192   6762   2208
+#   16199    175  49104 -12098   7831   -326   8199 -25380
+#   -7469   2860   8798   9126  -6358 -10569   5509 -27078
+#    9491  -2959  19512   2414 -11100  -2360  -6773 -30121
+#  -14199  39849 -11824  33005  17218 -22832  41142  11700
+#   -4547    301 -11770 -16788   5602   9879  -6507  19378
+#    1183   5673 -36292  19966    450  -5320   4351  24399
+#   -2505 -23865  -1915    616 -12683   9026 -21875   1947
+# 
+# success :)
+# Running Time =  515 clock cycles
+# ** Note: $stop    : C:/EEC 180/Lab6/test/Part2/tb_lab6.v(160)
+#    Time: 10410 ns  Iteration: 3  Instance: /tb_lab6
+# Break in Module tb_lab6 at C:/EEC 180/Lab6/test/Part2/tb_lab6.v line 160
+# End time: 18:21:38 on Mar 09,2025, Elapsed time: 1:04:28
+# Errors: 0, Warnings: 0
