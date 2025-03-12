@@ -3,8 +3,14 @@ module L6part2 (
 		output 	reg [10:0]	clock_count,
 		input 					clk,
 		input 					start,
-		input 					rst
+		input 					rst,
+		output	 [8:0]  LEDR,
+		input 	[3:0] SW
+		
 );
+
+
+
 
 integer row, column, rcPair;
 reg [1:0] state;
@@ -12,21 +18,58 @@ parameter IDLE = 2'b00, MACOP = 2'b01, DONE = 2'b10;
 reg macc_clear;
 reg matCWen;
 reg [5:0] matCaddr;
+reg [5:0] matAaddr;
+reg [5:0] matBaddr;
 reg signed [18:0] matCin;
+wire signed [7:0] matAout;
+wire signed [7:0] matBout;
 reg signed [7:0] macInA;
 reg signed [7:0] macInB;
+
+
+
+
+
+
 wire signed [18:0] macOut;
-reg signed [7:0] memA [0:63]	/* synthesis ramstyle = "M9K" */;
-reg signed [7:0] memB [0:63]	/* synthesis ramstyle = "M9K" */;
+///* synthesis ramstyle = "M9K" */reg signed [7:0] memA [0:63]	;
+///* synthesis ramstyle = "M9K" */reg signed [7:0] memB [0:63]	;
 //(* ram_init_file = "ram_a_init.mif"*) reg signed [7:0] memA [0:63]  /* synthesis ramstyle = "M9K" */;
 //(* ram_init_file = "ram_b_init.mif"*) reg signed [7:0] memB [0:63]  /* synthesis ramstyle = "M9K" */;
+
+
+
 
 RAMOUTPUT RAMOUTPUT(
 		.clk(clk),
 		.writeEn(matCWen),// Write enable for a single element
 		.addr(matCaddr),	// Address for the write
-		.data_in(matCin)  // Data to write into mem[addr]
+		.data_in(matCin),  // Data to write into mem[addr]
+		.data_out(LEDR)
 );
+
+
+RAMA ramA(
+		.clk(clk),
+		.addr(matAaddr),	
+		.data_out(matAout),
+		.mdi(SW[0]),
+		.writeEnable(SW[1])
+
+		
+
+
+);
+
+RAMB ramB(
+		.clk(clk),
+		.addr(matBaddr),	
+		.data_out(matBout),
+		.mdi(SW[2]),
+		.writeEnable(SW[3])
+
+);
+
 
 MAC mac( 
 		.clk(clk),
@@ -37,8 +80,8 @@ MAC mac(
 );
 
 initial begin
-	$readmemb("ram_a_init.txt", memA);
-	$readmemb("ram_b_init.txt", memB);
+//	$readmemb("ram_a_init.txt", memA);
+//	$readmemb("ram_b_init.txt", memB);
 	row <= 0;
 	column <= 0;
 	rcPair <= 0;
@@ -52,6 +95,7 @@ end
 
 
 always @(posedge clk or posedge rst) begin
+
 		if (rst) begin
 			done <= 0;
 		   state <= IDLE;
@@ -82,11 +126,15 @@ always @(posedge clk or posedge rst) begin
 				if (rcPair<7)										rcPair <= rcPair+1;			// pair iterator
 				
 				if (rcPair==0 && macOut == 0) begin							// ?ensures first pair is not added to itself?
-					macInA <= memA[column + rcPair*8];
-					macInB <= memB[rcPair + row*8];
+					matAaddr <= column + rcPair*8;
+					matBaddr <= rcPair + row*8;
+					macInA <= matAout;
+					macInB <= matBout;
 				end else begin
-					macInA <= memA[column + rcPair*8];
-					macInB <= memB[rcPair + row*8];
+					matAaddr <= column + rcPair*8;
+					matBaddr <= rcPair + row*8;
+					macInA <= matAout;
+					macInB <= matBout;
 				end
 				
 				if (rcPair==0)			macc_clear <= 1'b1;
@@ -109,5 +157,10 @@ always @(posedge clk or posedge rst) begin
 	  
 	  endcase
     end
+		
 end
+
+
+
+
 endmodule

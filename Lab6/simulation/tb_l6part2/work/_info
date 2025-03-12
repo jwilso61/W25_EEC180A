@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/EEC 180/Lab5/simulation/tb_l5part2
 vL6part2
-Z0 !s110 1741565820
+Z0 !s110 1741815774
 !i10b 1
-!s100 ?DBdRSLzbGHmL9nAR<`663
-I4eZ>?=j[c_g2NfQQV9b9f0
+!s100 ^G;DYoAGAgY_N[@TX^[0a3
+Ibf9;5ah5E:H^LIM7R[MS83
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/EEC 180/Lab6/simulation/tb_l6part2
-w1741559329
+w1741815479
 8C:/EEC 180/Lab6/synthesis/Part2/L6part2.v
 FC:/EEC 180/Lab6/synthesis/Part2/L6part2.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1741565820.000000
+Z4 !s108 1741815774.000000
 !s107 C:/EEC 180/Lab6/synthesis/Part2/L6part2.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part2/L6part2.v|
 !i113 1
@@ -37,7 +37,7 @@ R0
 I[JgPD;[W1o_3HcREiDd:d3
 R1
 R2
-w1741557234
+w1741809894
 8C:/EEC 180/Lab6/synthesis/Part1/mac.v
 FC:/EEC 180/Lab6/synthesis/Part1/mac.v
 L0 1
@@ -52,6 +52,50 @@ R4
 R5
 R6
 n@m@a@c
+vRAMA
+Z7 !s110 1741815775
+!i10b 1
+!s100 NXNnCo5Fe9>d>@ZHM[hk60
+Ih7NfiUSD]:nj@11ia^Q7T1
+R1
+R2
+w1741815686
+8C:/EEC 180/Lab6/synthesis/Part2/ramA.v
+FC:/EEC 180/Lab6/synthesis/Part2/ramA.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1741815775.000000
+!s107 C:/EEC 180/Lab6/synthesis/Part2/ramA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part2/ramA.v|
+!i113 1
+R5
+R6
+n@r@a@m@a
+vRAMB
+R7
+!i10b 1
+!s100 ZnimS<ZEc[0]e`l4Nk7am3
+I2JPco5W6:6iK^;;WE[hfW1
+R1
+R2
+w1741815446
+8C:/EEC 180/Lab6/synthesis/Part2/ramB.v
+FC:/EEC 180/Lab6/synthesis/Part2/ramB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/EEC 180/Lab6/synthesis/Part2/ramB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part2/ramB.v|
+!i113 1
+R5
+R6
+n@r@a@m@b
 vramOutput
 !s110 1741211181
 !i10b 1
@@ -60,16 +104,16 @@ I:jRhoWXVUZ^^]eO:mo8140
 R1
 R2
 w1740872661
-Z7 8C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v
-Z8 FC:/EEC 180/Lab6/synthesis/Part2/ramOutput.v
+Z9 8C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v
+Z10 FC:/EEC 180/Lab6/synthesis/Part2/ramOutput.v
 L0 1
 R3
 r1
 !s85 0
 31
 !s108 1741211181.000000
-Z9 !s107 C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v|
-Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v|
+Z11 !s107 C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v|
+Z12 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v|
 !i113 1
 R5
 R6
@@ -77,21 +121,21 @@ nram@output
 vRAMOUTPUT
 R0
 !i10b 1
-!s100 IJBfUzmlfEaX_g^k<S8^D3
-IzTFU=`3U0OjZnA_3AdcbV1
+!s100 ?]iINY@nj?AY_YVNVBZ;O2
+IX;lXQBDKU8ZEX2I6cgnKA2
 R1
 R2
-w1741559338
-R7
-R8
+w1741814504
+R9
+R10
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-R9
-R10
+R11
+R12
 !i113 1
 R5
 R6
@@ -103,7 +147,7 @@ R0
 IOEK5=S=Sf<IF4>]c`TMZT3
 R1
 R2
-w1741565818
+w1741812158
 8C:/EEC 180/Lab6/test/Part2/tb_lab6.v
 FC:/EEC 180/Lab6/test/Part2/tb_lab6.v
 L0 4

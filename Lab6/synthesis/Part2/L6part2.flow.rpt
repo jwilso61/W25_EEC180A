@@ -1,5 +1,5 @@
 Flow report for L6part2
-Sat Mar 08 17:31:09 2025
+Wed Mar 12 15:05:40 2025
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,21 +41,21 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Mar 08 17:31:09 2025       ;
+; Flow Status                        ; Successful - Wed Mar 12 15:05:40 2025       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; L6part2                                     ;
 ; Top-level Entity Name              ; L6part2                                     ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 179 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 160 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 117 / 49,760 ( < 1 % )                      ;
-; Total registers                    ; 117                                         ;
-; Total pins                         ; 15 / 360 ( 4 % )                            ;
+; Total logic elements               ; 213 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 197 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 159 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 159                                         ;
+; Total pins                         ; 28 / 360 ( 8 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
+; Total memory bits                  ; 1,600 / 1,677,312 ( < 1 % )                 ;
+; Embedded Multiplier 9-bit elements ; 1 / 288 ( < 1 % )                           ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
 ; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/08/2025 17:30:37 ;
+; Start date & time ; 03/12/2025 15:05:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; L6part2             ;
 +-------------------+---------------------+
@@ -78,12 +78,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 156704309904074.174148383704168        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 123870400480852.174181711727652        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
@@ -97,12 +101,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4764 MB             ; 00:00:23                           ;
-; Fitter               ; 00:00:11     ; 1.0                     ; 5649 MB             ; 00:00:16                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4696 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4826 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4644 MB             ; 00:00:01                           ;
-; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:46                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4836 MB             ; 00:00:16                           ;
+; Fitter               ; 00:00:08     ; 1.1                     ; 6238 MB             ; 00:00:17                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4695 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 4928 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4664 MB             ; 00:00:00                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,11 +115,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-13LCGEI  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-13LCGEI  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-13LCGEI  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-13LCGEI  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-13LCGEI  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-J946JV0  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-J946JV0  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-J946JV0  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-J946JV0  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-J946JV0  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
