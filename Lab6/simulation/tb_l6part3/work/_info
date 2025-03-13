@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/19.1
 vl6part3
-Z0 !s110 1741569606
+Z0 !s110 1741823010
 !i10b 1
-!s100 h6gQk9z63W>@T@cMX1cbC0
-IJeKF4@o<z8E=6A:a=bFYT0
+!s100 hY^KaNnV2O`]HMH:SD]:D3
+IPUoYOo:23D4[Pj;R3Am2K0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/EEC 180/Lab6/simulation/tb_l6part3
-w1741569602
+w1741822180
 8C:/EEC 180/Lab6/synthesis/Part3/l6part3.v
 FC:/EEC 180/Lab6/synthesis/Part3/l6part3.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1741569606.000000
+Z4 !s108 1741823010.000000
 !s107 C:/EEC 180/Lab6/synthesis/Part3/l6part3.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part3/l6part3.v|
 !i113 1
@@ -36,7 +36,7 @@ R0
 I[JgPD;[W1o_3HcREiDd:d3
 R1
 R2
-w1741557234
+w1741474883
 8C:/EEC 180/Lab6/synthesis/Part1/mac.v
 FC:/EEC 180/Lab6/synthesis/Part1/mac.v
 L0 1
@@ -51,14 +51,58 @@ R4
 R5
 R6
 n@m@a@c
+vRAMA
+R0
+!i10b 1
+!s100 9Lfo?RMg4SbKc2HgF:2CJ1
+IHKE4DHGTm0:>gg8Zk<9_O1
+R1
+R2
+w1741819351
+8C:/EEC 180/Lab6/synthesis/Part3/ramA.v
+FC:/EEC 180/Lab6/synthesis/Part3/ramA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180/Lab6/synthesis/Part3/ramA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part3/ramA.v|
+!i113 1
+R5
+R6
+n@r@a@m@a
+vRAMB
+R0
+!i10b 1
+!s100 0[a_5KM<`WWATAj2@1Z[V1
+IK47Ec5`f:SfRh@4oHO>EX1
+R1
+R2
+w1741820689
+8C:/EEC 180/Lab6/synthesis/Part3/ramB.v
+FC:/EEC 180/Lab6/synthesis/Part3/ramB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/EEC 180/Lab6/synthesis/Part3/ramB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/synthesis/Part3/ramB.v|
+!i113 1
+R5
+R6
+n@r@a@m@b
 vRAMOUTPUT
 R0
 !i10b 1
-!s100 IJBfUzmlfEaX_g^k<S8^D3
-IzTFU=`3U0OjZnA_3AdcbV1
+!s100 ?]iINY@nj?AY_YVNVBZ;O2
+IX;lXQBDKU8ZEX2I6cgnKA2
 R1
 R2
-w1741559338
+w1741817481
 8C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v
 FC:/EEC 180/Lab6/synthesis/Part2/ramOutput.v
 L0 1
@@ -77,20 +121,20 @@ vtb_lab6
 R0
 !i10b 1
 !s100 >flBF3^SD3FGNDm`^YjN:3
-IgWDAjFU8E^^kR9YZOn:hb1
+I[kYHFEd^?ezA1:H6IPDPj2
 R1
 R2
-w1741566808
-8C:\EEC 180\Lab6\test\Part2\tb_lab6.v
-FC:\EEC 180\Lab6\test\Part2\tb_lab6.v
+w1741819629
+8C:/EEC 180/Lab6/test/Part3/tb_lab6.v
+FC:/EEC 180/Lab6/test/Part3/tb_lab6.v
 L0 4
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:\EEC 180\Lab6\test\Part2\tb_lab6.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\EEC 180\Lab6\test\Part2\tb_lab6.v|
+!s107 C:/EEC 180/Lab6/test/Part3/tb_lab6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/EEC 180/Lab6/test/Part3/tb_lab6.v|
 !i113 1
 R5
 R6

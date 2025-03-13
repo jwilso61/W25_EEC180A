@@ -6,11 +6,7 @@ module L6part2 (
 		input 					rst,
 		output	 [8:0]  LEDR,
 		input 	[3:0] SW
-		
 );
-
-
-
 
 integer row, column, rcPair;
 reg [1:0] state;
@@ -23,22 +19,7 @@ reg [5:0] matBaddr;
 reg signed [18:0] matCin;
 wire signed [7:0] matAout;
 wire signed [7:0] matBout;
-reg signed [7:0] macInA;
-reg signed [7:0] macInB;
-
-
-
-
-
-
 wire signed [18:0] macOut;
-///* synthesis ramstyle = "M9K" */reg signed [7:0] memA [0:63]	;
-///* synthesis ramstyle = "M9K" */reg signed [7:0] memB [0:63]	;
-//(* ram_init_file = "ram_a_init.mif"*) reg signed [7:0] memA [0:63]  /* synthesis ramstyle = "M9K" */;
-//(* ram_init_file = "ram_b_init.mif"*) reg signed [7:0] memB [0:63]  /* synthesis ramstyle = "M9K" */;
-
-
-
 
 RAMOUTPUT RAMOUTPUT(
 		.clk(clk),
@@ -48,17 +29,12 @@ RAMOUTPUT RAMOUTPUT(
 		.data_out(LEDR)
 );
 
-
 RAMA ramA(
 		.clk(clk),
 		.addr(matAaddr),	
 		.data_out(matAout),
 		.mdi(SW[0]),
 		.writeEnable(SW[1])
-
-		
-
-
 );
 
 RAMB ramB(
@@ -70,18 +46,15 @@ RAMB ramB(
 
 );
 
-
 MAC mac( 
 		.clk(clk),
 		.macc_clear(macc_clear),
-		.inA(macInA),
-		.inB(macInB),
+		.inA(matAout),
+		.inB(matBout),
 		.out(macOut)
 );
 
 initial begin
-//	$readmemb("ram_a_init.txt", memA);
-//	$readmemb("ram_b_init.txt", memB);
 	row <= 0;
 	column <= 0;
 	rcPair <= 0;
@@ -89,8 +62,6 @@ initial begin
 	matCin <= 0;
 	matCWen <= 0;
 	macc_clear <= 1;
-	macInA <= 0;
-	macInB <= 0;
 end
 
 
@@ -114,10 +85,8 @@ always @(posedge clk or posedge rst) begin
 				macc_clear <= 1'b0;
 				matCWen <= 0;
 
-				if (row==0 && column==0 && rcPair==0) macc_clear <= 1'b1;
-
-				if (matCaddr==6'b111111 && rcPair==2) state <= DONE;
-				
+				if (row==0 && column==0 && rcPair==0) 			macc_clear <= 1'b1;
+				if (matCaddr==6'b111111 && rcPair==2) 			state <= DONE;
 				if (row<7  && rcPair==7)							row <= row + 1;				// row iterator
 				if (row==7 && rcPair==7)							row <= 1'b0;
 				
@@ -128,19 +97,15 @@ always @(posedge clk or posedge rst) begin
 				if (rcPair==0 && macOut == 0) begin							// ?ensures first pair is not added to itself?
 					matAaddr <= column + rcPair*8;
 					matBaddr <= rcPair + row*8;
-					macInA <= matAout;
-					macInB <= matBout;
 				end else begin
 					matAaddr <= column + rcPair*8;
 					matBaddr <= rcPair + row*8;
-					macInA <= matAout;
-					macInB <= matBout;
 				end
 				
-				if (rcPair==0)			macc_clear <= 1'b1;
-				if (macc_clear==1 && macOut!=0) 	matCWen <= 1;
+				if (rcPair==1)			macc_clear <= 1'b1;
+				if (rcPair==2 && macOut!=0) 	matCWen <= 1;
 				
-				if (rcPair==1) 		matCin <= macOut;
+				if (rcPair==2) 		matCin <= macOut;
 
 				if (rcPair==7) begin
 					rcPair<=0;
@@ -159,8 +124,5 @@ always @(posedge clk or posedge rst) begin
     end
 		
 end
-
-
-
 
 endmodule

@@ -1,11 +1,32 @@
-{C:/EEC 180/Lab6/test/Part2/tb_lab6.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/test/Part2/tb_lab6.v}
+{C:/EEC 180/Lab6/test/Part4/tb_lab6.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/test/Part4/tb_lab6.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module tb_lab6
 
 Top level modules:
 	tb_lab6
 
-} {} {}} {C:/EEC 180/Lab6/synthesis/Part1/mac.v} {1 {vlog -work work -stats=none {C:\EEC 180\Lab6\synthesis\Part1\mac.v}
+} {} {}} {C:/EEC 180/Lab6/synthesis/Part4/l6part4.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part4/l6part4.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module l6part4
+
+Top level modules:
+	l6part4
+
+} {} {}} {C:/EEC 180/Lab6/synthesis/Part4/ramA.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part4/ramA.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAMA
+
+Top level modules:
+	RAMA
+
+} {} {}} {C:/EEC 180/Lab6/synthesis/Part4/ramB.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part4/ramB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAMB
+
+Top level modules:
+	RAMB
+
+} {} {}} {C:/EEC 180/Lab6/synthesis/Part1/mac.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part1/mac.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module MAC
 

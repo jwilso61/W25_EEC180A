@@ -1,2 +1,2 @@
-Warning (10268): Verilog HDL information at l6part4.v(91): always construct contains both blocking and non-blocking assignments File: C:/EEC 180/Lab6/synthesis/Part4/l6part4.v Line: 91
+Warning (10268): Verilog HDL information at l6part4.v(120): always construct contains both blocking and non-blocking assignments File: C:/EEC 180/Lab6/synthesis/Part4/l6part4.v Line: 120
 Info (10281): Verilog HDL Declaration information at l6part4.v(2): object "done" differs only in case from object "DONE" in the same scope File: C:/EEC 180/Lab6/synthesis/Part4/l6part4.v Line: 2

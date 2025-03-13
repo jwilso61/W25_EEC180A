@@ -1,9 +1,16 @@
-{C:/EEC 180/Lab6/test/Part2/tb_lab6.v} {1 {vlog -work work -stats=none {C:\EEC 180\Lab6\test\Part2\tb_lab6.v}
+{C:/EEC 180/Lab6/synthesis/Part3/ramA.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part3/ramA.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_lab6
+-- Compiling module RAMA
 
 Top level modules:
-	tb_lab6
+	RAMA
+
+} {} {}} {C:/EEC 180/Lab6/synthesis/Part3/ramB.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part3/ramB.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RAMB
+
+Top level modules:
+	RAMB
 
 } {} {}} {C:/EEC 180/Lab6/synthesis/Part1/mac.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part1/mac.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -12,18 +19,25 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	MAC
 
-} {} {}} {C:/EEC 180/Lab6/synthesis/Part3/l6part3.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part3/l6part3.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module l6part3
-
-Top level modules:
-	l6part3
-
 } {} {}} {C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part2/ramOutput.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module RAMOUTPUT
 
 Top level modules:
 	RAMOUTPUT
+
+} {} {}} {C:/EEC 180/Lab6/test/Part3/tb_lab6.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/test/Part3/tb_lab6.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_lab6
+
+Top level modules:
+	tb_lab6
+
+} {} {}} {C:/EEC 180/Lab6/synthesis/Part3/l6part3.v} {1 {vlog -work work -stats=none {C:/EEC 180/Lab6/synthesis/Part3/l6part3.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module l6part3
+
+Top level modules:
+	l6part3
 
 } {} {}}
